@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from connect4_msgs/action/ResetBoard.action
+// generated code does not contain a copyright notice
+
+#include "connect4_msgs/msg/BoardState.idl"
+
+module connect4_msgs {
+  module action {
+    struct ResetBoard_Goal {
+      connect4_msgs::msg::BoardState final_board_state;
+    };
+    struct ResetBoard_Result {
+      boolean success;
+
+      string message;
+    };
+    struct ResetBoard_Feedback {
+      string status;
+    };
+  };
+};

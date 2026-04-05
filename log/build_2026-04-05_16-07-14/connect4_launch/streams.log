@@ -1,0 +1,35 @@
+[1.690s] Invoking command in '/home/danie/connect4_ros/src/connect4_launch': PYTHONPATH=/home/danie/connect4_ros/build/connect4_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_launch build --build-base /home/danie/connect4_ros/build/connect4_launch/build install --record /home/danie/connect4_ros/build/connect4_launch/install.log --single-version-externally-managed install_data
+[1.948s] running egg_info
+[1.948s] creating ../../build/connect4_launch/connect4_launch.egg-info
+[1.968s] writing ../../build/connect4_launch/connect4_launch.egg-info/PKG-INFO
+[1.968s] writing dependency_links to ../../build/connect4_launch/connect4_launch.egg-info/dependency_links.txt
+[1.969s] writing requirements to ../../build/connect4_launch/connect4_launch.egg-info/requires.txt
+[1.969s] writing top-level names to ../../build/connect4_launch/connect4_launch.egg-info/top_level.txt
+[1.969s] writing manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'
+[2.016s] reading manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'
+[2.016s] writing manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'
+[2.016s] running build
+[2.016s] running build_py
+[2.016s] creating /home/danie/connect4_ros/build/connect4_launch/build
+[2.016s] creating /home/danie/connect4_ros/build/connect4_launch/build/lib
+[2.017s] creating /home/danie/connect4_ros/build/connect4_launch/build/lib/connect4_launch
+[2.017s] copying connect4_launch/__init__.py -> /home/danie/connect4_ros/build/connect4_launch/build/lib/connect4_launch
+[2.017s] copying connect4_launch/py.typed -> /home/danie/connect4_ros/build/connect4_launch/build/lib/connect4_launch
+[2.017s] running install
+[2.022s] running install_lib
+[2.042s] creating /home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages/connect4_launch
+[2.042s] copying /home/danie/connect4_ros/build/connect4_launch/build/lib/connect4_launch/py.typed -> /home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages/connect4_launch
+[2.042s] copying /home/danie/connect4_ros/build/connect4_launch/build/lib/connect4_launch/__init__.py -> /home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages/connect4_launch
+[2.042s] byte-compiling /home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages/connect4_launch/__init__.py to __init__.cpython-312.pyc
+[2.043s] running install_data
+[2.044s] creating /home/danie/connect4_ros/install/connect4_launch/share/ament_index
+[2.044s] creating /home/danie/connect4_ros/install/connect4_launch/share/ament_index/resource_index
+[2.044s] creating /home/danie/connect4_ros/install/connect4_launch/share/ament_index/resource_index/packages
+[2.044s] copying resource/connect4_launch -> /home/danie/connect4_ros/install/connect4_launch/share/ament_index/resource_index/packages
+[2.045s] copying package.xml -> /home/danie/connect4_ros/install/connect4_launch/share/connect4_launch
+[2.045s] creating /home/danie/connect4_ros/install/connect4_launch/share/connect4_launch/launch
+[2.045s] running install_egg_info
+[2.066s] Copying ../../build/connect4_launch/connect4_launch.egg-info to /home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages/connect4_launch-0.0.0-py3.12.egg-info
+[2.067s] running install_scripts
+[2.191s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_launch/install.log'
+[2.210s] Invoked command in '/home/danie/connect4_ros/src/connect4_launch' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_launch/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_launch build --build-base /home/danie/connect4_ros/build/connect4_launch/build install --record /home/danie/connect4_ros/build/connect4_launch/install.log --single-version-externally-managed install_data

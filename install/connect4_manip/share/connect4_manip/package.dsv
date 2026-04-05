@@ -1,0 +1,6 @@
+source;share/connect4_manip/hook/pythonpath.ps1
+source;share/connect4_manip/hook/pythonpath.dsv
+source;share/connect4_manip/hook/pythonpath.sh
+source;share/connect4_manip/hook/ament_prefix_path.ps1
+source;share/connect4_manip/hook/ament_prefix_path.dsv
+source;share/connect4_manip/hook/ament_prefix_path.sh

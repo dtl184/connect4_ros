@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c.o.d"
+  "libconnect4_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libconnect4_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c"
+  "rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c"
+  "rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c"
+  "rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

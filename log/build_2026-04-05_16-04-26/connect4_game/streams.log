@@ -1,0 +1,39 @@
+[2.302s] Invoking command in '/home/danie/connect4_ros/src/connect4_game': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data
+[2.658s] running egg_info
+[2.658s] creating ../../build/connect4_game/connect4_game.egg-info
+[2.690s] writing ../../build/connect4_game/connect4_game.egg-info/PKG-INFO
+[2.691s] writing dependency_links to ../../build/connect4_game/connect4_game.egg-info/dependency_links.txt
+[2.691s] writing entry points to ../../build/connect4_game/connect4_game.egg-info/entry_points.txt
+[2.691s] writing requirements to ../../build/connect4_game/connect4_game.egg-info/requires.txt
+[2.691s] writing top-level names to ../../build/connect4_game/connect4_game.egg-info/top_level.txt
+[2.691s] writing manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'
+[2.749s] reading manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'
+[2.749s] writing manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'
+[2.749s] running build
+[2.749s] running build_py
+[2.749s] creating /home/danie/connect4_ros/build/connect4_game/build
+[2.750s] creating /home/danie/connect4_ros/build/connect4_game/build/lib
+[2.750s] creating /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game
+[2.750s] copying connect4_game/__init__.py -> /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game
+[2.750s] copying connect4_game/referee_node.py -> /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game
+[2.750s] copying connect4_game/py.typed -> /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game
+[2.751s] running install
+[2.756s] running install_lib
+[2.777s] creating /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game
+[2.777s] copying /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game/py.typed -> /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game
+[2.778s] copying /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game/__init__.py -> /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game
+[2.778s] copying /home/danie/connect4_ros/build/connect4_game/build/lib/connect4_game/referee_node.py -> /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game
+[2.778s] byte-compiling /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game/__init__.py to __init__.cpython-312.pyc
+[2.779s] byte-compiling /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game/referee_node.py to referee_node.cpython-312.pyc
+[2.779s] running install_data
+[2.780s] creating /home/danie/connect4_ros/install/connect4_game/share/ament_index
+[2.780s] creating /home/danie/connect4_ros/install/connect4_game/share/ament_index/resource_index
+[2.780s] creating /home/danie/connect4_ros/install/connect4_game/share/ament_index/resource_index/packages
+[2.780s] copying resource/connect4_game -> /home/danie/connect4_ros/install/connect4_game/share/ament_index/resource_index/packages
+[2.780s] copying package.xml -> /home/danie/connect4_ros/install/connect4_game/share/connect4_game
+[2.781s] running install_egg_info
+[2.804s] Copying ../../build/connect4_game/connect4_game.egg-info to /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game-0.0.0-py3.12.egg-info
+[2.804s] running install_scripts
+[2.976s] Installing referee_node script to /home/danie/connect4_ros/install/connect4_game/lib/connect4_game
+[2.977s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_game/install.log'
+[3.023s] Invoked command in '/home/danie/connect4_ros/src/connect4_game' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data

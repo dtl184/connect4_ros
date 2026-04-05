@@ -1,0 +1,44 @@
+[2.277s] Invoking command in '/home/danie/connect4_ros/src/connect4_perception': PYTHONPATH=/home/danie/connect4_ros/build/connect4_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_perception build --build-base /home/danie/connect4_ros/build/connect4_perception/build install --record /home/danie/connect4_ros/build/connect4_perception/install.log --single-version-externally-managed install_data
+[2.595s] running egg_info
+[2.596s] creating ../../build/connect4_perception/connect4_perception.egg-info
+[2.631s] writing ../../build/connect4_perception/connect4_perception.egg-info/PKG-INFO
+[2.632s] writing dependency_links to ../../build/connect4_perception/connect4_perception.egg-info/dependency_links.txt
+[2.632s] writing entry points to ../../build/connect4_perception/connect4_perception.egg-info/entry_points.txt
+[2.632s] writing requirements to ../../build/connect4_perception/connect4_perception.egg-info/requires.txt
+[2.632s] writing top-level names to ../../build/connect4_perception/connect4_perception.egg-info/top_level.txt
+[2.632s] writing manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'
+[2.687s] reading manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'
+[2.688s] writing manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'
+[2.688s] running build
+[2.688s] running build_py
+[2.688s] creating /home/danie/connect4_ros/build/connect4_perception/build
+[2.689s] creating /home/danie/connect4_ros/build/connect4_perception/build/lib
+[2.689s] creating /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception
+[2.690s] copying connect4_perception/__init__.py -> /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception
+[2.690s] copying connect4_perception/board_perception_node.py -> /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception
+[2.690s] copying connect4_perception/py.typed -> /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception
+[2.690s] running install
+[2.700s] running install_lib
+[2.731s] creating /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception
+[2.732s] copying /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception/py.typed -> /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception
+[2.732s] copying /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception/__init__.py -> /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception
+[2.732s] copying /home/danie/connect4_ros/build/connect4_perception/build/lib/connect4_perception/board_perception_node.py -> /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception
+[2.733s] byte-compiling /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception/__init__.py to __init__.cpython-312.pyc
+[2.734s] byte-compiling /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception/board_perception_node.py to board_perception_node.cpython-312.pyc
+[2.735s]   File "/home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception/board_perception_node.py", line 35
+[2.735s]     board_state.cells = # fill this is with correct number of cells
+[2.735s]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.735s] SyntaxError: invalid syntax
+[2.736s] 
+[2.736s] running install_data
+[2.736s] creating /home/danie/connect4_ros/install/connect4_perception/share/ament_index
+[2.736s] creating /home/danie/connect4_ros/install/connect4_perception/share/ament_index/resource_index
+[2.736s] creating /home/danie/connect4_ros/install/connect4_perception/share/ament_index/resource_index/packages
+[2.737s] copying resource/connect4_perception -> /home/danie/connect4_ros/install/connect4_perception/share/ament_index/resource_index/packages
+[2.737s] copying package.xml -> /home/danie/connect4_ros/install/connect4_perception/share/connect4_perception
+[2.737s] running install_egg_info
+[2.761s] Copying ../../build/connect4_perception/connect4_perception.egg-info to /home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception-0.0.0-py3.12.egg-info
+[2.762s] running install_scripts
+[2.934s] Installing board_perception_node script to /home/danie/connect4_ros/install/connect4_perception/lib/connect4_perception
+[2.935s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_perception/install.log'
+[2.978s] Invoked command in '/home/danie/connect4_ros/src/connect4_perception' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_perception build --build-base /home/danie/connect4_ros/build/connect4_perception/build install --record /home/danie/connect4_ros/build/connect4_perception/install.log --single-version-externally-managed install_data

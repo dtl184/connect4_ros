@@ -1,0 +1,2 @@
+[console_scripts]
+referee_node = connect4_game.referee_node:main

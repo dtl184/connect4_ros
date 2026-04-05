@@ -1,0 +1,4 @@
+Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs
+Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs

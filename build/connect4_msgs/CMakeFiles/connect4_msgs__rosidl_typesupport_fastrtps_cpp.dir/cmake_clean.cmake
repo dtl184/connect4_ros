@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp.o.d"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp.o"
+  "CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp.o.d"
+  "libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

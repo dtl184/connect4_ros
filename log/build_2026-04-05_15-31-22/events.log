@@ -1,0 +1,468 @@
+[0.000000] (-) TimerEvent: {}
+[0.001214] (connect4_msgs) JobQueued: {'identifier': 'connect4_msgs', 'dependencies': OrderedDict()}
+[0.001260] (connect4_msgs) JobStarted: {'identifier': 'connect4_msgs'}
+[0.020118] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'cmake'}
+[0.021177] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/danie/connect4_ros/src/connect4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/danie/connect4_ros/install/connect4_msgs'], 'cwd': '/home/danie/connect4_ros/build/connect4_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/kilted/share:/opt/ros/kilted/share/', 'USER': 'danie', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/gz_sim_vendor/share/gz:/opt/ros/kilted/opt/sdformat_vendor/share/gz:/opt/ros/kilted/opt/gz_gui_vendor/share/gz:/opt/ros/kilted/opt/gz_transport_vendor/share/gz:/opt/ros/kilted/opt/gz_rendering_vendor/share/gz:/opt/ros/kilted/opt/gz_plugin_vendor/share/gz:/opt/ros/kilted/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/kilted/opt/gz_msgs_vendor/share/gz:/opt/ros/kilted/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/danie/ros2_ws/install/track_mean/lib:/home/danie/ros2_ws/install/custom_action_interfaces/lib:/home/danie/ros2_ws/install/compute_stats/lib:/home/danie/ros2_ws/install/action_hw/lib:/opt/ros/kilted/opt/gz_sim_vendor/lib:/opt/ros/kilted/opt/gz_sensors_vendor/lib:/opt/ros/kilted/opt/gz_physics_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_gui_vendor/lib:/opt/ros/kilted/opt/gz_transport_vendor/lib:/opt/ros/kilted/opt/gz_rendering_vendor/lib:/opt/ros/kilted/opt/gz_plugin_vendor/lib:/opt/ros/kilted/opt/gz_fuel_tools_vendor/lib:/opt/ros/kilted/opt/gz_msgs_vendor/lib:/opt/ros/kilted/opt/gz_common_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_ogre_next_vendor/lib:/opt/ros/kilted/opt/gz_dartsim_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/danie', 'OLDPWD': '/home/danie/connect4_ros/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/danie/ros2_ws/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'danie', 'NAME': 'DanielsLaptop', 'WSL_INTEROP': '/run/WSL/323_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/kilted/opt/gz_msgs_vendor/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/opt/gz_ogre_next_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/swipl/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/Java/jdk-17:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/danie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/swipl/bin:/mnt/c/ffmpeg/bin/:/mnt/c/Users/danie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/danie/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/danie/AppData/Local/Muse Hub/lib:/mnt/c/Users/danie/AppData/Local/PowerToys/DSCModules/:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/py_pubsub:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/danie/connect4_ros/build/connect4_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/danie/ros2_ws/install/track_mean/lib/python3.12/site-packages:/home/danie/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/home/danie/ros2_ws/install/custom_action_interfaces/lib/python3.12/site-packages:/home/danie/ros2_ws/install/compute_stats/lib/python3.12/site-packages:/home/danie/ros2_ws/install/action_hw/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted/opt/gz_sim_vendor:/opt/ros/kilted/opt/gz_sensors_vendor:/opt/ros/kilted/opt/gz_physics_vendor:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_gui_vendor:/opt/ros/kilted/opt/gz_transport_vendor:/opt/ros/kilted/opt/gz_rendering_vendor:/opt/ros/kilted/opt/gz_plugin_vendor:/opt/ros/kilted/opt/gz_fuel_tools_vendor:/opt/ros/kilted/opt/gz_msgs_vendor:/opt/ros/kilted/opt/gz_common_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_ogre_next_vendor:/opt/ros/kilted/opt/gz_dartsim_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted', 'WSLENV': ''}), 'shell': False}
+[0.100310] (-) TimerEvent: {}
+[0.200791] (-) TimerEvent: {}
+[0.301149] (-) TimerEvent: {}
+[0.401502] (-) TimerEvent: {}
+[0.453519] (connect4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.502678] (-) TimerEvent: {}
+[0.603960] (-) TimerEvent: {}
+[0.706489] (-) TimerEvent: {}
+[0.809017] (-) TimerEvent: {}
+[0.909457] (-) TimerEvent: {}
+[1.010919] (-) TimerEvent: {}
+[1.049187] (connect4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.111137] (-) TimerEvent: {}
+[1.211492] (-) TimerEvent: {}
+[1.311932] (-) TimerEvent: {}
+[1.412271] (-) TimerEvent: {}
+[1.487919] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.512421] (-) TimerEvent: {}
+[1.612762] (-) TimerEvent: {}
+[1.713157] (-) TimerEvent: {}
+[1.772472] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.779427] (connect4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.785153] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.786128] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.813329] (-) TimerEvent: {}
+[1.889582] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.913506] (-) TimerEvent: {}
+[2.014072] (-) TimerEvent: {}
+[2.116019] (-) TimerEvent: {}
+[2.161984] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.168335] (connect4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.168449] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.168813] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.215682] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)\n'}
+[2.216094] (-) TimerEvent: {}
+[2.318632] (-) TimerEvent: {}
+[2.368906] (connect4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.420072] (-) TimerEvent: {}
+[2.522573] (-) TimerEvent: {}
+[2.552507] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)\n'}
+[2.571604] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.623853] (-) TimerEvent: {}
+[2.672151] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.725287] (-) TimerEvent: {}
+[2.799070] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)\n'}
+[2.811850] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_runtime: 1.7.1 (/opt/ros/kilted/share/rosidl_default_runtime/cmake)\n'}
+[2.824992] (connect4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.3.0 (/opt/ros/kilted/share/builtin_interfaces/cmake)\n'}
+[2.825357] (-) TimerEvent: {}
+[2.849200] (connect4_msgs) StdoutLine: {'line': b'-- Found action_msgs: 2.3.0 (/opt/ros/kilted/share/action_msgs/cmake)\n'}
+[2.927290] (-) TimerEvent: {}
+[3.027729] (-) TimerEvent: {}
+[3.130069] (-) TimerEvent: {}
+[3.230525] (-) TimerEvent: {}
+[3.331097] (-) TimerEvent: {}
+[3.431379] (-) TimerEvent: {}
+[3.442026] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros_core: 0.14.7 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)\n'}
+[3.531591] (-) TimerEvent: {}
+[3.632027] (-) TimerEvent: {}
+[3.732370] (-) TimerEvent: {}
+[3.788078] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.832725] (-) TimerEvent: {}
+[3.933241] (-) TimerEvent: {}
+[4.033599] (-) TimerEvent: {}
+[4.133974] (-) TimerEvent: {}
+[4.234418] (-) TimerEvent: {}
+[4.256163] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.334715] (-) TimerEvent: {}
+[4.435273] (-) TimerEvent: {}
+[4.536364] (-) TimerEvent: {}
+[4.639075] (-) TimerEvent: {}
+[4.739521] (-) TimerEvent: {}
+[4.797716] (connect4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.836689] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)\n'}
+[4.839841] (-) TimerEvent: {}
+[4.902531] (connect4_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.905634] (connect4_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.910602] (connect4_msgs) StdoutLine: {'line': b'-- Configuring done (4.8s)\n'}
+[4.940685] (-) TimerEvent: {}
+[4.954640] (connect4_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.965530] (connect4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/danie/connect4_ros/build/connect4_msgs\n'}
+[4.974268] (connect4_msgs) CommandEnded: {'returncode': 0}
+[4.974591] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'build'}
+[4.974627] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/danie/connect4_ros/build/connect4_msgs', '--', '-j8', '-l8'], 'cwd': '/home/danie/connect4_ros/build/connect4_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/kilted/share:/opt/ros/kilted/share/', 'USER': 'danie', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/gz_sim_vendor/share/gz:/opt/ros/kilted/opt/sdformat_vendor/share/gz:/opt/ros/kilted/opt/gz_gui_vendor/share/gz:/opt/ros/kilted/opt/gz_transport_vendor/share/gz:/opt/ros/kilted/opt/gz_rendering_vendor/share/gz:/opt/ros/kilted/opt/gz_plugin_vendor/share/gz:/opt/ros/kilted/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/kilted/opt/gz_msgs_vendor/share/gz:/opt/ros/kilted/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/danie/ros2_ws/install/track_mean/lib:/home/danie/ros2_ws/install/custom_action_interfaces/lib:/home/danie/ros2_ws/install/compute_stats/lib:/home/danie/ros2_ws/install/action_hw/lib:/opt/ros/kilted/opt/gz_sim_vendor/lib:/opt/ros/kilted/opt/gz_sensors_vendor/lib:/opt/ros/kilted/opt/gz_physics_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_gui_vendor/lib:/opt/ros/kilted/opt/gz_transport_vendor/lib:/opt/ros/kilted/opt/gz_rendering_vendor/lib:/opt/ros/kilted/opt/gz_plugin_vendor/lib:/opt/ros/kilted/opt/gz_fuel_tools_vendor/lib:/opt/ros/kilted/opt/gz_msgs_vendor/lib:/opt/ros/kilted/opt/gz_common_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_ogre_next_vendor/lib:/opt/ros/kilted/opt/gz_dartsim_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/danie', 'OLDPWD': '/home/danie/connect4_ros/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/danie/ros2_ws/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'danie', 'NAME': 'DanielsLaptop', 'WSL_INTEROP': '/run/WSL/323_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/kilted/opt/gz_msgs_vendor/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/opt/gz_ogre_next_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/swipl/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/Java/jdk-17:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/danie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/swipl/bin:/mnt/c/ffmpeg/bin/:/mnt/c/Users/danie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/danie/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/danie/AppData/Local/Muse Hub/lib:/mnt/c/Users/danie/AppData/Local/PowerToys/DSCModules/:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/py_pubsub:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/danie/connect4_ros/build/connect4_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/danie/ros2_ws/install/track_mean/lib/python3.12/site-packages:/home/danie/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/home/danie/ros2_ws/install/custom_action_interfaces/lib/python3.12/site-packages:/home/danie/ros2_ws/install/compute_stats/lib/python3.12/site-packages:/home/danie/ros2_ws/install/action_hw/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted/opt/gz_sim_vendor:/opt/ros/kilted/opt/gz_sensors_vendor:/opt/ros/kilted/opt/gz_physics_vendor:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_gui_vendor:/opt/ros/kilted/opt/gz_transport_vendor:/opt/ros/kilted/opt/gz_rendering_vendor:/opt/ros/kilted/opt/gz_plugin_vendor:/opt/ros/kilted/opt/gz_fuel_tools_vendor:/opt/ros/kilted/opt/gz_msgs_vendor:/opt/ros/kilted/opt/gz_common_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_ogre_next_vendor:/opt/ros/kilted/opt/gz_dartsim_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted', 'WSLENV': ''}), 'shell': False}
+[5.025434] (connect4_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.034212] (connect4_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_connect4_msgs\n'}
+[5.040952] (-) TimerEvent: {}
+[5.141455] (-) TimerEvent: {}
+[5.242037] (-) TimerEvent: {}
+[5.272769] (connect4_msgs) StdoutLine: {'line': b'[  1%] Built target connect4_msgs__rosidl_generator_type_description\n'}
+[5.274197] (connect4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.275305] (connect4_msgs) StdoutLine: {'line': b'creating connect4_msgs.egg-info\n'}
+[5.285308] (connect4_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.292156] (connect4_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.306921] (connect4_msgs) StdoutLine: {'line': b'writing connect4_msgs.egg-info/PKG-INFO\n'}
+[5.307302] (connect4_msgs) StdoutLine: {'line': b'writing dependency_links to connect4_msgs.egg-info/dependency_links.txt\n'}
+[5.307481] (connect4_msgs) StdoutLine: {'line': b'writing top-level names to connect4_msgs.egg-info/top_level.txt\n'}
+[5.307735] (connect4_msgs) StdoutLine: {'line': b"writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[5.342406] (-) TimerEvent: {}
+[5.374574] (connect4_msgs) StdoutLine: {'line': b"reading manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[5.374932] (connect4_msgs) StdoutLine: {'line': b"writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[5.398948] (connect4_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_connect4_msgs_egg\n'}
+[5.443511] (-) TimerEvent: {}
+[5.546093] (-) TimerEvent: {}
+[5.647997] (-) TimerEvent: {}
+[5.750585] (-) TimerEvent: {}
+[5.850953] (-) TimerEvent: {}
+[5.860374] (connect4_msgs) StdoutLine: {'line': b'[  4%] Built target connect4_msgs__cpp\n'}
+[5.947969] (connect4_msgs) StderrLine: {'line': b"gmake[2]: Warning: File 'rosidl_generator_c/connect4_msgs/msg/board_state.h' has modification time 0.17 s in the future\n"}
+[5.951409] (-) TimerEvent: {}
+[5.969317] (connect4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__description.c.o\x1b[0m\n'}
+[5.969755] (connect4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__functions.c.o\x1b[0m\n'}
+[5.970001] (connect4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__type_support.c.o\x1b[0m\n'}
+[5.971675] (connect4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__description.c.o\x1b[0m\n'}
+[5.979054] (connect4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__type_support.c.o\x1b[0m\n'}
+[5.979345] (connect4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__description.c.o\x1b[0m\n'}
+[5.979439] (connect4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__functions.c.o\x1b[0m\n'}
+[5.980229] (connect4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__functions.c.o\x1b[0m\n'}
+[6.033812] (connect4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__type_support.c.o\x1b[0m\n'}
+[6.034468] (connect4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__description.c.o\x1b[0m\n'}
+[6.044411] (connect4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__type_support.c.o\x1b[0m\n'}
+[6.044648] (connect4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__functions.c.o\x1b[0m\n'}
+[6.051592] (-) TimerEvent: {}
+[6.151934] (-) TimerEvent: {}
+[6.190117] (connect4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libconnect4_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[6.252087] (-) TimerEvent: {}
+[6.317907] (connect4_msgs) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[6.325184] (connect4_msgs) StdoutLine: {'line': b'[ 25%] Built target connect4_msgs__rosidl_generator_c\n'}
+[6.336676] (connect4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.337022] (connect4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.337656] (connect4_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.337811] (connect4_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.338791] (connect4_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.338920] (connect4_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.352243] (-) TimerEvent: {}
+[6.452628] (-) TimerEvent: {}
+[6.553381] (-) TimerEvent: {}
+[6.655912] (-) TimerEvent: {}
+[6.758475] (-) TimerEvent: {}
+[6.860965] (connect4_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/board_state__type_support.cpp.o\x1b[0m\n'}
+[6.861215] (-) TimerEvent: {}
+[6.862894] (connect4_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/deliver_block__type_support.cpp.o\x1b[0m\n'}
+[6.863071] (connect4_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/winner__type_support.cpp.o\x1b[0m\n'}
+[6.884662] (connect4_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/board_state__type_support.cpp.o\x1b[0m\n'}
+[6.962711] (-) TimerEvent: {}
+[6.964395] (connect4_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/winner__type_support.cpp.o\x1b[0m\n'}
+[7.041056] (connect4_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/deliver_block__type_support.cpp.o\x1b[0m\n'}
+[7.067193] (-) TimerEvent: {}
+[7.143231] (connect4_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/board_state__type_support.cpp.o\x1b[0m\n'}
+[7.155242] (connect4_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/reset_board__type_support.cpp.o\x1b[0m\n'}
+[7.167586] (-) TimerEvent: {}
+[7.182309] (connect4_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c.o\x1b[0m\n'}
+[7.232092] (connect4_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.241226] (connect4_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c.o\x1b[0m\n'}
+[7.267717] (-) TimerEvent: {}
+[7.294976] (connect4_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c.o\x1b[0m\n'}
+[7.371179] (-) TimerEvent: {}
+[7.399228] (connect4_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c.o\x1b[0m\n'}
+[7.416898] (connect4_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/winner__type_support.cpp.o\x1b[0m\n'}
+[7.417137] (connect4_msgs) StdoutLine: {'line': b'[ 56%] Built target connect4_msgs__rosidl_typesupport_c\n'}
+[7.428887] (connect4_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/reset_board__type_support.cpp.o\x1b[0m\n'}
+[7.439539] (connect4_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/deliver_block__type_support.cpp.o\x1b[0m\n'}
+[7.471463] (-) TimerEvent: {}
+[7.495179] (connect4_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libconnect4_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.570269] (connect4_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp.o\x1b[0m\n'}
+[7.571627] (-) TimerEvent: {}
+[7.618794] (connect4_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp.o\x1b[0m\n'}
+[7.672194] (-) TimerEvent: {}
+[7.675204] (connect4_msgs) StdoutLine: {'line': b'[ 64%] Built target connect4_msgs__rosidl_typesupport_introspection_c\n'}
+[7.687817] (connect4_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp.o\x1b[0m\n'}
+[7.694873] (connect4_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/board_state__type_support_c.cpp.o\x1b[0m\n'}
+[7.775187] (-) TimerEvent: {}
+[7.823278] (connect4_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/winner__type_support_c.cpp.o\x1b[0m\n'}
+[7.875388] (-) TimerEvent: {}
+[7.949976] (connect4_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp.o\x1b[0m\n'}
+[7.975537] (-) TimerEvent: {}
+[8.076024] (-) TimerEvent: {}
+[8.176621] (-) TimerEvent: {}
+[8.276908] (connect4_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/reset_board__type_support.cpp.o\x1b[0m\n'}
+[8.277141] (-) TimerEvent: {}
+[8.291869] (connect4_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/deliver_block__type_support_c.cpp.o\x1b[0m\n'}
+[8.355200] (connect4_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/reset_board__type_support_c.cpp.o\x1b[0m\n'}
+[8.377341] (-) TimerEvent: {}
+[8.417445] (connect4_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.477567] (-) TimerEvent: {}
+[8.578096] (-) TimerEvent: {}
+[8.645301] (connect4_msgs) StdoutLine: {'line': b'[ 76%] Built target connect4_msgs__rosidl_typesupport_cpp\n'}
+[8.678365] (-) TimerEvent: {}
+[8.778908] (-) TimerEvent: {}
+[8.879965] (-) TimerEvent: {}
+[8.980580] (-) TimerEvent: {}
+[9.000785] (connect4_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.080823] (-) TimerEvent: {}
+[9.168348] (connect4_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.180922] (connect4_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.181104] (-) TimerEvent: {}
+[9.182054] (connect4_msgs) StdoutLine: {'line': b'[ 81%] Built target connect4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[9.281484] (-) TimerEvent: {}
+[9.316736] (connect4_msgs) StdoutLine: {'line': b'[ 81%] Built target connect4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[9.319049] (connect4_msgs) StdoutLine: {'line': b'[ 81%] Built target connect4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[9.337251] (connect4_msgs) StdoutLine: {'line': b'[ 81%] Built target connect4_msgs\n'}
+[9.354969] (connect4_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.381646] (-) TimerEvent: {}
+[9.482883] (-) TimerEvent: {}
+[9.583459] (-) TimerEvent: {}
+[9.686124] (-) TimerEvent: {}
+[9.788717] (-) TimerEvent: {}
+[9.889457] (-) TimerEvent: {}
+[9.991578] (-) TimerEvent: {}
+[10.092582] (-) TimerEvent: {}
+[10.195141] (-) TimerEvent: {}
+[10.236348] (connect4_msgs) StdoutLine: {'line': b'[ 82%] Built target connect4_msgs__py\n'}
+[10.255586] (connect4_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_deliver_block_s.c.o\x1b[0m\n'}
+[10.255865] (connect4_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_reset_board_s.c.o\x1b[0m\n'}
+[10.256049] (connect4_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_winner_s.c.o\x1b[0m\n'}
+[10.256400] (connect4_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_board_state_s.c.o\x1b[0m\n'}
+[10.295686] (-) TimerEvent: {}
+[10.396125] (-) TimerEvent: {}
+[10.496612] (-) TimerEvent: {}
+[10.506936] (connect4_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libconnect4_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[10.598701] (-) TimerEvent: {}
+[10.647319] (connect4_msgs) StdoutLine: {'line': b'[ 90%] Built target connect4_msgs__rosidl_generator_py\n'}
+[10.667248] (connect4_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.667412] (connect4_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.667465] (connect4_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.699068] (-) TimerEvent: {}
+[10.799559] (-) TimerEvent: {}
+[10.803241] (connect4_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.812350] (connect4_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.820888] (connect4_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.899739] (-) TimerEvent: {}
+[10.908699] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs_s__rosidl_typesupport_c\n'}
+[10.910116] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs_s__rosidl_typesupport_introspection_c\n'}
+[10.949180] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[10.960709] (connect4_msgs) CommandEnded: {'returncode': 0}
+[10.961051] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'install'}
+[10.968369] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/danie/connect4_ros/build/connect4_msgs'], 'cwd': '/home/danie/connect4_ros/build/connect4_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/kilted/share:/opt/ros/kilted/share/', 'USER': 'danie', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/gz_sim_vendor/share/gz:/opt/ros/kilted/opt/sdformat_vendor/share/gz:/opt/ros/kilted/opt/gz_gui_vendor/share/gz:/opt/ros/kilted/opt/gz_transport_vendor/share/gz:/opt/ros/kilted/opt/gz_rendering_vendor/share/gz:/opt/ros/kilted/opt/gz_plugin_vendor/share/gz:/opt/ros/kilted/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/kilted/opt/gz_msgs_vendor/share/gz:/opt/ros/kilted/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/danie/ros2_ws/install/track_mean/lib:/home/danie/ros2_ws/install/custom_action_interfaces/lib:/home/danie/ros2_ws/install/compute_stats/lib:/home/danie/ros2_ws/install/action_hw/lib:/opt/ros/kilted/opt/gz_sim_vendor/lib:/opt/ros/kilted/opt/gz_sensors_vendor/lib:/opt/ros/kilted/opt/gz_physics_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_gui_vendor/lib:/opt/ros/kilted/opt/gz_transport_vendor/lib:/opt/ros/kilted/opt/gz_rendering_vendor/lib:/opt/ros/kilted/opt/gz_plugin_vendor/lib:/opt/ros/kilted/opt/gz_fuel_tools_vendor/lib:/opt/ros/kilted/opt/gz_msgs_vendor/lib:/opt/ros/kilted/opt/gz_common_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_ogre_next_vendor/lib:/opt/ros/kilted/opt/gz_dartsim_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/danie', 'OLDPWD': '/home/danie/connect4_ros/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/danie/ros2_ws/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'danie', 'NAME': 'DanielsLaptop', 'WSL_INTEROP': '/run/WSL/323_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/kilted/opt/gz_msgs_vendor/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/opt/gz_ogre_next_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/swipl/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/Java/jdk-17:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/danie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/swipl/bin:/mnt/c/ffmpeg/bin/:/mnt/c/Users/danie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/danie/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/danie/AppData/Local/Muse Hub/lib:/mnt/c/Users/danie/AppData/Local/PowerToys/DSCModules/:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/py_pubsub:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/danie/connect4_ros/build/connect4_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/danie/ros2_ws/install/track_mean/lib/python3.12/site-packages:/home/danie/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/home/danie/ros2_ws/install/custom_action_interfaces/lib/python3.12/site-packages:/home/danie/ros2_ws/install/compute_stats/lib/python3.12/site-packages:/home/danie/ros2_ws/install/action_hw/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/danie/ros2_ws/install/track_mean:/home/danie/ros2_ws/install/custom_action_interfaces:/home/danie/ros2_ws/install/compute_stats:/home/danie/ros2_ws/install/action_hw:/opt/ros/kilted/opt/gz_sim_vendor:/opt/ros/kilted/opt/gz_sensors_vendor:/opt/ros/kilted/opt/gz_physics_vendor:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_gui_vendor:/opt/ros/kilted/opt/gz_transport_vendor:/opt/ros/kilted/opt/gz_rendering_vendor:/opt/ros/kilted/opt/gz_plugin_vendor:/opt/ros/kilted/opt/gz_fuel_tools_vendor:/opt/ros/kilted/opt/gz_msgs_vendor:/opt/ros/kilted/opt/gz_common_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_ogre_next_vendor:/opt/ros/kilted/opt/gz_dartsim_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/danie/ros2_ws/install/py_pubsub:/opt/ros/kilted', 'WSLENV': ''}), 'shell': False}
+[10.975488] (connect4_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.976100] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/rosidl_interfaces/connect4_msgs\n'}
+[10.976489] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.json\n'}
+[10.976568] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.json\n'}
+[10.976940] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.json\n'}
+[10.977035] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.json\n'}
+[10.977089] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.977524] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.977620] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.977849] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.h\n'}
+[10.977980] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.h\n'}
+[10.978115] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__description.c\n'}
+[10.978481] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.c\n'}
+[10.978587] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.h\n'}
+[10.978672] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.c\n'}
+[10.978745] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.h\n'}
+[10.978811] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.h\n'}
+[10.978886] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.c\n'}
+[10.979263] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.h\n'}
+[10.979359] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__description.c\n'}
+[10.979476] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.c\n'}
+[10.979567] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.979636] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.h\n'}
+[10.979707] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.h\n'}
+[10.979781] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.980011] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.980103] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.c\n'}
+[10.980163] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__description.c\n'}
+[10.980265] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.h\n'}
+[10.980356] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.h\n'}
+[10.980587] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__description.c\n'}
+[10.980738] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.c\n'}
+[10.980870] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.c\n'}
+[10.981004] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.h\n'}
+[10.981245] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.h\n'}
+[10.981313] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.h\n'}
+[10.981359] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.h\n'}
+[10.981425] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.c\n'}
+[10.981548] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.h\n'}
+[10.981855] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.h\n'}
+[10.981917] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.sh\n'}
+[10.981964] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.dsv\n'}
+[10.982009] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so\n'}
+[10.982218] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so" to ""\n'}
+[10.982377] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.982586] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.982920] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.983009] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_c.h\n'}
+[10.983225] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.983305] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.983351] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.983396] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.983440] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_c.h\n'}
+[10.983506] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_c.h\n'}
+[10.983614] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.983799] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.983901] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.984025] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.984148] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.984257] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_c.h\n'}
+[10.984471] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.c\n'}
+[10.984609] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_c.h\n'}
+[10.984727] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.c\n'}
+[10.984778] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.984824] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.984910] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.985034] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.c\n'}
+[10.985157] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_c.h\n'}
+[10.985283] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_c.h\n'}
+[10.985387] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.c\n'}
+[10.985583] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.985713] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.985839] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so\n'}
+[10.985962] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.986086] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.986209] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.986332] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.986554] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__traits.hpp\n'}
+[10.986701] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__builder.hpp\n'}
+[10.986826] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__builder.hpp\n'}
+[10.986949] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__traits.hpp\n'}
+[10.987092] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.hpp\n'}
+[10.987237] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.hpp\n'}
+[10.987397] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.hpp\n'}
+[10.987524] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.hpp\n'}
+[10.987647] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.987771] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.hpp\n'}
+[10.987894] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.hpp\n'}
+[10.988017] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.988166] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.hpp\n'}
+[10.988291] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.988400] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.hpp\n'}
+[10.988524] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__builder.hpp\n'}
+[10.988696] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.hpp\n'}
+[10.988756] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.hpp\n'}
+[10.988801] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__builder.hpp\n'}
+[10.988868] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__traits.hpp\n'}
+[10.988992] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.hpp\n'}
+[10.989119] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__traits.hpp\n'}
+[10.989243] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.hpp\n'}
+[10.989367] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.989492] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.989633] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.989757] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.989881] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/dds_fastrtps\n'}
+[10.989991] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.990119] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.990243] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.990366] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.990489] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/dds_fastrtps\n'}
+[10.990613] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.990737] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.990921] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.991183] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.991240] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[10.991286] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[10.991332] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[10.991377] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.991422] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.cpp\n'}
+[10.991466] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.991534] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.cpp\n'}
+[10.991623] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[10.991748] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[10.991859] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.cpp\n'}
+[10.992021] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.cpp\n'}
+[10.992071] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.992121] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.992172] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.992220] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.992264] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so\n'}
+[10.992309] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.992395] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.sh\n'}
+[10.992470] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.dsv\n'}
+[10.992581] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info\n'}
+[10.992817] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[10.992905] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[10.993005] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[10.993100] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[10.993156] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs\n'}
+[10.993337] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[10.993415] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[10.993560] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg\n'}
+[10.993615] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state_s.c\n'}
+[10.993703] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state.py\n'}
+[10.993913] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner.py\n'}
+[10.993984] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/__init__.py\n'}
+[10.994032] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner_s.c\n'}
+[10.994080] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action\n'}
+[10.994190] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board.py\n'}
+[10.994370] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block.py\n'}
+[10.994464] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block_s.c\n'}
+[10.994645] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board_s.c\n'}
+[10.994775] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/__init__.py\n'}
+[10.994961] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.995132] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.995320] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.995395] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/__init__.py\n'}
+[10.995443] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so\n'}
+[10.999946] (-) TimerEvent: {}
+[11.045089] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs'...\n"}
+[11.045233] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/__init__.py'...\n"}
+[11.045279] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action'...\n"}
+[11.045318] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/__init__.py'...\n"}
+[11.045358] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block.py'...\n"}
+[11.045397] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board.py'...\n"}
+[11.045435] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg'...\n"}
+[11.045474] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/__init__.py'...\n"}
+[11.045512] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state.py'...\n"}
+[11.045551] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner.py'...\n"}
+[11.050007] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[11.050205] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[11.050495] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[11.050609] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[11.050825] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so\n'}
+[11.050918] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[11.051027] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so\n'}
+[11.051425] (connect4_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so" to ""\n'}
+[11.051515] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.idl\n'}
+[11.051674] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.idl\n'}
+[11.051745] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.idl\n'}
+[11.051939] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.idl\n'}
+[11.052087] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.msg\n'}
+[11.052345] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.msg\n'}
+[11.052421] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.action\n'}
+[11.052465] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.action\n'}
+[11.052758] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/package_run_dependencies/connect4_msgs\n'}
+[11.053252] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/parent_prefix_path/connect4_msgs\n'}
+[11.053336] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.sh\n'}
+[11.053398] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.dsv\n'}
+[11.053652] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.sh\n'}
+[11.053810] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.dsv\n'}
+[11.053866] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.bash\n'}
+[11.054034] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.sh\n'}
+[11.054105] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.zsh\n'}
+[11.054149] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.dsv\n'}
+[11.054191] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.dsv\n'}
+[11.054570] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/packages/connect4_msgs\n'}
+[11.054793] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport.cmake\n'}
+[11.054924] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.055171] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.055284] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.055555] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.055694] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.055773] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport.cmake\n'}
+[11.055894] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.056022] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cppExport.cmake\n'}
+[11.056279] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.056380] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.056463] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.056528] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.056700] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[11.056771] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.056819] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport.cmake\n'}
+[11.056883] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.057072] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[11.057140] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.057250] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.057459] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.057570] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.057730] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.057788] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.057894] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig.cmake\n'}
+[11.058016] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig-version.cmake\n'}
+[11.058177] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.xml\n'}
+[11.059927] (connect4_msgs) CommandEnded: {'returncode': 0}
+[11.090020] (connect4_msgs) JobEnded: {'identifier': 'connect4_msgs', 'rc': 0}
+[11.091821] (-) EventReactorShutdown: {}

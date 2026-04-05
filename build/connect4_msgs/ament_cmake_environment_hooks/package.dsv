@@ -1,0 +1,4 @@
+source;share/connect4_msgs/local_setup.bash
+source;share/connect4_msgs/local_setup.dsv
+source;share/connect4_msgs/local_setup.sh
+source;share/connect4_msgs/local_setup.zsh

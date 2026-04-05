@@ -1,0 +1,6 @@
+connect4_msgs/BoardState final_board_state
+---
+bool success
+string message
+---
+string status

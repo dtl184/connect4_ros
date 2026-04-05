@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from connect4_msgs/msg/BoardState.msg
+// generated code does not contain a copyright notice
+
+
+module connect4_msgs {
+  module msg {
+    struct BoardState {
+      sequence<int32> cells;
+    };
+  };
+};

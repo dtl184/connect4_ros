@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from connect4_msgs/action/DeliverBlock.action
+// generated code does not contain a copyright notice
+
+
+module connect4_msgs {
+  module action {
+    struct DeliverBlock_Goal {
+      int32 player;
+    };
+    struct DeliverBlock_Result {
+      boolean success;
+
+      string message;
+    };
+    struct DeliverBlock_Feedback {
+      string status;
+    };
+  };
+};

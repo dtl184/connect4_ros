@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from connect4_msgs/msg/Winner.msg
+// generated code does not contain a copyright notice
+
+
+module connect4_msgs {
+  module msg {
+    struct Winner {
+      int32 winner;
+    };
+  };
+};
