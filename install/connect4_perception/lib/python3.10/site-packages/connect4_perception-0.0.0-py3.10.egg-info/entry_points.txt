@@ -1,2 +1,0 @@
-[console_scripts]
-board_perception_node = connect4_perception.board_perception_node:main

@@ -1,0 +1,39 @@
+[1.520s] Invoking command in '/home/danie/connect4_ros/src/connect4_turtlebotnav': PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data
+[1.802s] running egg_info
+[1.802s] creating ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info
+[1.824s] writing ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/PKG-INFO
+[1.824s] writing dependency_links to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/dependency_links.txt
+[1.824s] writing entry points to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/entry_points.txt
+[1.824s] writing requirements to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/requires.txt
+[1.824s] writing top-level names to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/top_level.txt
+[1.824s] writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[1.877s] reading manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[1.878s] writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[1.878s] running build
+[1.878s] running build_py
+[1.878s] creating /home/danie/connect4_ros/build/connect4_turtlebotnav/build
+[1.879s] creating /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib
+[1.879s] creating /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[1.879s] copying connect4_turtlebotnav/block_delivery_node.py -> /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[1.879s] copying connect4_turtlebotnav/__init__.py -> /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[1.880s] copying connect4_turtlebotnav/py.typed -> /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[1.880s] running install
+[1.889s] running install_lib
+[1.910s] creating /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav
+[1.911s] copying /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/block_delivery_node.py -> /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav
+[1.911s] copying /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/py.typed -> /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav
+[1.911s] copying /home/danie/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/__init__.py -> /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav
+[1.911s] byte-compiling /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav/block_delivery_node.py to block_delivery_node.cpython-312.pyc
+[1.912s] byte-compiling /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav/__init__.py to __init__.cpython-312.pyc
+[1.913s] running install_data
+[1.913s] creating /home/danie/connect4_ros/install/connect4_turtlebotnav/share/ament_index
+[1.913s] creating /home/danie/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index
+[1.913s] creating /home/danie/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages
+[1.914s] copying resource/connect4_turtlebotnav -> /home/danie/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages
+[1.914s] copying package.xml -> /home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav
+[1.914s] running install_egg_info
+[1.943s] Copying ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info to /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav-0.0.0-py3.12.egg-info
+[1.944s] running install_scripts
+[2.087s] Installing block_delivery_node script to /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/connect4_turtlebotnav
+[2.088s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_turtlebotnav/install.log'
+[2.111s] Invoked command in '/home/danie/connect4_ros/src/connect4_turtlebotnav' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data

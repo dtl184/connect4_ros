@@ -2,6 +2,9 @@
 // with input from connect4_msgs:action/ResetBoard.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "connect4_msgs/action/reset_board.hpp"
+
+
 #ifndef CONNECT4_MSGS__ACTION__DETAIL__RESET_BOARD__TRAITS_HPP_
 #define CONNECT4_MSGS__ACTION__DETAIL__RESET_BOARD__TRAITS_HPP_
 
@@ -535,6 +538,175 @@ struct is_message<connect4_msgs::action::ResetBoard_SendGoal_Response>
 
 }  // namespace rosidl_generator_traits
 
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__traits.hpp"
+
+namespace connect4_msgs
+{
+
+namespace action
+{
+
+inline void to_flow_style_yaml(
+  const ResetBoard_SendGoal_Event & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: info
+  {
+    out << "info: ";
+    to_flow_style_yaml(msg.info, out);
+    out << ", ";
+  }
+
+  // member: request
+  {
+    if (msg.request.size() == 0) {
+      out << "request: []";
+    } else {
+      out << "request: [";
+      size_t pending_items = msg.request.size();
+      for (auto item : msg.request) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: response
+  {
+    if (msg.response.size() == 0) {
+      out << "response: []";
+    } else {
+      out << "response: [";
+      size_t pending_items = msg.response.size();
+      for (auto item : msg.response) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const ResetBoard_SendGoal_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: info
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "info:\n";
+    to_block_style_yaml(msg.info, out, indentation + 2);
+  }
+
+  // member: request
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.request.size() == 0) {
+      out << "request: []\n";
+    } else {
+      out << "request:\n";
+      for (auto item : msg.request) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+
+  // member: response
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.response.size() == 0) {
+      out << "response: []\n";
+    } else {
+      out << "response:\n";
+      for (auto item : msg.response) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ResetBoard_SendGoal_Event & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace action
+
+}  // namespace connect4_msgs
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use connect4_msgs::action::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const connect4_msgs::action::ResetBoard_SendGoal_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  connect4_msgs::action::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use connect4_msgs::action::to_yaml() instead")]]
+inline std::string to_yaml(const connect4_msgs::action::ResetBoard_SendGoal_Event & msg)
+{
+  return connect4_msgs::action::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<connect4_msgs::action::ResetBoard_SendGoal_Event>()
+{
+  return "connect4_msgs::action::ResetBoard_SendGoal_Event";
+}
+
+template<>
+inline const char * name<connect4_msgs::action::ResetBoard_SendGoal_Event>()
+{
+  return "connect4_msgs/action/ResetBoard_SendGoal_Event";
+}
+
+template<>
+struct has_fixed_size<connect4_msgs::action::ResetBoard_SendGoal_Event>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<connect4_msgs::action::ResetBoard_SendGoal_Event>
+  : std::integral_constant<bool, has_bounded_size<connect4_msgs::action::ResetBoard_SendGoal_Request>::value && has_bounded_size<connect4_msgs::action::ResetBoard_SendGoal_Response>::value && has_bounded_size<service_msgs::msg::ServiceEventInfo>::value> {};
+
+template<>
+struct is_message<connect4_msgs::action::ResetBoard_SendGoal_Event>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
 namespace rosidl_generator_traits
 {
 
@@ -799,6 +971,176 @@ struct is_message<connect4_msgs::action::ResetBoard_GetResult_Response>
 
 }  // namespace rosidl_generator_traits
 
+// Include directives for member types
+// Member 'info'
+// already included above
+// #include "service_msgs/msg/detail/service_event_info__traits.hpp"
+
+namespace connect4_msgs
+{
+
+namespace action
+{
+
+inline void to_flow_style_yaml(
+  const ResetBoard_GetResult_Event & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: info
+  {
+    out << "info: ";
+    to_flow_style_yaml(msg.info, out);
+    out << ", ";
+  }
+
+  // member: request
+  {
+    if (msg.request.size() == 0) {
+      out << "request: []";
+    } else {
+      out << "request: [";
+      size_t pending_items = msg.request.size();
+      for (auto item : msg.request) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: response
+  {
+    if (msg.response.size() == 0) {
+      out << "response: []";
+    } else {
+      out << "response: [";
+      size_t pending_items = msg.response.size();
+      for (auto item : msg.response) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const ResetBoard_GetResult_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: info
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "info:\n";
+    to_block_style_yaml(msg.info, out, indentation + 2);
+  }
+
+  // member: request
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.request.size() == 0) {
+      out << "request: []\n";
+    } else {
+      out << "request:\n";
+      for (auto item : msg.request) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+
+  // member: response
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.response.size() == 0) {
+      out << "response: []\n";
+    } else {
+      out << "response:\n";
+      for (auto item : msg.response) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ResetBoard_GetResult_Event & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace action
+
+}  // namespace connect4_msgs
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use connect4_msgs::action::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const connect4_msgs::action::ResetBoard_GetResult_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  connect4_msgs::action::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use connect4_msgs::action::to_yaml() instead")]]
+inline std::string to_yaml(const connect4_msgs::action::ResetBoard_GetResult_Event & msg)
+{
+  return connect4_msgs::action::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<connect4_msgs::action::ResetBoard_GetResult_Event>()
+{
+  return "connect4_msgs::action::ResetBoard_GetResult_Event";
+}
+
+template<>
+inline const char * name<connect4_msgs::action::ResetBoard_GetResult_Event>()
+{
+  return "connect4_msgs/action/ResetBoard_GetResult_Event";
+}
+
+template<>
+struct has_fixed_size<connect4_msgs::action::ResetBoard_GetResult_Event>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<connect4_msgs::action::ResetBoard_GetResult_Event>
+  : std::integral_constant<bool, has_bounded_size<connect4_msgs::action::ResetBoard_GetResult_Request>::value && has_bounded_size<connect4_msgs::action::ResetBoard_GetResult_Response>::value && has_bounded_size<service_msgs::msg::ServiceEventInfo>::value> {};
+
+template<>
+struct is_message<connect4_msgs::action::ResetBoard_GetResult_Event>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
 namespace rosidl_generator_traits
 {
 
@@ -972,6 +1314,18 @@ struct is_message<connect4_msgs::action::ResetBoard_FeedbackMessage>
 
 namespace rosidl_generator_traits
 {
+
+template<>
+inline const char * data_type<connect4_msgs::action::ResetBoard>()
+{
+  return "connect4_msgs::action::ResetBoard";
+}
+
+template<>
+inline const char * name<connect4_msgs::action::ResetBoard>()
+{
+  return "connect4_msgs/action/ResetBoard";
+}
 
 template<>
 struct is_action<connect4_msgs::action::ResetBoard>

@@ -2,6 +2,9 @@
 // with input from connect4_msgs:action/DeliverBlock.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "connect4_msgs/action/deliver_block.hpp"
+
+
 #ifndef CONNECT4_MSGS__ACTION__DETAIL__DELIVER_BLOCK__BUILDER_HPP_
 #define CONNECT4_MSGS__ACTION__DETAIL__DELIVER_BLOCK__BUILDER_HPP_
 
@@ -279,6 +282,80 @@ namespace action
 namespace builder
 {
 
+class Init_DeliverBlock_SendGoal_Event_response
+{
+public:
+  explicit Init_DeliverBlock_SendGoal_Event_response(::connect4_msgs::action::DeliverBlock_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  ::connect4_msgs::action::DeliverBlock_SendGoal_Event response(::connect4_msgs::action::DeliverBlock_SendGoal_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_SendGoal_Event msg_;
+};
+
+class Init_DeliverBlock_SendGoal_Event_request
+{
+public:
+  explicit Init_DeliverBlock_SendGoal_Event_request(::connect4_msgs::action::DeliverBlock_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  Init_DeliverBlock_SendGoal_Event_response request(::connect4_msgs::action::DeliverBlock_SendGoal_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_DeliverBlock_SendGoal_Event_response(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_SendGoal_Event msg_;
+};
+
+class Init_DeliverBlock_SendGoal_Event_info
+{
+public:
+  Init_DeliverBlock_SendGoal_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_DeliverBlock_SendGoal_Event_request info(::connect4_msgs::action::DeliverBlock_SendGoal_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_DeliverBlock_SendGoal_Event_request(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_SendGoal_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::connect4_msgs::action::DeliverBlock_SendGoal_Event>()
+{
+  return connect4_msgs::action::builder::Init_DeliverBlock_SendGoal_Event_info();
+}
+
+}  // namespace connect4_msgs
+
+
+namespace connect4_msgs
+{
+
+namespace action
+{
+
+namespace builder
+{
+
 class Init_DeliverBlock_GetResult_Request_goal_id
 {
 public:
@@ -365,6 +442,80 @@ inline
 auto build<::connect4_msgs::action::DeliverBlock_GetResult_Response>()
 {
   return connect4_msgs::action::builder::Init_DeliverBlock_GetResult_Response_status();
+}
+
+}  // namespace connect4_msgs
+
+
+namespace connect4_msgs
+{
+
+namespace action
+{
+
+namespace builder
+{
+
+class Init_DeliverBlock_GetResult_Event_response
+{
+public:
+  explicit Init_DeliverBlock_GetResult_Event_response(::connect4_msgs::action::DeliverBlock_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  ::connect4_msgs::action::DeliverBlock_GetResult_Event response(::connect4_msgs::action::DeliverBlock_GetResult_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_GetResult_Event msg_;
+};
+
+class Init_DeliverBlock_GetResult_Event_request
+{
+public:
+  explicit Init_DeliverBlock_GetResult_Event_request(::connect4_msgs::action::DeliverBlock_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  Init_DeliverBlock_GetResult_Event_response request(::connect4_msgs::action::DeliverBlock_GetResult_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_DeliverBlock_GetResult_Event_response(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_GetResult_Event msg_;
+};
+
+class Init_DeliverBlock_GetResult_Event_info
+{
+public:
+  Init_DeliverBlock_GetResult_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_DeliverBlock_GetResult_Event_request info(::connect4_msgs::action::DeliverBlock_GetResult_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_DeliverBlock_GetResult_Event_request(msg_);
+  }
+
+private:
+  ::connect4_msgs::action::DeliverBlock_GetResult_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::connect4_msgs::action::DeliverBlock_GetResult_Event>()
+{
+  return connect4_msgs::action::builder::Init_DeliverBlock_GetResult_Event_info();
 }
 
 }  // namespace connect4_msgs

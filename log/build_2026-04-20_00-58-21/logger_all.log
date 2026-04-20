@@ -1,0 +1,338 @@
+[0.190s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'connect4_msgs', 'connect4_game', 'connect4_turtlebotnav', 'connect4_manip']
+[0.190s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['connect4_msgs', 'connect4_game', 'connect4_turtlebotnav', 'connect4_manip'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79560c96fbc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79560c96f8f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79560c96f8f0>>, mixin_verb=('build',))
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.234s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/danie/connect4_ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_game) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_game' with type 'ros.ament_python' and name 'connect4_game'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_launch) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_launch' with type 'ros.ament_python' and name 'connect4_launch'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_manip) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_manip' with type 'ros.ament_python' and name 'connect4_manip'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_msgs) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_msgs' with type 'ros.ament_cmake' and name 'connect4_msgs'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_perception) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_perception' with type 'ros.ament_python' and name 'connect4_perception'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/connect4_turtlebotnav) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/connect4_turtlebotnav' with type 'ros.ament_python' and name 'connect4_turtlebotnav'
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.290s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'connect4_perception' in 'src/connect4_perception'
+[0.290s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'connect4_launch' in 'src/connect4_launch'
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.291s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/danie/connect4_ros/install/connect4_turtlebotnav' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.291s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/danie/connect4_ros/install/connect4_manip' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.291s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/danie/connect4_ros/install/connect4_game' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.291s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/danie/connect4_ros/install/connect4_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.291s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/danie/connect4_ros/install/connect4_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/danie/connect4_ros/install
+[0.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 452 installed packages in /opt/ros/kilted
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'connect4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.357s] DEBUG:colcon.colcon_core.verb:Building package 'connect4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danie/connect4_ros/build/connect4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danie/connect4_ros/install/connect4_msgs', 'merge_install': False, 'path': '/home/danie/connect4_ros/src/connect4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_target' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_clean_cache' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_clean_first' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'cmake_force_configure' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'ament_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'catkin_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_game' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.357s] DEBUG:colcon.colcon_core.verb:Building package 'connect4_game' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danie/connect4_ros/build/connect4_game', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danie/connect4_ros/install/connect4_game', 'merge_install': False, 'path': '/home/danie/connect4_ros/src/connect4_game', 'symlink_install': False, 'test_result_base': None}
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_target' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_clean_cache' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_clean_first' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'cmake_force_configure' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'ament_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'catkin_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_manip' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.357s] DEBUG:colcon.colcon_core.verb:Building package 'connect4_manip' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danie/connect4_ros/build/connect4_manip', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danie/connect4_ros/install/connect4_manip', 'merge_install': False, 'path': '/home/danie/connect4_ros/src/connect4_manip', 'symlink_install': False, 'test_result_base': None}
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_target' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_clean_first' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'cmake_force_configure' from command line to 'False'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'ament_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.357s] Level 5:colcon.colcon_core.verb:set package 'connect4_turtlebotnav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.357s] DEBUG:colcon.colcon_core.verb:Building package 'connect4_turtlebotnav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danie/connect4_ros/build/connect4_turtlebotnav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danie/connect4_ros/install/connect4_turtlebotnav', 'merge_install': False, 'path': '/home/danie/connect4_ros/src/connect4_turtlebotnav', 'symlink_install': False, 'test_result_base': None}
+[0.358s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.359s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/danie/connect4_ros/src/connect4_msgs' with build type 'ament_cmake'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/danie/connect4_ros/src/connect4_msgs'
+[0.361s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.361s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.361s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake /home/danie/connect4_ros/src/connect4_msgs -DCMAKE_INSTALL_PREFIX=/home/danie/connect4_ros/install/connect4_msgs
+[4.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake /home/danie/connect4_ros/src/connect4_msgs -DCMAKE_INSTALL_PREFIX=/home/danie/connect4_ros/install/connect4_msgs
+[4.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+[10.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+[10.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs
+[10.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(connect4_msgs)
+[10.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs
+[10.832s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs' for CMake module files
+[10.832s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs' for CMake config files
+[10.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'cmake_prefix_path')
+[10.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.ps1'
+[10.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.dsv'
+[10.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.sh'
+[10.834s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib'
+[10.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'ld_library_path_lib')
+[10.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.ps1'
+[10.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.dsv'
+[10.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.sh'
+[10.835s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/bin'
+[10.835s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib/pkgconfig/connect4_msgs.pc'
+[10.835s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages'
+[10.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'pythonpath')
+[10.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.ps1'
+[10.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.dsv'
+[10.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.sh'
+[10.836s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/bin'
+[10.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.ps1'
+[10.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.dsv'
+[10.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.sh'
+[10.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.bash'
+[10.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.zsh'
+[10.839s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danie/connect4_ros/install/connect4_msgs/share/colcon-core/packages/connect4_msgs)
+[10.839s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(connect4_msgs)
+[10.840s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs' for CMake module files
+[10.840s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs' for CMake config files
+[10.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'cmake_prefix_path')
+[10.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.ps1'
+[10.841s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.dsv'
+[10.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/cmake_prefix_path.sh'
+[10.841s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib'
+[10.841s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'ld_library_path_lib')
+[10.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.ps1'
+[10.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.dsv'
+[10.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/ld_library_path_lib.sh'
+[10.842s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/bin'
+[10.843s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib/pkgconfig/connect4_msgs.pc'
+[10.843s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages'
+[10.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_msgs', 'pythonpath')
+[10.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.ps1'
+[10.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.dsv'
+[10.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/hook/pythonpath.sh'
+[10.844s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_msgs/bin'
+[10.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.ps1'
+[10.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.dsv'
+[10.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.sh'
+[10.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.bash'
+[10.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.zsh'
+[10.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danie/connect4_ros/install/connect4_msgs/share/colcon-core/packages/connect4_msgs)
+[10.846s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/danie/connect4_ros/src/connect4_game' with build type 'ament_python'
+[10.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_game', 'ament_prefix_path')
+[10.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/ament_prefix_path.ps1'
+[10.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/ament_prefix_path.dsv'
+[10.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/ament_prefix_path.sh'
+[10.848s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.848s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.852s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/danie/connect4_ros/src/connect4_manip' with build type 'ament_python'
+[10.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_manip', 'ament_prefix_path')
+[10.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/ament_prefix_path.ps1'
+[10.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/ament_prefix_path.dsv'
+[10.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/ament_prefix_path.sh'
+[10.854s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.854s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.857s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/danie/connect4_ros/src/connect4_turtlebotnav' with build type 'ament_python'
+[10.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_turtlebotnav', 'ament_prefix_path')
+[10.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/ament_prefix_path.ps1'
+[10.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/ament_prefix_path.dsv'
+[10.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/ament_prefix_path.sh'
+[10.859s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.859s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.136s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/danie/connect4_ros/src/connect4_manip'
+[11.136s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.136s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.336s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/danie/connect4_ros/src/connect4_game'
+[11.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.551s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/danie/connect4_ros/src/connect4_turtlebotnav'
+[11.552s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.552s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/src/connect4_manip': PYTHONPATH=/home/danie/connect4_ros/build/connect4_manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_manip build --build-base /home/danie/connect4_ros/build/connect4_manip/build install --record /home/danie/connect4_ros/build/connect4_manip/install.log --single-version-externally-managed install_data
+[12.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/src/connect4_game': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data
+[12.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danie/connect4_ros/src/connect4_turtlebotnav': PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data
+[12.898s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip' for CMake module files
+[12.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/src/connect4_manip' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_manip build --build-base /home/danie/connect4_ros/build/connect4_manip/build install --record /home/danie/connect4_ros/build/connect4_manip/install.log --single-version-externally-managed install_data
+[12.898s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip' for CMake config files
+[12.899s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip/lib'
+[12.899s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip/bin'
+[12.899s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip/lib/pkgconfig/connect4_manip.pc'
+[12.899s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages'
+[12.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_manip', 'pythonpath')
+[12.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/pythonpath.ps1'
+[12.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/pythonpath.dsv'
+[12.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/hook/pythonpath.sh'
+[12.900s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_manip/bin'
+[12.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(connect4_manip)
+[12.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/package.ps1'
+[12.901s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/package.dsv'
+[12.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/package.sh'
+[12.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/package.bash'
+[12.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_manip/share/connect4_manip/package.zsh'
+[12.902s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danie/connect4_ros/install/connect4_manip/share/colcon-core/packages/connect4_manip)
+[12.940s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game' for CMake module files
+[12.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/src/connect4_game' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data
+[12.941s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game' for CMake config files
+[12.941s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game/lib'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game/bin'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game/lib/pkgconfig/connect4_game.pc'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages'
+[12.942s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_game', 'pythonpath')
+[12.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/pythonpath.ps1'
+[12.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/pythonpath.dsv'
+[12.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/hook/pythonpath.sh'
+[12.943s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_game/bin'
+[12.944s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(connect4_game)
+[12.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/package.ps1'
+[12.944s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/package.dsv'
+[12.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/package.sh'
+[12.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/package.bash'
+[12.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_game/share/connect4_game/package.zsh'
+[12.945s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danie/connect4_ros/install/connect4_game/share/colcon-core/packages/connect4_game)
+[12.969s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav' for CMake module files
+[12.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danie/connect4_ros/src/connect4_turtlebotnav' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data
+[12.970s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav' for CMake config files
+[12.970s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav/lib'
+[12.970s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav/bin'
+[12.970s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/pkgconfig/connect4_turtlebotnav.pc'
+[12.970s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages'
+[12.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('connect4_turtlebotnav', 'pythonpath')
+[12.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/pythonpath.ps1'
+[12.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/pythonpath.dsv'
+[12.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/hook/pythonpath.sh'
+[12.971s] Level 1:colcon.colcon_core.environment:checking '/home/danie/connect4_ros/install/connect4_turtlebotnav/bin'
+[12.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(connect4_turtlebotnav)
+[12.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/package.ps1'
+[12.972s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/package.dsv'
+[12.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/package.sh'
+[12.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/package.bash'
+[12.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/danie/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav/package.zsh'
+[12.973s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danie/connect4_ros/install/connect4_turtlebotnav/share/colcon-core/packages/connect4_turtlebotnav)
+[12.973s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.974s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.974s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.974s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.022s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[13.022s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.022s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.022s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.023s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[13.024s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danie/connect4_ros/install/local_setup.ps1'
+[13.024s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/danie/connect4_ros/install/_local_setup_util_ps1.py'
+[13.025s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danie/connect4_ros/install/setup.ps1'
+[13.026s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danie/connect4_ros/install/local_setup.sh'
+[13.026s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/danie/connect4_ros/install/_local_setup_util_sh.py'
+[13.026s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danie/connect4_ros/install/setup.sh'
+[13.027s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danie/connect4_ros/install/local_setup.bash'
+[13.027s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danie/connect4_ros/install/setup.bash'
+[13.028s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danie/connect4_ros/install/local_setup.zsh'
+[13.028s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danie/connect4_ros/install/setup.zsh'

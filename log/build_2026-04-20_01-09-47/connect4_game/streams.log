@@ -1,0 +1,22 @@
+[1.861s] Invoking command in '/home/danie/connect4_ros/src/connect4_game': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data
+[2.138s] running egg_info
+[2.160s] writing ../../build/connect4_game/connect4_game.egg-info/PKG-INFO
+[2.160s] writing dependency_links to ../../build/connect4_game/connect4_game.egg-info/dependency_links.txt
+[2.160s] writing entry points to ../../build/connect4_game/connect4_game.egg-info/entry_points.txt
+[2.161s] writing requirements to ../../build/connect4_game/connect4_game.egg-info/requires.txt
+[2.161s] writing top-level names to ../../build/connect4_game/connect4_game.egg-info/top_level.txt
+[2.212s] reading manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'
+[2.213s] writing manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'
+[2.213s] running build
+[2.213s] running build_py
+[2.214s] running install
+[2.220s] running install_lib
+[2.245s] running install_data
+[2.245s] running install_egg_info
+[2.275s] removing '/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game-0.0.0-py3.12.egg-info' (and everything under it)
+[2.275s] Copying ../../build/connect4_game/connect4_game.egg-info to /home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages/connect4_game-0.0.0-py3.12.egg-info
+[2.277s] running install_scripts
+[2.440s] Installing demo_driver_node script to /home/danie/connect4_ros/install/connect4_game/lib/connect4_game
+[2.440s] Installing referee_node script to /home/danie/connect4_ros/install/connect4_game/lib/connect4_game
+[2.440s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_game/install.log'
+[2.468s] Invoked command in '/home/danie/connect4_ros/src/connect4_game' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_game build --build-base /home/danie/connect4_ros/build/connect4_game/build install --record /home/danie/connect4_ros/build/connect4_game/install.log --single-version-externally-managed install_data

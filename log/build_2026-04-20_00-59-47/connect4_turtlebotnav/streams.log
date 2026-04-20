@@ -1,0 +1,21 @@
+[0.951s] Invoking command in '/home/danie/connect4_ros/src/connect4_turtlebotnav': AMENT_PREFIX_PATH=/home/danie/connect4_ros/install/connect4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danie/connect4_ros/install/connect4_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/danie/connect4_ros/install/connect4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data
+[1.186s] running egg_info
+[1.204s] writing ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/PKG-INFO
+[1.204s] writing dependency_links to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/dependency_links.txt
+[1.204s] writing entry points to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/entry_points.txt
+[1.205s] writing requirements to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/requires.txt
+[1.205s] writing top-level names to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/top_level.txt
+[1.243s] reading manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[1.244s] writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[1.244s] running build
+[1.244s] running build_py
+[1.244s] running install
+[1.249s] running install_lib
+[1.268s] running install_data
+[1.268s] running install_egg_info
+[1.288s] removing '/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav-0.0.0-py3.12.egg-info' (and everything under it)
+[1.288s] Copying ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info to /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages/connect4_turtlebotnav-0.0.0-py3.12.egg-info
+[1.289s] running install_scripts
+[1.406s] Installing block_delivery_node script to /home/danie/connect4_ros/install/connect4_turtlebotnav/lib/connect4_turtlebotnav
+[1.407s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_turtlebotnav/install.log'
+[1.427s] Invoked command in '/home/danie/connect4_ros/src/connect4_turtlebotnav' returned '0': AMENT_PREFIX_PATH=/home/danie/connect4_ros/install/connect4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danie/connect4_ros/install/connect4_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/danie/connect4_ros/install/connect4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danie/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/danie/connect4_ros/build/connect4_turtlebotnav/build install --record /home/danie/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data

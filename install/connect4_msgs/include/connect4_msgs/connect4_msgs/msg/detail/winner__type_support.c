@@ -37,6 +37,7 @@ static rosidl_typesupport_introspection_c__MessageMember connect4_msgs__msg__Win
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -56,6 +57,7 @@ static const rosidl_typesupport_introspection_c__MessageMembers connect4_msgs__m
   "Winner",  // message name
   1,  // number of fields
   sizeof(connect4_msgs__msg__Winner),
+  false,  // has_any_key_member_
   connect4_msgs__msg__Winner__rosidl_typesupport_introspection_c__Winner_message_member_array,  // message members
   connect4_msgs__msg__Winner__rosidl_typesupport_introspection_c__Winner_init_function,  // function to initialize message memory (memory has to be allocated)
   connect4_msgs__msg__Winner__rosidl_typesupport_introspection_c__Winner_fini_function  // function to terminate message instance (will not free memory)
@@ -67,6 +69,9 @@ static rosidl_message_type_support_t connect4_msgs__msg__Winner__rosidl_typesupp
   0,
   &connect4_msgs__msg__Winner__rosidl_typesupport_introspection_c__Winner_message_members,
   get_message_typesupport_handle_function,
+  &connect4_msgs__msg__Winner__get_type_hash,
+  &connect4_msgs__msg__Winner__get_type_description,
+  &connect4_msgs__msg__Winner__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_connect4_msgs
