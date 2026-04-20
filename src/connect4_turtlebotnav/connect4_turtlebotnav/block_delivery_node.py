@@ -58,6 +58,7 @@ class BlockDeliveryNode(Node):
             return result
 
         goal_pose = self._make_pose(*PLAYER_DELIVERY_POSES[player])
+
         self.get_logger().info(
             'Navigating to player %d at (%.2f, %.2f)' % (
                 player,
@@ -100,6 +101,7 @@ class BlockDeliveryNode(Node):
         pose.pose.position.x = x
         pose.pose.position.y = y
         pose.pose.position.z = 0.0
+        
         qz, qw = yaw_to_quaternion(yaw)
         pose.pose.orientation.z = qz
         pose.pose.orientation.w = qw

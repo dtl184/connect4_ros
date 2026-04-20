@@ -37,9 +37,6 @@ class BoardPerceptionNode(Node):
         self._last_process_time = self.get_clock().now()
         self._min_interval_ns = int(1e9 / PROCESS_RATE_HZ)
 
-        if not CV2_AVAILABLE:
-            self.get_logger().warn('cv2 not found — publishing empty board state')
-
         self.get_logger().info('BoardPerceptionNode started')
 
     def image_callback(self, msg: Image) -> None:

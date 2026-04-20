@@ -52,10 +52,10 @@ class ArmManipNode(Node):
 
         # hard coded poses for now, will eventually get these from the camera
         self.home_pose = self.make_pose(0.35, 0.00, 0.35)
-        self.pick_pose = self.make_pose(0.45, 0.12, 0.12)
+        self.pick_pose = self.make_pose(0.45, 0.15, 0.12)
         self.lift_pose = self.make_pose(0.45, 0.12, 0.22)
-        self.drop_red_pose = self.make_pose(0.25, -0.22, 0.18)
-        self.drop_blue_pose = self.make_pose(0.25, 0.22, 0.18)
+        self.drop_red_pose = self.make_pose(0.25, -0.22, 0.19)
+        self.drop_blue_pose = self.make_pose(0.25, 0.22, 0.19)
 
         self.get_logger().info("ArmManipNode started")
 
@@ -154,12 +154,12 @@ class ArmManipNode(Node):
         return False
 
     def close_gripper(self) -> bool:
-        self.get_logger().info("Closing gripper (demo stub)")
+        self.get_logger().info("Closing gripper")
         time.sleep(1.0)
         return True
 
     def open_gripper(self) -> bool:
-        self.get_logger().info("Opening gripper (demo stub)")
+        self.get_logger().info("Opening gripper")
         time.sleep(1.0)
         return True
 

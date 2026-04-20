@@ -37,6 +37,7 @@ class DemoDriverNode(Node):
         if self.started:
             return
         self.started = True
+        
         self.start_timer.cancel()
         self.get_logger().info("Starting demo: deliver block to player 1")
         self.send_deliver_goal(1)
