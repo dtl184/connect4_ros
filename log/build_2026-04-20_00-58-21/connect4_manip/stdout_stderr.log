@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/connect4_manip/connect4_manip.egg-info
+writing ../../build/connect4_manip/connect4_manip.egg-info/PKG-INFO
+writing dependency_links to ../../build/connect4_manip/connect4_manip.egg-info/dependency_links.txt
+writing entry points to ../../build/connect4_manip/connect4_manip.egg-info/entry_points.txt
+writing requirements to ../../build/connect4_manip/connect4_manip.egg-info/requires.txt
+writing top-level names to ../../build/connect4_manip/connect4_manip.egg-info/top_level.txt
+writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+reading manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/danie/connect4_ros/build/connect4_manip/build
+creating /home/danie/connect4_ros/build/connect4_manip/build/lib
+creating /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+copying connect4_manip/__init__.py -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+copying connect4_manip/arm_manip_node.py -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+copying connect4_manip/py.typed -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+running install
+running install_lib
+creating /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/py.typed -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/__init__.py -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/arm_manip_node.py -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+byte-compiling /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip/arm_manip_node.py to arm_manip_node.cpython-312.pyc
+running install_data
+creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index
+creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index
+creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages
+copying resource/connect4_manip -> /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages
+copying package.xml -> /home/danie/connect4_ros/install/connect4_manip/share/connect4_manip
+running install_egg_info
+Copying ../../build/connect4_manip/connect4_manip.egg-info to /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip-0.0.0-py3.12.egg-info
+running install_scripts
+Installing arm_manip_node script to /home/danie/connect4_ros/install/connect4_manip/lib/connect4_manip
+writing list of installed files to '/home/danie/connect4_ros/build/connect4_manip/install.log'

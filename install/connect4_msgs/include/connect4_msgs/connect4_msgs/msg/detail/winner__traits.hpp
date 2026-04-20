@@ -2,6 +2,9 @@
 // with input from connect4_msgs:msg/Winner.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "connect4_msgs/msg/winner.hpp"
+
+
 #ifndef CONNECT4_MSGS__MSG__DETAIL__WINNER__TRAITS_HPP_
 #define CONNECT4_MSGS__MSG__DETAIL__WINNER__TRAITS_HPP_
 

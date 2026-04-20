@@ -1,0 +1,349 @@
+[0.010s] Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake /home/danie/connect4_ros/src/connect4_msgs -DCMAKE_INSTALL_PREFIX=/home/danie/connect4_ros/install/connect4_msgs
+[0.138s] -- The C compiler identification is GNU 13.3.0
+[0.606s] -- The CXX compiler identification is GNU 13.3.0
+[1.028s] -- Detecting C compiler ABI info
+[1.276s] -- Detecting C compiler ABI info - done
+[1.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.283s] -- Detecting C compile features
+[1.283s] -- Detecting C compile features - done
+[1.377s] -- Detecting CXX compiler ABI info
+[1.624s] -- Detecting CXX compiler ABI info - done
+[1.632s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.632s] -- Detecting CXX compile features
+[1.632s] -- Detecting CXX compile features - done
+[1.636s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.773s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.880s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[1.889s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.982s] -- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[1.986s] -- Found rosidl_default_runtime: 1.7.1 (/opt/ros/kilted/share/rosidl_default_runtime/cmake)
+[1.995s] -- Found builtin_interfaces: 2.3.0 (/opt/ros/kilted/share/builtin_interfaces/cmake)
+[2.010s] -- Found action_msgs: 2.3.0 (/opt/ros/kilted/share/action_msgs/cmake)
+[2.617s] -- Found ament_cmake_ros_core: 0.14.7 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[2.987s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.456s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.829s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.858s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[3.882s] -- Added test 'lint_cmake' to check CMake code style
+[3.883s] -- Added test 'xmllint' to check XML markup files
+[3.885s] -- Configuring done (3.9s)
+[3.926s] -- Generating done (0.0s)
+[3.936s] -- Build files have been written to: /home/danie/connect4_ros/build/connect4_msgs
+[3.944s] Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake /home/danie/connect4_ros/src/connect4_msgs -DCMAKE_INSTALL_PREFIX=/home/danie/connect4_ros/install/connect4_msgs
+[3.946s] Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+[3.998s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.009s] [  1%] Built target ament_cmake_python_copy_connect4_msgs
+[4.214s] [  1%] Built target connect4_msgs__rosidl_generator_type_description
+[4.229s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.239s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.268s] running egg_info
+[4.269s] creating connect4_msgs.egg-info
+[4.305s] writing connect4_msgs.egg-info/PKG-INFO
+[4.305s] writing dependency_links to connect4_msgs.egg-info/dependency_links.txt
+[4.305s] writing top-level names to connect4_msgs.egg-info/top_level.txt
+[4.305s] writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'
+[4.402s] reading manifest file 'connect4_msgs.egg-info/SOURCES.txt'
+[4.402s] writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'
+[4.430s] [  4%] Built target ament_cmake_python_build_connect4_msgs_egg
+[4.904s] [  4%] Built target connect4_msgs__cpp
+[5.023s] [  9%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__description.c.o[0m
+[5.023s] [  9%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__functions.c.o[0m
+[5.023s] [  9%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__type_support.c.o[0m
+[5.024s] [ 10%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__description.c.o[0m
+[5.024s] [ 12%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__type_support.c.o[0m
+[5.025s] [ 14%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__functions.c.o[0m
+[5.026s] [ 15%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__description.c.o[0m
+[5.032s] [ 17%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__functions.c.o[0m
+[5.067s] [ 20%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__type_support.c.o[0m
+[5.067s] [ 20%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__description.c.o[0m
+[5.079s] [ 21%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__functions.c.o[0m
+[5.081s] [ 23%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__type_support.c.o[0m
+[5.225s] [ 25%] [32m[1mLinking C shared library libconnect4_msgs__rosidl_generator_c.so[0m
+[5.341s] [ 25%] Built target connect4_msgs__rosidl_generator_c
+[5.352s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.352s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.353s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.353s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.353s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.354s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.864s] [ 37%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/deliver_block__type_support.cpp.o[0m
+[5.864s] [ 37%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/board_state__type_support.cpp.o[0m
+[5.864s] [ 39%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/winner__type_support.cpp.o[0m
+[5.869s] [ 40%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/board_state__type_support.cpp.o[0m
+[5.922s] [ 42%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/winner__type_support.cpp.o[0m
+[5.983s] [ 43%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/deliver_block__type_support.cpp.o[0m
+[6.076s] [ 45%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/reset_board__type_support.cpp.o[0m
+[6.085s] [ 46%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/board_state__type_support.cpp.o[0m
+[6.158s] [ 48%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c.o[0m
+[6.160s] [ 50%] [32m[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_c.so[0m
+[6.218s] [ 51%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c.o[0m
+[6.272s] [ 53%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c.o[0m
+[6.280s] [ 54%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c.o[0m
+[6.317s] [ 56%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/reset_board__type_support.cpp.o[0m
+[6.375s] [ 57%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/winner__type_support.cpp.o[0m
+[6.377s] [ 57%] Built target connect4_msgs__rosidl_typesupport_c
+[6.382s] [ 59%] [32m[1mLinking C shared library libconnect4_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.391s] [ 60%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/deliver_block__type_support.cpp.o[0m
+[6.603s] [ 62%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp.o[0m
+[6.619s] [ 64%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/reset_board__type_support.cpp.o[0m
+[6.667s] [ 64%] Built target connect4_msgs__rosidl_typesupport_introspection_c
+[6.700s] [ 65%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp.o[0m
+[6.844s] [ 67%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/board_state__type_support_c.cpp.o[0m
+[6.986s] [ 68%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/winner__type_support_c.cpp.o[0m
+[7.204s] [ 70%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp.o[0m
+[7.588s] [ 71%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp.o[0m
+[7.627s] [ 73%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/deliver_block__type_support_c.cpp.o[0m
+[7.655s] [ 75%] [32mBuilding CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/reset_board__type_support_c.cpp.o[0m
+[7.710s] [ 76%] [32m[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_cpp.so[0m
+[7.919s] [ 78%] [32m[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.928s] [ 78%] Built target connect4_msgs__rosidl_typesupport_cpp
+[8.093s] [ 78%] Built target connect4_msgs__rosidl_typesupport_introspection_cpp
+[8.293s] [ 79%] [32m[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[8.472s] [ 79%] Built target connect4_msgs__rosidl_typesupport_fastrtps_c
+[8.624s] [ 81%] [32m[1mLinking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.797s] [ 81%] Built target connect4_msgs__rosidl_typesupport_fastrtps_cpp
+[8.818s] [ 81%] Built target connect4_msgs
+[8.843s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.752s] [ 82%] Built target connect4_msgs__py
+[9.772s] [ 84%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_winner_s.c.o[0m
+[9.773s] [ 85%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_deliver_block_s.c.o[0m
+[9.773s] [ 87%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_board_state_s.c.o[0m
+[9.774s] [ 89%] [32mBuilding C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_reset_board_s.c.o[0m
+[9.950s] [ 90%] [32m[1mLinking C shared library libconnect4_msgs__rosidl_generator_py.so[0m
+[10.065s] [ 90%] Built target connect4_msgs__rosidl_generator_py
+[10.085s] [ 92%] [32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.085s] [ 95%] [32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.085s] [ 93%] [32mBuilding C object CMakeFiles/connect4_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.226s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[10.226s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so[0m
+[10.230s] [100%] [32m[1mLinking C shared module rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[10.314s] [100%] Built target connect4_msgs_s__rosidl_typesupport_introspection_c
+[10.314s] [100%] Built target connect4_msgs_s__rosidl_typesupport_c
+[10.357s] [100%] Built target connect4_msgs_s__rosidl_typesupport_fastrtps_c
+[10.370s] Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --build /home/danie/connect4_ros/build/connect4_msgs -- -j8 -l8
+[10.378s] Invoking command in '/home/danie/connect4_ros/build/connect4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs
+[10.385s] -- Install configuration: ""
+[10.386s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/rosidl_interfaces/connect4_msgs
+[10.387s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.json
+[10.387s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.json
+[10.387s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.json
+[10.387s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.json
+[10.387s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.h
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.h
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__description.c
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.c
+[10.388s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.h
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.c
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.h
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.h
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.c
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.h
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__description.c
+[10.389s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.c
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.h
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.h
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.c
+[10.390s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__description.c
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.h
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.h
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__description.c
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.c
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.c
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.h
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.h
+[10.391s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.h
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.h
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.c
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.h
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.h
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.sh
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.dsv
+[10.392s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so
+[10.393s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so" to ""
+[10.393s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.393s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.393s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.393s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_c.h
+[10.393s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_c.h
+[10.393s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.393s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.394s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.394s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_c.h
+[10.394s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_c.h
+[10.394s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so
+[10.394s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.394s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.394s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.395s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.395s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_c.h
+[10.395s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.c
+[10.395s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_c.h
+[10.395s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.c
+[10.395s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.395s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.396s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.c
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_c.h
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_c.h
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.c
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so
+[10.396s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.396s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so
+[10.397s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so" to ""
+[10.397s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.397s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.397s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.397s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__traits.hpp
+[10.397s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__builder.hpp
+[10.397s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__builder.hpp
+[10.397s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__traits.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.hpp
+[10.398s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.hpp
+[10.398s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.hpp
+[10.399s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.hpp
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__builder.hpp
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.hpp
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.hpp
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__builder.hpp
+[10.399s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__traits.hpp
+[10.400s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.hpp
+[10.400s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__traits.hpp
+[10.400s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.hpp
+[10.400s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.400s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.400s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.400s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp
+[10.400s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/dds_fastrtps
+[10.401s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_cpp.hpp
+[10.401s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.401s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.401s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.401s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/dds_fastrtps
+[10.401s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_cpp.hpp
+[10.401s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_cpp.hpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.402s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.402s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs
+[10.402s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg
+[10.402s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_cpp.hpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.cpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_cpp.hpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.cpp
+[10.402s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action
+[10.402s] -- Up-to-date: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.cpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.cpp
+[10.402s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_cpp.hpp
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_cpp.hpp
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so
+[10.403s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so
+[10.403s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so" to ""
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.sh
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.dsv
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info
+[10.403s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c
+[10.404s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state_s.c
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state.py
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner.py
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/__init__.py
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner_s.c
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board.py
+[10.405s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block.py
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block_s.c
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board_s.c
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/__init__.py
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/__init__.py
+[10.406s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so
+[10.454s] Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs'...
+[10.454s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/__init__.py'...
+[10.454s] Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/__init__.py'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_deliver_block.py'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/action/_reset_board.py'...
+[10.455s] Listing '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/__init__.py'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_board_state.py'...
+[10.455s] Compiling '/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/msg/_winner.py'...
+[10.459s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.459s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[10.460s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so
+[10.460s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[10.460s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so
+[10.460s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.so" to ""
+[10.460s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so
+[10.461s] -- Set non-toolchain portion of runtime path of "/home/danie/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so" to ""
+[10.461s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.idl
+[10.461s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.idl
+[10.461s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.idl
+[10.461s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.idl
+[10.461s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.msg
+[10.462s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.msg
+[10.462s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.action
+[10.462s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.action
+[10.462s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/package_run_dependencies/connect4_msgs
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/parent_prefix_path/connect4_msgs
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.sh
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.dsv
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.sh
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.dsv
+[10.463s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.bash
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.sh
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.zsh
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.dsv
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.dsv
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/packages/connect4_msgs
+[10.464s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cppExport.cmake
+[10.465s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.466s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.466s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.466s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.466s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake-extras.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.467s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.468s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.468s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.468s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig.cmake
+[10.468s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig-version.cmake
+[10.468s] -- Installing: /home/danie/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.xml
+[10.470s] Invoked command in '/home/danie/connect4_ros/build/connect4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/danie/connect4_ros/install/connect4_turtlebotnav:/home/danie/connect4_ros/install/connect4_manip:/home/danie/connect4_ros/install/connect4_game:/opt/ros/kilted /usr/bin/cmake --install /home/danie/connect4_ros/build/connect4_msgs

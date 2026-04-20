@@ -2,6 +2,9 @@
 // with input from connect4_msgs:action/DeliverBlock.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "connect4_msgs/action/deliver_block.h"
+
+
 #ifndef CONNECT4_MSGS__ACTION__DETAIL__DELIVER_BLOCK__STRUCT_H_
 #define CONNECT4_MSGS__ACTION__DETAIL__DELIVER_BLOCK__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct connect4_msgs__action__DeliverBlock_Goal__Sequence
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_Goal__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -57,7 +59,6 @@ typedef struct connect4_msgs__action__DeliverBlock_Result__Sequence
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_Result__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -80,7 +81,6 @@ typedef struct connect4_msgs__action__DeliverBlock_Feedback__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_Feedback__Sequence;
-
 
 // Constants defined in the message
 
@@ -107,7 +107,6 @@ typedef struct connect4_msgs__action__DeliverBlock_SendGoal_Request__Sequence
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -131,6 +130,41 @@ typedef struct connect4_msgs__action__DeliverBlock_SendGoal_Response__Sequence
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_SendGoal_Response__Sequence;
 
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__struct.h"
+
+// constants for array fields with an upper bound
+// request
+enum
+{
+  connect4_msgs__action__DeliverBlock_SendGoal_Event__request__MAX_SIZE = 1
+};
+// response
+enum
+{
+  connect4_msgs__action__DeliverBlock_SendGoal_Event__response__MAX_SIZE = 1
+};
+
+/// Struct defined in action/DeliverBlock in the package connect4_msgs.
+typedef struct connect4_msgs__action__DeliverBlock_SendGoal_Event
+{
+  service_msgs__msg__ServiceEventInfo info;
+  connect4_msgs__action__DeliverBlock_SendGoal_Request__Sequence request;
+  connect4_msgs__action__DeliverBlock_SendGoal_Response__Sequence response;
+} connect4_msgs__action__DeliverBlock_SendGoal_Event;
+
+// Struct for a sequence of connect4_msgs__action__DeliverBlock_SendGoal_Event.
+typedef struct connect4_msgs__action__DeliverBlock_SendGoal_Event__Sequence
+{
+  connect4_msgs__action__DeliverBlock_SendGoal_Event * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} connect4_msgs__action__DeliverBlock_SendGoal_Event__Sequence;
 
 // Constants defined in the message
 
@@ -154,7 +188,6 @@ typedef struct connect4_msgs__action__DeliverBlock_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -180,6 +213,42 @@ typedef struct connect4_msgs__action__DeliverBlock_GetResult_Response__Sequence
   size_t capacity;
 } connect4_msgs__action__DeliverBlock_GetResult_Response__Sequence;
 
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'info'
+// already included above
+// #include "service_msgs/msg/detail/service_event_info__struct.h"
+
+// constants for array fields with an upper bound
+// request
+enum
+{
+  connect4_msgs__action__DeliverBlock_GetResult_Event__request__MAX_SIZE = 1
+};
+// response
+enum
+{
+  connect4_msgs__action__DeliverBlock_GetResult_Event__response__MAX_SIZE = 1
+};
+
+/// Struct defined in action/DeliverBlock in the package connect4_msgs.
+typedef struct connect4_msgs__action__DeliverBlock_GetResult_Event
+{
+  service_msgs__msg__ServiceEventInfo info;
+  connect4_msgs__action__DeliverBlock_GetResult_Request__Sequence request;
+  connect4_msgs__action__DeliverBlock_GetResult_Response__Sequence response;
+} connect4_msgs__action__DeliverBlock_GetResult_Event;
+
+// Struct for a sequence of connect4_msgs__action__DeliverBlock_GetResult_Event.
+typedef struct connect4_msgs__action__DeliverBlock_GetResult_Event__Sequence
+{
+  connect4_msgs__action__DeliverBlock_GetResult_Event * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} connect4_msgs__action__DeliverBlock_GetResult_Event__Sequence;
 
 // Constants defined in the message
 

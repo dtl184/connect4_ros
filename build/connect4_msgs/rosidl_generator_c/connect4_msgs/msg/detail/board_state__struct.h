@@ -2,6 +2,9 @@
 // with input from connect4_msgs:msg/BoardState.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "connect4_msgs/msg/board_state.h"
+
+
 #ifndef CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__STRUCT_H_
 #define CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

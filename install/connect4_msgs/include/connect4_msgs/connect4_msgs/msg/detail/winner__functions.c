@@ -57,7 +57,7 @@ connect4_msgs__msg__Winner__copy(
 }
 
 connect4_msgs__msg__Winner *
-connect4_msgs__msg__Winner__create()
+connect4_msgs__msg__Winner__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   connect4_msgs__msg__Winner * msg = (connect4_msgs__msg__Winner *)allocator.allocate(sizeof(connect4_msgs__msg__Winner), allocator.state);

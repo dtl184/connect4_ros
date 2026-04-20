@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "connect4_msgs/action/ResetBoard_Feedback",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "connect4_msgs/action/ResetBoard_Feedback",
+      "hash_string": "RIHS01_3488a7203e6a1553e9505102222b5e47666f15422c85f820a9ebfabbed6be0e5"
+    }
+  ]
+}

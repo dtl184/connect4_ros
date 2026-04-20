@@ -4,6 +4,7 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "connect4_msgs/msg/detail/winner__functions.h"
 #include "connect4_msgs/msg/detail/winner__struct.hpp"
 #include "rosidl_typesupport_cpp/identifier.hpp"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t Winner_message_type_support_handle = 
   ::rosidl_typesupport_cpp::typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Winner_message_typesupport_map),
   ::rosidl_typesupport_cpp::get_message_typesupport_handle_function,
+  &connect4_msgs__msg__Winner__get_type_hash,
+  &connect4_msgs__msg__Winner__get_type_description,
+  &connect4_msgs__msg__Winner__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_cpp

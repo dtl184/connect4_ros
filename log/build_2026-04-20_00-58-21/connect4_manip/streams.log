@@ -1,0 +1,39 @@
+[1.414s] Invoking command in '/home/danie/connect4_ros/src/connect4_manip': PYTHONPATH=/home/danie/connect4_ros/build/connect4_manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_manip build --build-base /home/danie/connect4_ros/build/connect4_manip/build install --record /home/danie/connect4_ros/build/connect4_manip/install.log --single-version-externally-managed install_data
+[1.727s] running egg_info
+[1.728s] creating ../../build/connect4_manip/connect4_manip.egg-info
+[1.749s] writing ../../build/connect4_manip/connect4_manip.egg-info/PKG-INFO
+[1.749s] writing dependency_links to ../../build/connect4_manip/connect4_manip.egg-info/dependency_links.txt
+[1.750s] writing entry points to ../../build/connect4_manip/connect4_manip.egg-info/entry_points.txt
+[1.750s] writing requirements to ../../build/connect4_manip/connect4_manip.egg-info/requires.txt
+[1.750s] writing top-level names to ../../build/connect4_manip/connect4_manip.egg-info/top_level.txt
+[1.750s] writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+[1.799s] reading manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+[1.799s] writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'
+[1.800s] running build
+[1.800s] running build_py
+[1.800s] creating /home/danie/connect4_ros/build/connect4_manip/build
+[1.800s] creating /home/danie/connect4_ros/build/connect4_manip/build/lib
+[1.801s] creating /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+[1.801s] copying connect4_manip/__init__.py -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+[1.801s] copying connect4_manip/arm_manip_node.py -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+[1.802s] copying connect4_manip/py.typed -> /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip
+[1.802s] running install
+[1.811s] running install_lib
+[1.834s] creating /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+[1.834s] copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/py.typed -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+[1.835s] copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/__init__.py -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+[1.835s] copying /home/danie/connect4_ros/build/connect4_manip/build/lib/connect4_manip/arm_manip_node.py -> /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip
+[1.835s] byte-compiling /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip/__init__.py to __init__.cpython-312.pyc
+[1.836s] byte-compiling /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip/arm_manip_node.py to arm_manip_node.cpython-312.pyc
+[1.837s] running install_data
+[1.837s] creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index
+[1.838s] creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index
+[1.838s] creating /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages
+[1.838s] copying resource/connect4_manip -> /home/danie/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages
+[1.838s] copying package.xml -> /home/danie/connect4_ros/install/connect4_manip/share/connect4_manip
+[1.838s] running install_egg_info
+[1.863s] Copying ../../build/connect4_manip/connect4_manip.egg-info to /home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages/connect4_manip-0.0.0-py3.12.egg-info
+[1.864s] running install_scripts
+[2.015s] Installing arm_manip_node script to /home/danie/connect4_ros/install/connect4_manip/lib/connect4_manip
+[2.015s] writing list of installed files to '/home/danie/connect4_ros/build/connect4_manip/install.log'
+[2.045s] Invoked command in '/home/danie/connect4_ros/src/connect4_manip' returned '0': PYTHONPATH=/home/danie/connect4_ros/build/connect4_manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_msgs/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_turtlebotnav/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_manip/lib/python3.12/site-packages:/home/danie/connect4_ros/install/connect4_game/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_manip build --build-base /home/danie/connect4_ros/build/connect4_manip/build install --record /home/danie/connect4_ros/build/connect4_manip/install.log --single-version-externally-managed install_data

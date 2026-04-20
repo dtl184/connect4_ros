@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "connect4_msgs/msg/Winner",
+      "fields": [
+        {
+          "name": "winner",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "connect4_msgs/msg/Winner",
+      "hash_string": "RIHS01_ead742d6f2fcc96d709529d9d8326ce7b769a681fe237ab9ef4fcd89139a85dc"
+    }
+  ]
+}
