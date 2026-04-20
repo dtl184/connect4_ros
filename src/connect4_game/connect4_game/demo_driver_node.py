@@ -9,11 +9,6 @@ from connect4_msgs.action import DeliverBlock, ResetBoard
 
 
 class DemoDriverNode(Node):
-    """
-    Dedicated assignment demo node:
-    1. sends DeliverBlock(player=1)
-    2. when that succeeds, sends ResetBoard(fake board)
-    """
 
     def __init__(self):
         super().__init__("demo_driver_node")
@@ -86,7 +81,6 @@ class DemoDriverNode(Node):
 
         goal = ResetBoard.Goal()
 
-        # Fake board: one occupied cell so the arm has something to “reset”
         board = BoardState()
         board.cells = [0] * 42
         board.cells[35] = 1

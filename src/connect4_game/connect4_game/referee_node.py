@@ -37,8 +37,7 @@ class RefereeNode(Node):
         self.awaiting_move = False
         self._game_started = False
 
-        # Kick off first block delivery a few seconds after startup so action
-        # servers have time to come up.
+        # Kick off first block delivery a few seconds after startup so action servers have time to come up.
         self._start_timer = self.create_timer(
             3.0, self._start_game_once, callback_group=cb_group
         )

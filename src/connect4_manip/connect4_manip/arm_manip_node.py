@@ -24,16 +24,6 @@ from connect4_msgs.msg import BoardState
 
 
 class ArmManipNode(Node):
-    """
-    Minimal assignment-passing MoveIt wrapper:
-    - Accepts ResetBoard goals
-    - Plans to a hard-coded pickup pose
-    - Simulates gripper close
-    - Plans to a lift pose
-    - Plans to a hard-coded drop pose
-    - Simulates gripper open
-    - Returns home
-    """
 
     def __init__(self):
         super().__init__("arm_manip_node")
@@ -55,14 +45,12 @@ class ArmManipNode(Node):
             callback_group=self.cb_group,
         )
 
-        # IMPORTANT: adjust these two names if your MoveIt config uses different names
         self.move_group_name = "ur_manipulator"
         self.ee_link_name = "tool0"
 
-        # IMPORTANT: adjust frame if your MoveIt demo uses "world" instead of "base_link"
         self.planning_frame = "base_link"
 
-        # Hard-coded poses for the assignment demo
+        # hard coded poses for now, will eventually get these from the camera
         self.home_pose = self.make_pose(0.35, 0.00, 0.35)
         self.pick_pose = self.make_pose(0.45, 0.12, 0.12)
         self.lift_pose = self.make_pose(0.45, 0.12, 0.22)
@@ -80,8 +68,6 @@ class ArmManipNode(Node):
         pose.pose.position.y = y
         pose.pose.position.z = z
 
-        # 180 deg rotation about X is a common top-down tool orientation for UR setups.
-        # If planning fails, this is the first thing to tune.
         pose.pose.orientation.x = 1.0
         pose.pose.orientation.y = 0.0
         pose.pose.orientation.z = 0.0
@@ -180,13 +166,10 @@ class ArmManipNode(Node):
     def get_occupied_cells(self, board_state: BoardState) -> List[int]:
         occupied = [i for i, val in enumerate(board_state.cells) if val != 0]
         if not occupied:
-            # Assignment-safe fallback: if no perception yet, just use a fake cell
             occupied = [35]
         return occupied
 
     def cell_to_pick_pose(self, cell_index: int) -> PoseStamped:
-        # Minimal hard-coded board geometry:
-        # 6 rows x 7 cols, row-major
         rows, cols = 6, 7
         row = cell_index // cols
         col = cell_index % cols

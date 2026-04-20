@@ -41,7 +41,6 @@ class BlockDeliveryNode(Node):
 
         self.navigator = BasicNavigator()
         self.nav2_ready = False
-        self.nav2_available = None   # None = not yet checked
 
         self.get_logger().info('BlockDeliveryNode started')
 

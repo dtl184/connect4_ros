@@ -14,7 +14,7 @@ except ImportError:
 
 BOARD_ROWS = 6
 BOARD_COLS = 7
-PROCESS_RATE_HZ = 2.0   # throttle to avoid flooding downstream nodes
+PROCESS_RATE_HZ = 2.0   
 
 
 class BoardPerceptionNode(Node):
