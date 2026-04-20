@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(grep -E \"\\\\.\\(py|cpp|h|xml|msg|action|launch|txt\\)$\")"
-    ]
-  }
-}
