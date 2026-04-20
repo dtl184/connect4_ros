@@ -24,7 +24,8 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [         'arm_manip_node = connect4_manip.arm_manip_node:main',
+        "console_scripts": [
+            "arm_manip_node = connect4_manip.arm_manip_node:main",
         ],
     },
 )
