@@ -4,7 +4,6 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
-#include "connect4_msgs/msg/detail/board_state__functions.h"
 #include "connect4_msgs/msg/detail/board_state__struct.hpp"
 #include "rosidl_typesupport_cpp/identifier.hpp"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t BoardState_message_type_support_handl
   ::rosidl_typesupport_cpp::typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_BoardState_message_typesupport_map),
   ::rosidl_typesupport_cpp::get_message_typesupport_handle_function,
-  &connect4_msgs__msg__BoardState__get_type_hash,
-  &connect4_msgs__msg__BoardState__get_type_description,
-  &connect4_msgs__msg__BoardState__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_cpp

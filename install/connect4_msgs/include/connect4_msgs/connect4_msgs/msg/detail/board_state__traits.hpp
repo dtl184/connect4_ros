@@ -2,9 +2,6 @@
 // with input from connect4_msgs:msg/BoardState.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "connect4_msgs/msg/board_state.hpp"
-
-
 #ifndef CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__TRAITS_HPP_
 #define CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__TRAITS_HPP_
 

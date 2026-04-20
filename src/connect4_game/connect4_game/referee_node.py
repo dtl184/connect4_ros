@@ -45,10 +45,6 @@ class RefereeNode(Node):
 
         self.get_logger().info('RefereeNode started')
 
-    # ------------------------------------------------------------------ #
-    # Game flow                                                            #
-    # ------------------------------------------------------------------ #
-
     def _start_game_once(self):
         if self._game_started:
             return
@@ -79,12 +75,24 @@ class RefereeNode(Node):
             self.awaiting_move = False
             self.send_deliver_block_goal(self.current_player)
 
-    # ------------------------------------------------------------------ #
-    # Game logic (stubs — to be filled in with full implementation)       #
-    # ------------------------------------------------------------------ #
-
     def is_winner(self, board_state: BoardState) -> bool:
-        # TODO: check four-in-a-row for both players
+        cells = board_state.cells
+        rows, cols = 6, 7
+
+        def get(r, c):
+            if 0 <= r < rows and 0 <= c < cols:
+                return cells[r * cols + c]
+            return -1
+
+        for player in (1, 2):
+            for r in range(rows):
+                for c in range(cols):
+                    if get(r, c) != player:
+                        continue
+                    # horizontal, vertical, diagonal down-right, diagonal down-left
+                    for dr, dc in ((0, 1), (1, 0), (1, 1), (1, -1)):
+                        if all(get(r + k * dr, c + k * dc) == player for k in range(4)):
+                            return True
         return False
 
     def is_legal_move(self, previous: BoardState, current: BoardState) -> bool:
@@ -93,9 +101,8 @@ class RefereeNode(Node):
         diff = sum(1 for a, b in zip(previous.cells, current.cells) if a != b)
         return diff == 1
 
-    # ------------------------------------------------------------------ #
-    # DeliverBlock action client                                           #
-    # ------------------------------------------------------------------ #
+
+    # Deliver Block Action Client
 
     def send_deliver_block_goal(self, player: int) -> None:
         self.get_logger().info('Sending DeliverBlock goal for player %d' % player)
@@ -124,9 +131,8 @@ class RefereeNode(Node):
         )
         self.awaiting_move = True
 
-    # ------------------------------------------------------------------ #
-    # ResetBoard action client                                             #
-    # ------------------------------------------------------------------ #
+
+    # Reset Board Action Client
 
     def send_reset_board_goal(self, board_state: BoardState) -> None:
         self.get_logger().info('Sending ResetBoard goal')

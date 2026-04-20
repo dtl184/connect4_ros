@@ -1,5 +1,0 @@
-  File "/home/danie/connect4_ros/install/connect4_perception/lib/python3.12/site-packages/connect4_perception/board_perception_node.py", line 35
-    board_state.cells = # fill this is with correct number of cells
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax
-

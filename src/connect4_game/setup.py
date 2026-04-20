@@ -24,7 +24,9 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': ['referee_node = connect4_game.referee_node:main',
+        'console_scripts': [
+            'referee_node = connect4_game.referee_node:main',
+            'test_actions_node = connect4_game.test_actions_node:main',
         ],
     },
 )

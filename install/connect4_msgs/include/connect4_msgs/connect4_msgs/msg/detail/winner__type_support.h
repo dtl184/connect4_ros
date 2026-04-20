@@ -2,9 +2,6 @@
 // with input from connect4_msgs:msg/Winner.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "connect4_msgs/msg/winner.h"
-
-
 #ifndef CONNECT4_MSGS__MSG__DETAIL__WINNER__TYPE_SUPPORT_H_
 #define CONNECT4_MSGS__MSG__DETAIL__WINNER__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   connect4_msgs,
   msg,
   Winner
-)(void);
+)();
 
 #ifdef __cplusplus
 }

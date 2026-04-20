@@ -1,0 +1,55 @@
+[0.000000] (-) TimerEvent: {}
+[0.000330] (-) JobUnselected: {'identifier': 'connect4_game'}
+[0.000502] (-) JobUnselected: {'identifier': 'connect4_launch'}
+[0.000656] (-) JobUnselected: {'identifier': 'connect4_manip'}
+[0.000717] (-) JobUnselected: {'identifier': 'connect4_msgs'}
+[0.000801] (-) JobUnselected: {'identifier': 'connect4_perception'}
+[0.000889] (connect4_turtlebotnav) JobQueued: {'identifier': 'connect4_turtlebotnav', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs')])}
+[0.001008] (connect4_turtlebotnav) JobStarted: {'identifier': 'connect4_turtlebotnav'}
+[0.099520] (-) TimerEvent: {}
+[0.199846] (-) TimerEvent: {}
+[0.300071] (-) TimerEvent: {}
+[0.400303] (-) TimerEvent: {}
+[0.500564] (-) TimerEvent: {}
+[0.600862] (-) TimerEvent: {}
+[0.701156] (-) TimerEvent: {}
+[0.801468] (-) TimerEvent: {}
+[0.901746] (-) TimerEvent: {}
+[1.002026] (-) TimerEvent: {}
+[1.039626] (connect4_turtlebotnav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_turtlebotnav', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_turtlebotnav', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/hrilab/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_turtlebotnav', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/hrilab/miniconda3', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[1.102186] (-) TimerEvent: {}
+[1.202440] (-) TimerEvent: {}
+[1.302725] (-) TimerEvent: {}
+[1.366909] (connect4_turtlebotnav) StdoutLine: {'line': b'running egg_info\n'}
+[1.390933] (connect4_turtlebotnav) StdoutLine: {'line': b'writing ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/PKG-INFO\n'}
+[1.391591] (connect4_turtlebotnav) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/dependency_links.txt\n'}
+[1.391867] (connect4_turtlebotnav) StdoutLine: {'line': b'writing entry points to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/entry_points.txt\n'}
+[1.392114] (connect4_turtlebotnav) StdoutLine: {'line': b'writing requirements to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/requires.txt\n'}
+[1.392321] (connect4_turtlebotnav) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/top_level.txt\n'}
+[1.402800] (-) TimerEvent: {}
+[1.444756] (connect4_turtlebotnav) StdoutLine: {'line': b"reading manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'\n"}
+[1.446334] (connect4_turtlebotnav) StdoutLine: {'line': b"writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'\n"}
+[1.446609] (connect4_turtlebotnav) StdoutLine: {'line': b'running build\n'}
+[1.446700] (connect4_turtlebotnav) StdoutLine: {'line': b'running build_py\n'}
+[1.446912] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/__init__.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[1.446987] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[1.447293] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/py.typed -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[1.447507] (connect4_turtlebotnav) StdoutLine: {'line': b'running install\n'}
+[1.452334] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_lib\n'}
+[1.477069] (connect4_turtlebotnav) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav\n'}
+[1.477626] (connect4_turtlebotnav) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav/block_delivery_node.py to block_delivery_node.cpython-310.pyc\n'}
+[1.478765] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_data\n'}
+[1.479332] (connect4_turtlebotnav) StdoutLine: {'line': b'copying resource/connect4_turtlebotnav -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages\n'}
+[1.479712] (connect4_turtlebotnav) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav\n'}
+[1.479969] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.502962] (-) TimerEvent: {}
+[1.506195] (connect4_turtlebotnav) StdoutLine: {'line': b"removing '/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.506647] (connect4_turtlebotnav) StdoutLine: {'line': b'Copying ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav-0.0.0-py3.10.egg-info\n'}
+[1.508050] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_scripts\n'}
+[1.603138] (-) TimerEvent: {}
+[1.703421] (-) TimerEvent: {}
+[1.704219] (connect4_turtlebotnav) StdoutLine: {'line': b'Installing block_delivery_node script to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/connect4_turtlebotnav\n'}
+[1.704737] (connect4_turtlebotnav) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log'\n"}
+[1.736685] (connect4_turtlebotnav) CommandEnded: {'returncode': 0}
+[1.786787] (connect4_turtlebotnav) JobEnded: {'identifier': 'connect4_turtlebotnav', 'rc': 0}
+[1.787752] (-) EventReactorShutdown: {}

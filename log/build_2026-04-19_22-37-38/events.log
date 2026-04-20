@@ -1,0 +1,684 @@
+[0.000000] (-) TimerEvent: {}
+[0.000275] (connect4_msgs) JobQueued: {'identifier': 'connect4_msgs', 'dependencies': OrderedDict()}
+[0.000315] (connect4_game) JobQueued: {'identifier': 'connect4_game', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs')])}
+[0.000381] (connect4_manip) JobQueued: {'identifier': 'connect4_manip', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs')])}
+[0.000467] (connect4_perception) JobQueued: {'identifier': 'connect4_perception', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs')])}
+[0.000495] (connect4_turtlebotnav) JobQueued: {'identifier': 'connect4_turtlebotnav', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs')])}
+[0.000584] (connect4_launch) JobQueued: {'identifier': 'connect4_launch', 'dependencies': OrderedDict([('connect4_msgs', '/home/hrilab/connect4_ros/install/connect4_msgs'), ('connect4_game', '/home/hrilab/connect4_ros/install/connect4_game'), ('connect4_manip', '/home/hrilab/connect4_ros/install/connect4_manip'), ('connect4_perception', '/home/hrilab/connect4_ros/install/connect4_perception'), ('connect4_turtlebotnav', '/home/hrilab/connect4_ros/install/connect4_turtlebotnav')])}
+[0.000692] (connect4_msgs) JobStarted: {'identifier': 'connect4_msgs'}
+[0.009898] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'cmake'}
+[0.010408] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/hrilab/connect4_ros/src/connect4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/hrilab/connect4_ros/install/connect4_msgs'], 'cwd': '/home/hrilab/connect4_ros/build/connect4_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/hrilab'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'hrilab'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('CLAUDE_AGENT_SDK_VERSION', '0.2.114'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrilab'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/hrilab/connect4_ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-f5050ef2-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1838'), ('SYSTEMD_EXEC_PID', '2098'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CONDA_ROOT', '/home/hrilab/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '729030'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hrilab'), ('JOURNAL_STREAM', '8:17219'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrilab'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:'), ('SESSION_MANAGER', 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', '398f752ff14542f78c8898d6f089dad2'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VIRTUAL_ENV', '/home/hrilab/miniconda3'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrilab/connect4_ros/build/connect4_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '729030'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.072909] (connect4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099331] (-) TimerEvent: {}
+[0.140256] (connect4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.151087] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199461] (-) TimerEvent: {}
+[0.273765] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.284408] (connect4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.284692] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.285304] (connect4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.289308] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299597] (-) TimerEvent: {}
+[0.396973] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.399697] (-) TimerEvent: {}
+[0.421230] (connect4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.422045] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.423261] (connect4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.430048] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499877] (-) TimerEvent: {}
+[0.600162] (-) TimerEvent: {}
+[0.700419] (-) TimerEvent: {}
+[0.800641] (-) TimerEvent: {}
+[0.896012] (connect4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.900743] (-) TimerEvent: {}
+[1.000955] (-) TimerEvent: {}
+[1.052998] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.060766] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.076936] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.101129] (-) TimerEvent: {}
+[1.136230] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.180429] (connect4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_runtime: 1.2.1 (/opt/ros/humble/share/rosidl_default_runtime/cmake)\n'}
+[1.183767] (connect4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[1.195470] (connect4_msgs) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[1.201253] (-) TimerEvent: {}
+[1.301535] (-) TimerEvent: {}
+[1.401887] (-) TimerEvent: {}
+[1.502120] (-) TimerEvent: {}
+[1.602389] (-) TimerEvent: {}
+[1.653812] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.702509] (-) TimerEvent: {}
+[1.802779] (-) TimerEvent: {}
+[1.903038] (-) TimerEvent: {}
+[1.970341] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.003176] (-) TimerEvent: {}
+[2.103477] (-) TimerEvent: {}
+[2.203726] (-) TimerEvent: {}
+[2.303981] (-) TimerEvent: {}
+[2.354696] (connect4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.386730] (connect4_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.388500] (connect4_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.404162] (-) TimerEvent: {}
+[2.448496] (connect4_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.449165] (connect4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.449602] (connect4_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.449906] (connect4_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.479542] (connect4_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.504293] (-) TimerEvent: {}
+[2.604561] (-) TimerEvent: {}
+[2.664213] (connect4_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.703515] (connect4_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.704631] (-) TimerEvent: {}
+[2.705439] (connect4_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.710400] (connect4_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.772877] (connect4_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.788072] (connect4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/hrilab/connect4_ros/build/connect4_msgs\n'}
+[2.799668] (connect4_msgs) CommandEnded: {'returncode': 0}
+[2.801151] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'build'}
+[2.803161] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hrilab/connect4_ros/build/connect4_msgs', '--', '-j12', '-l12'], 'cwd': '/home/hrilab/connect4_ros/build/connect4_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/hrilab'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'hrilab'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('CLAUDE_AGENT_SDK_VERSION', '0.2.114'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrilab'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/hrilab/connect4_ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-f5050ef2-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1838'), ('SYSTEMD_EXEC_PID', '2098'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CONDA_ROOT', '/home/hrilab/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '729030'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hrilab'), ('JOURNAL_STREAM', '8:17219'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrilab'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:'), ('SESSION_MANAGER', 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', '398f752ff14542f78c8898d6f089dad2'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VIRTUAL_ENV', '/home/hrilab/miniconda3'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrilab/connect4_ros/build/connect4_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '729030'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.805527] (-) TimerEvent: {}
+[2.854775] (connect4_msgs) StdoutLine: {'line': b'[  1%] Generating C code for ROS interfaces\n'}
+[2.864605] (connect4_msgs) StdoutLine: {'line': b'[  3%] Generating Rust code for ROS interfaces\n'}
+[2.865001] (connect4_msgs) StdoutLine: {'line': b'[  5%] Generating C++ code for ROS interfaces\n'}
+[2.874781] (connect4_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_connect4_msgs\n'}
+[2.905643] (-) TimerEvent: {}
+[3.005873] (-) TimerEvent: {}
+[3.106079] (-) TimerEvent: {}
+[3.191001] (connect4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.206184] (-) TimerEvent: {}
+[3.219199] (connect4_msgs) StdoutLine: {'line': b'creating connect4_msgs.egg-info\n'}
+[3.219442] (connect4_msgs) StdoutLine: {'line': b'writing connect4_msgs.egg-info/PKG-INFO\n'}
+[3.219944] (connect4_msgs) StdoutLine: {'line': b'writing dependency_links to connect4_msgs.egg-info/dependency_links.txt\n'}
+[3.220227] (connect4_msgs) StdoutLine: {'line': b'writing top-level names to connect4_msgs.egg-info/top_level.txt\n'}
+[3.220360] (connect4_msgs) StdoutLine: {'line': b"writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[3.253547] (connect4_msgs) StdoutLine: {'line': b'[  5%] Built target connect4_msgs__rs\n'}
+[3.306288] (-) TimerEvent: {}
+[3.306877] (connect4_msgs) StdoutLine: {'line': b"reading manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[3.307990] (connect4_msgs) StdoutLine: {'line': b"writing manifest file 'connect4_msgs.egg-info/SOURCES.txt'\n"}
+[3.342174] (connect4_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_connect4_msgs_egg\n'}
+[3.406446] (-) TimerEvent: {}
+[3.506671] (-) TimerEvent: {}
+[3.606875] (-) TimerEvent: {}
+[3.707065] (-) TimerEvent: {}
+[3.768644] (connect4_msgs) StdoutLine: {'line': b'[  8%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/board_state__functions.c.o\n'}
+[3.768986] (connect4_msgs) StdoutLine: {'line': b'[  8%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/reset_board__functions.c.o\n'}
+[3.769403] (connect4_msgs) StdoutLine: {'line': b'[ 12%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/action/detail/deliver_block__functions.c.o\n'}
+[3.769533] (connect4_msgs) StdoutLine: {'line': b'[ 12%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_c.dir/rosidl_generator_c/connect4_msgs/msg/detail/winner__functions.c.o\n'}
+[3.772588] (connect4_msgs) StdoutLine: {'line': b'[ 12%] Built target connect4_msgs__cpp\n'}
+[3.782882] (connect4_msgs) StdoutLine: {'line': b'[ 16%] Generating C++ introspection for ROS interfaces\n'}
+[3.783140] (connect4_msgs) StdoutLine: {'line': b'[ 16%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[3.786911] (connect4_msgs) StdoutLine: {'line': b'[ 17%] Generating C++ type support dispatch for ROS interfaces\n'}
+[3.807168] (-) TimerEvent: {}
+[3.907352] (-) TimerEvent: {}
+[3.942417] (connect4_msgs) StdoutLine: {'line': b'[ 19%] Linking C shared library libconnect4_msgs__rosidl_generator_c.so\n'}
+[3.985260] (connect4_msgs) StdoutLine: {'line': b'[ 19%] Built target connect4_msgs__rosidl_generator_c\n'}
+[3.996204] (connect4_msgs) StdoutLine: {'line': b'[ 21%] Generating C type support dispatch for ROS interfaces\n'}
+[3.996586] (connect4_msgs) StdoutLine: {'line': b'[ 23%] Generating C introspection for ROS interfaces\n'}
+[3.996725] (connect4_msgs) StdoutLine: {'line': b'[ 25%] Generating C type support for eProsima Fast-RTPS\n'}
+[4.007456] (-) TimerEvent: {}
+[4.107645] (-) TimerEvent: {}
+[4.207837] (-) TimerEvent: {}
+[4.308019] (-) TimerEvent: {}
+[4.359303] (connect4_msgs) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/winner__type_support.cpp.o\n'}
+[4.359468] (connect4_msgs) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/msg/board_state__type_support.cpp.o\n'}
+[4.359540] (connect4_msgs) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/reset_board__type_support.cpp.o\n'}
+[4.359603] (connect4_msgs) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/connect4_msgs/action/deliver_block__type_support.cpp.o\n'}
+[4.409890] (-) TimerEvent: {}
+[4.482884] (connect4_msgs) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/winner__type_support.cpp.o\n'}
+[4.484864] (connect4_msgs) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/msg/detail/board_state__type_support.cpp.o\n'}
+[4.492259] (connect4_msgs) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/reset_board__type_support.cpp.o\n'}
+[4.497044] (connect4_msgs) StdoutLine: {'line': b'[ 39%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/connect4_msgs/action/detail/deliver_block__type_support.cpp.o\n'}
+[4.511951] (-) TimerEvent: {}
+[4.612139] (-) TimerEvent: {}
+[4.646951] (connect4_msgs) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/board_state__type_support.cpp.o\n'}
+[4.696922] (connect4_msgs) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/msg/winner__type_support.cpp.o\n'}
+[4.712247] (-) TimerEvent: {}
+[4.745686] (connect4_msgs) StdoutLine: {'line': b'[ 44%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/deliver_block__type_support.cpp.o\n'}
+[4.813934] (-) TimerEvent: {}
+[4.830794] (connect4_msgs) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/connect4_msgs/action/reset_board__type_support.cpp.o\n'}
+[4.914037] (-) TimerEvent: {}
+[4.921723] (connect4_msgs) StdoutLine: {'line': b'[ 48%] Linking CXX shared library libconnect4_msgs__rosidl_typesupport_c.so\n'}
+[4.944088] (connect4_msgs) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/board_state__type_support.cpp.o\n'}
+[4.948650] (connect4_msgs) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/msg/detail/dds_fastrtps/winner__type_support.cpp.o\n'}
+[4.996044] (connect4_msgs) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/deliver_block__type_support.cpp.o\n'}
+[5.011897] (connect4_msgs) StdoutLine: {'line': b'[ 53%] Built target connect4_msgs__rosidl_typesupport_c\n'}
+[5.014148] (-) TimerEvent: {}
+[5.097313] (connect4_msgs) StdoutLine: {'line': b'[ 55%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/connect4_msgs/action/detail/dds_fastrtps/reset_board__type_support.cpp.o\n'}
+[5.114265] (-) TimerEvent: {}
+[5.124241] (connect4_msgs) StdoutLine: {'line': b'[ 57%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/board_state__type_support.c.o\n'}
+[5.136788] (connect4_msgs) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/board_state__type_support_c.cpp.o\n'}
+[5.199419] (connect4_msgs) StdoutLine: {'line': b'[ 60%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/msg/detail/winner__type_support.c.o\n'}
+[5.214380] (-) TimerEvent: {}
+[5.262100] (connect4_msgs) StdoutLine: {'line': b'[ 62%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/msg/detail/winner__type_support_c.cpp.o\n'}
+[5.267169] (connect4_msgs) StdoutLine: {'line': b'[ 64%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/deliver_block__type_support.c.o\n'}
+[5.276647] (connect4_msgs) StdoutLine: {'line': b'[ 66%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/connect4_msgs/action/detail/reset_board__type_support.c.o\n'}
+[5.314970] (-) TimerEvent: {}
+[5.325939] (connect4_msgs) StdoutLine: {'line': b'[ 67%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/deliver_block__type_support_c.cpp.o\n'}
+[5.329158] (connect4_msgs) StdoutLine: {'line': b'[ 69%] Linking CXX shared library libconnect4_msgs__rosidl_typesupport_cpp.so\n'}
+[5.361495] (connect4_msgs) StdoutLine: {'line': b'[ 71%] Building CXX object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/connect4_msgs/action/detail/reset_board__type_support_c.cpp.o\n'}
+[5.381965] (connect4_msgs) StdoutLine: {'line': b'[ 73%] Linking C shared library libconnect4_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.415092] (-) TimerEvent: {}
+[5.431188] (connect4_msgs) StdoutLine: {'line': b'[ 73%] Built target connect4_msgs__rosidl_typesupport_cpp\n'}
+[5.457101] (connect4_msgs) StdoutLine: {'line': b'[ 73%] Built target connect4_msgs__rosidl_typesupport_introspection_c\n'}
+[5.515978] (-) TimerEvent: {}
+[5.617894] (-) TimerEvent: {}
+[5.704897] (connect4_msgs) StdoutLine: {'line': b'[ 75%] Linking CXX shared library libconnect4_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.718010] (-) TimerEvent: {}
+[5.802222] (connect4_msgs) StdoutLine: {'line': b'[ 75%] Built target connect4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.818103] (-) TimerEvent: {}
+[5.918323] (-) TimerEvent: {}
+[5.957578] (connect4_msgs) StdoutLine: {'line': b'[ 76%] Linking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.018455] (-) TimerEvent: {}
+[6.041271] (connect4_msgs) StdoutLine: {'line': b'[ 78%] Linking CXX shared library libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.042217] (connect4_msgs) StdoutLine: {'line': b'[ 78%] Built target connect4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.118578] (-) TimerEvent: {}
+[6.124132] (connect4_msgs) StdoutLine: {'line': b'[ 78%] Built target connect4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.149255] (connect4_msgs) StdoutLine: {'line': b'[ 78%] Built target connect4_msgs\n'}
+[6.173726] (connect4_msgs) StdoutLine: {'line': b'[ 80%] Generating Python code for ROS interfaces\n'}
+[6.218721] (-) TimerEvent: {}
+[6.318966] (-) TimerEvent: {}
+[6.419220] (-) TimerEvent: {}
+[6.519440] (-) TimerEvent: {}
+[6.619617] (-) TimerEvent: {}
+[6.719770] (-) TimerEvent: {}
+[6.819936] (-) TimerEvent: {}
+[6.920135] (-) TimerEvent: {}
+[7.020349] (-) TimerEvent: {}
+[7.120611] (-) TimerEvent: {}
+[7.220898] (-) TimerEvent: {}
+[7.321125] (-) TimerEvent: {}
+[7.421376] (-) TimerEvent: {}
+[7.521629] (-) TimerEvent: {}
+[7.621893] (-) TimerEvent: {}
+[7.722147] (-) TimerEvent: {}
+[7.734660] (connect4_msgs) StdoutLine: {'line': b'[ 80%] Built target connect4_msgs__py\n'}
+[7.755962] (connect4_msgs) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_winner_s.c.o\n'}
+[7.756190] (connect4_msgs) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_reset_board_s.c.o\n'}
+[7.756297] (connect4_msgs) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/msg/_board_state_s.c.o\n'}
+[7.756398] (connect4_msgs) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/connect4_msgs__rosidl_generator_py.dir/rosidl_generator_py/connect4_msgs/action/_deliver_block_s.c.o\n'}
+[7.822309] (-) TimerEvent: {}
+[7.934214] (-) TimerEvent: {}
+[8.034497] (-) TimerEvent: {}
+[8.134799] (-) TimerEvent: {}
+[8.235156] (-) TimerEvent: {}
+[8.335504] (-) TimerEvent: {}
+[8.435853] (-) TimerEvent: {}
+[8.536155] (-) TimerEvent: {}
+[8.573157] (connect4_msgs) StdoutLine: {'line': b'[ 89%] Linking C shared library rosidl_generator_py/connect4_msgs/libconnect4_msgs__rosidl_generator_py.so\n'}
+[8.630259] (connect4_msgs) StdoutLine: {'line': b'[ 89%] Built target connect4_msgs__rosidl_generator_py\n'}
+[8.636238] (-) TimerEvent: {}
+[8.653850] (connect4_msgs) StdoutLine: {'line': b'[ 92%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c.o\n'}
+[8.654142] (connect4_msgs) StdoutLine: {'line': b'[ 92%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[8.654219] (connect4_msgs) StdoutLine: {'line': b'[ 94%] Building C object CMakeFiles/connect4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[8.736374] (-) TimerEvent: {}
+[8.828839] (connect4_msgs) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.829027] (connect4_msgs) StdoutLine: {'line': b'[ 98%] Linking C shared library rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.836496] (-) TimerEvent: {}
+[8.853366] (connect4_msgs) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.879949] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs__rosidl_typesupport_c__pyext\n'}
+[8.880254] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.908913] (connect4_msgs) StdoutLine: {'line': b'[100%] Built target connect4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.928054] (connect4_msgs) CommandEnded: {'returncode': 0}
+[8.929135] (connect4_msgs) JobProgress: {'identifier': 'connect4_msgs', 'progress': 'install'}
+[8.936624] (-) TimerEvent: {}
+[8.940170] (connect4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hrilab/connect4_ros/build/connect4_msgs'], 'cwd': '/home/hrilab/connect4_ros/build/connect4_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/hrilab'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'hrilab'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('CLAUDE_AGENT_SDK_VERSION', '0.2.114'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrilab'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/hrilab/connect4_ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-f5050ef2-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1838'), ('SYSTEMD_EXEC_PID', '2098'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CONDA_ROOT', '/home/hrilab/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '729030'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hrilab'), ('JOURNAL_STREAM', '8:17219'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrilab'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:'), ('SESSION_MANAGER', 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', '398f752ff14542f78c8898d6f089dad2'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VIRTUAL_ENV', '/home/hrilab/miniconda3'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrilab/connect4_ros/build/connect4_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hrilab/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '729030'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.952052] (connect4_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.952645] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/rosidl_interfaces/connect4_msgs\n'}
+[8.952972] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.953359] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.953505] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.h\n'}
+[8.953649] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.h\n'}
+[8.953782] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.954142] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.h\n'}
+[8.954285] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.h\n'}
+[8.954418] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.c\n'}
+[8.955205] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.h\n'}
+[8.955673] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__functions.h\n'}
+[8.955810] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__functions.c\n'}
+[8.956084] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.h\n'}
+[8.956162] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.h\n'}
+[8.956233] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.956303] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.h\n'}
+[8.956372] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.h\n'}
+[8.956440] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.956509] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.956577] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.c\n'}
+[8.956645] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__functions.h\n'}
+[8.956777] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.h\n'}
+[8.956868] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__functions.c\n'}
+[8.957138] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.h\n'}
+[8.957207] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.h\n'}
+[8.957276] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.h\n'}
+[8.957344] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.h\n'}
+[8.957411] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.sh\n'}
+[8.957478] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/library_path.dsv\n'}
+[8.957544] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so\n'}
+[8.957611] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_c.so" to ""\n'}
+[8.957807] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.957887] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.957960] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.958021] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_c.h\n'}
+[8.958084] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_c.h\n'}
+[8.958145] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.958205] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.958267] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.958328] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_c.h\n'}
+[8.958396] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_c.h\n'}
+[8.958538] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.958810] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.959152] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.959326] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.959397] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.959465] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.c\n'}
+[8.959534] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_c.h\n'}
+[8.959603] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.c\n'}
+[8.959670] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_c.h\n'}
+[8.959739] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.959907] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.959985] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.960056] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.c\n'}
+[8.960118] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.c\n'}
+[8.960185] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_c.h\n'}
+[8.960253] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_c.h\n'}
+[8.960321] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.960480] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.960549] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so\n'}
+[8.960835] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_c.so" to ""\n'}
+[8.960987] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.961060] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.961130] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/reset_board.hpp\n'}
+[8.961198] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/deliver_block.hpp\n'}
+[8.961395] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.961463] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.hpp\n'}
+[8.961526] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__struct.hpp\n'}
+[8.961594] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__builder.hpp\n'}
+[8.961750] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__traits.hpp\n'}
+[8.961831] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.hpp\n'}
+[8.962027] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__builder.hpp\n'}
+[8.962165] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__struct.hpp\n'}
+[8.962229] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__traits.hpp\n'}
+[8.962372] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.962507] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/board_state.hpp\n'}
+[8.962684] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/winner.hpp\n'}
+[8.962754] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.962829] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__struct.hpp\n'}
+[8.963089] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.hpp\n'}
+[8.963159] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__struct.hpp\n'}
+[8.963304] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__traits.hpp\n'}
+[8.963375] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.hpp\n'}
+[8.963443] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__builder.hpp\n'}
+[8.963510] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__builder.hpp\n'}
+[8.963864] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__traits.hpp\n'}
+[8.964170] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.964247] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.964317] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.964385] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.964452] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.964520] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.964588] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/dds_fastrtps\n'}
+[8.964656] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.964723] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.964902] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.964981] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.965045] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/dds_fastrtps\n'}
+[8.965118] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.965186] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.965361] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.965525] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs\n'}
+[8.965798] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action\n'}
+[8.966518] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail\n'}
+[8.966859] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__type_support.cpp\n'}
+[8.967128] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.967276] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/deliver_block__type_support.cpp\n'}
+[8.967419] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/action/detail/reset_board__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.967560] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg\n'}
+[8.967857] (connect4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail\n'}
+[8.968031] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.968185] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/winner__type_support.cpp\n'}
+[8.968327] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__type_support.cpp\n'}
+[8.968618] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/include/connect4_msgs/connect4_msgs/msg/detail/board_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.968766] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.969008] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.969227] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so\n'}
+[8.969450] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[8.969729] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.sh\n'}
+[8.969959] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/pythonpath.dsv\n'}
+[8.970263] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs-0.0.0-py3.10.egg-info\n'}
+[8.970489] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.970628] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.970849] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.971091] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.971229] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs\n'}
+[8.971567] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/__init__.py\n'}
+[8.971710] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/libconnect4_msgs__rosidl_generator_py.so\n'}
+[8.972080] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.972444] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[8.972665] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action\n'}
+[8.972804] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_deliver_block.py\n'}
+[8.973054] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/__init__.py\n'}
+[8.973193] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_deliver_block_s.c\n'}
+[8.973430] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_reset_board.py\n'}
+[8.973650] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_reset_board_s.c\n'}
+[8.973883] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.974182] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/_connect4_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.974523] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.974678] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.974974] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg\n'}
+[8.975107] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/__init__.py\n'}
+[8.975224] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_board_state.py\n'}
+[8.975340] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_winner_s.c\n'}
+[8.975453] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_board_state_s.c\n'}
+[8.975555] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_winner.py\n'}
+[9.036750] (-) TimerEvent: {}
+[9.055972] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs'...\n"}
+[9.056164] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/__init__.py'...\n"}
+[9.056245] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action'...\n"}
+[9.056315] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/__init__.py'...\n"}
+[9.056382] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_deliver_block.py'...\n"}
+[9.056446] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/action/_reset_board.py'...\n"}
+[9.056509] (connect4_msgs) StdoutLine: {'line': b"Listing '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg'...\n"}
+[9.056571] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/__init__.py'...\n"}
+[9.056660] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_board_state.py'...\n"}
+[9.056724] (connect4_msgs) StdoutLine: {'line': b"Compiling '/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/msg/_winner.py'...\n"}
+[9.063266] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.063648] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.063933] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.064308] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.064583] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.065050] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages/connect4_msgs/connect4_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.065290] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so\n'}
+[9.065623] (connect4_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hrilab/connect4_ros/install/connect4_msgs/lib/libconnect4_msgs__rosidl_generator_py.so" to ""\n'}
+[9.066169] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/rust_packages/connect4_msgs\n'}
+[9.066591] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust\n'}
+[9.066675] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/Cargo.toml\n'}
+[9.066772] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src\n'}
+[9.067210] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/msg.rs\n'}
+[9.067440] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/lib.rs\n'}
+[9.067684] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/action\n'}
+[9.067919] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/action/rmw.rs\n'}
+[9.068080] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/action.rs\n'}
+[9.068231] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/msg\n'}
+[9.068384] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/src/msg/rmw.rs\n'}
+[9.068676] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/rust/build.rs\n'}
+[9.068906] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.idl\n'}
+[9.069126] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.idl\n'}
+[9.069329] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.idl\n'}
+[9.069470] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.idl\n'}
+[9.069683] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/BoardState.msg\n'}
+[9.069828] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/msg/Winner.msg\n'}
+[9.070096] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/DeliverBlock.action\n'}
+[9.070307] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/action/ResetBoard.action\n'}
+[9.070519] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/package_run_dependencies/connect4_msgs\n'}
+[9.070737] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/parent_prefix_path/connect4_msgs\n'}
+[9.071039] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.sh\n'}
+[9.071281] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/ament_prefix_path.dsv\n'}
+[9.071437] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.sh\n'}
+[9.071587] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/environment/path.dsv\n'}
+[9.071738] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.bash\n'}
+[9.072115] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.sh\n'}
+[9.072265] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.zsh\n'}
+[9.072482] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/local_setup.dsv\n'}
+[9.072622] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.dsv\n'}
+[9.072849] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/ament_index/resource_index/packages/connect4_msgs\n'}
+[9.073078] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport.cmake\n'}
+[9.073301] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.073519] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.073694] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.073909] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.074137] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.074360] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.074555] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.074802] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.075064] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.075290] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.075561] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.075784] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.076049] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.076320] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.076614] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.076909] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/export_connect4_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.077156] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[9.077415] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.077656] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.077888] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.078161] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.078238] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.078448] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.078524] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig.cmake\n'}
+[9.078749] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/cmake/connect4_msgsConfig-version.cmake\n'}
+[9.078865] (connect4_msgs) StdoutLine: {'line': b'-- Installing: /home/hrilab/connect4_ros/install/connect4_msgs/share/connect4_msgs/package.xml\n'}
+[9.080994] (connect4_msgs) CommandEnded: {'returncode': 0}
+[9.136891] (-) TimerEvent: {}
+[9.169092] (connect4_msgs) JobEnded: {'identifier': 'connect4_msgs', 'rc': 0}
+[9.170816] (connect4_game) JobStarted: {'identifier': 'connect4_game'}
+[9.177897] (connect4_manip) JobStarted: {'identifier': 'connect4_manip'}
+[9.185016] (connect4_perception) JobStarted: {'identifier': 'connect4_perception'}
+[9.190548] (connect4_turtlebotnav) JobStarted: {'identifier': 'connect4_turtlebotnav'}
+[9.237005] (-) TimerEvent: {}
+[9.337224] (-) TimerEvent: {}
+[9.437450] (-) TimerEvent: {}
+[9.537720] (-) TimerEvent: {}
+[9.637979] (-) TimerEvent: {}
+[9.738224] (-) TimerEvent: {}
+[9.838471] (-) TimerEvent: {}
+[9.938744] (-) TimerEvent: {}
+[10.039041] (-) TimerEvent: {}
+[10.139274] (-) TimerEvent: {}
+[10.239483] (-) TimerEvent: {}
+[10.339758] (-) TimerEvent: {}
+[10.440058] (-) TimerEvent: {}
+[10.540286] (-) TimerEvent: {}
+[10.640518] (-) TimerEvent: {}
+[10.740786] (-) TimerEvent: {}
+[10.841040] (-) TimerEvent: {}
+[10.941302] (-) TimerEvent: {}
+[11.041563] (-) TimerEvent: {}
+[11.105837] (connect4_game) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_game', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_game/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_game/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_game', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_game', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[11.135252] (connect4_manip) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_manip', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_manip/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_manip/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_manip', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_manip', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[11.141679] (-) TimerEvent: {}
+[11.156060] (connect4_turtlebotnav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_turtlebotnav', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_turtlebotnav', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_turtlebotnav', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[11.169882] (connect4_perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_perception', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_perception/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_perception', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_perception', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[11.241809] (-) TimerEvent: {}
+[11.342034] (-) TimerEvent: {}
+[11.442268] (-) TimerEvent: {}
+[11.492392] (connect4_game) StdoutLine: {'line': b'running egg_info\n'}
+[11.511256] (connect4_manip) StdoutLine: {'line': b'running egg_info\n'}
+[11.516383] (connect4_game) StdoutLine: {'line': b'creating ../../build/connect4_game/connect4_game.egg-info\n'}
+[11.516946] (connect4_game) StdoutLine: {'line': b'writing ../../build/connect4_game/connect4_game.egg-info/PKG-INFO\n'}
+[11.517399] (connect4_game) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_game/connect4_game.egg-info/dependency_links.txt\n'}
+[11.518556] (connect4_game) StdoutLine: {'line': b'writing entry points to ../../build/connect4_game/connect4_game.egg-info/entry_points.txt\n'}
+[11.518903] (connect4_game) StdoutLine: {'line': b'writing requirements to ../../build/connect4_game/connect4_game.egg-info/requires.txt\n'}
+[11.519196] (connect4_game) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_game/connect4_game.egg-info/top_level.txt\n'}
+[11.519466] (connect4_game) StdoutLine: {'line': b"writing manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'\n"}
+[11.525397] (connect4_perception) StdoutLine: {'line': b'running egg_info\n'}
+[11.534973] (connect4_manip) StdoutLine: {'line': b'creating ../../build/connect4_manip/connect4_manip.egg-info\n'}
+[11.535320] (connect4_manip) StdoutLine: {'line': b'writing ../../build/connect4_manip/connect4_manip.egg-info/PKG-INFO\n'}
+[11.535638] (connect4_manip) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_manip/connect4_manip.egg-info/dependency_links.txt\n'}
+[11.535951] (connect4_manip) StdoutLine: {'line': b'writing entry points to ../../build/connect4_manip/connect4_manip.egg-info/entry_points.txt\n'}
+[11.536409] (connect4_manip) StdoutLine: {'line': b'writing requirements to ../../build/connect4_manip/connect4_manip.egg-info/requires.txt\n'}
+[11.536567] (connect4_manip) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_manip/connect4_manip.egg-info/top_level.txt\n'}
+[11.536710] (connect4_manip) StdoutLine: {'line': b"writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'\n"}
+[11.537000] (connect4_turtlebotnav) StdoutLine: {'line': b'running egg_info\n'}
+[11.542373] (-) TimerEvent: {}
+[11.549207] (connect4_perception) StdoutLine: {'line': b'creating ../../build/connect4_perception/connect4_perception.egg-info\n'}
+[11.549656] (connect4_perception) StdoutLine: {'line': b'writing ../../build/connect4_perception/connect4_perception.egg-info/PKG-INFO\n'}
+[11.550452] (connect4_perception) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_perception/connect4_perception.egg-info/dependency_links.txt\n'}
+[11.550888] (connect4_perception) StdoutLine: {'line': b'writing entry points to ../../build/connect4_perception/connect4_perception.egg-info/entry_points.txt\n'}
+[11.551380] (connect4_perception) StdoutLine: {'line': b'writing requirements to ../../build/connect4_perception/connect4_perception.egg-info/requires.txt\n'}
+[11.551513] (connect4_perception) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_perception/connect4_perception.egg-info/top_level.txt\n'}
+[11.551641] (connect4_perception) StdoutLine: {'line': b"writing manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'\n"}
+[11.564926] (connect4_turtlebotnav) StdoutLine: {'line': b'creating ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info\n'}
+[11.565142] (connect4_turtlebotnav) StdoutLine: {'line': b'writing ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/PKG-INFO\n'}
+[11.565610] (connect4_turtlebotnav) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/dependency_links.txt\n'}
+[11.566024] (connect4_turtlebotnav) StdoutLine: {'line': b'writing entry points to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/entry_points.txt\n'}
+[11.566411] (connect4_turtlebotnav) StdoutLine: {'line': b'writing requirements to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/requires.txt\n'}
+[11.566545] (connect4_turtlebotnav) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/top_level.txt\n'}
+[11.566673] (connect4_turtlebotnav) StdoutLine: {'line': b"writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'\n"}
+[11.566996] (connect4_game) StdoutLine: {'line': b"reading manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'\n"}
+[11.568456] (connect4_game) StdoutLine: {'line': b"writing manifest file '../../build/connect4_game/connect4_game.egg-info/SOURCES.txt'\n"}
+[11.568710] (connect4_game) StdoutLine: {'line': b'running build\n'}
+[11.568862] (connect4_game) StdoutLine: {'line': b'running build_py\n'}
+[11.569220] (connect4_game) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game\n'}
+[11.569360] (connect4_game) StdoutLine: {'line': b'copying connect4_game/__init__.py -> /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game\n'}
+[11.569492] (connect4_game) StdoutLine: {'line': b'copying connect4_game/test_actions_node.py -> /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game\n'}
+[11.569742] (connect4_game) StdoutLine: {'line': b'copying connect4_game/referee_node.py -> /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game\n'}
+[11.569999] (connect4_game) StdoutLine: {'line': b'copying connect4_game/py.typed -> /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game\n'}
+[11.570136] (connect4_game) StdoutLine: {'line': b'running install\n'}
+[11.574811] (connect4_game) StdoutLine: {'line': b'running install_lib\n'}
+[11.588000] (connect4_manip) StdoutLine: {'line': b"reading manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'\n"}
+[11.589368] (connect4_manip) StdoutLine: {'line': b"writing manifest file '../../build/connect4_manip/connect4_manip.egg-info/SOURCES.txt'\n"}
+[11.589520] (connect4_manip) StdoutLine: {'line': b'running build\n'}
+[11.589653] (connect4_manip) StdoutLine: {'line': b'running build_py\n'}
+[11.590002] (connect4_manip) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip\n'}
+[11.590277] (connect4_manip) StdoutLine: {'line': b'copying connect4_manip/__init__.py -> /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip\n'}
+[11.590410] (connect4_manip) StdoutLine: {'line': b'copying connect4_manip/arm_manip_node.py -> /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip\n'}
+[11.590687] (connect4_manip) StdoutLine: {'line': b'copying connect4_manip/py.typed -> /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip\n'}
+[11.590990] (connect4_manip) StdoutLine: {'line': b'running install\n'}
+[11.596071] (connect4_manip) StdoutLine: {'line': b'running install_lib\n'}
+[11.599604] (connect4_game) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game\n'}
+[11.599771] (connect4_game) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game/__init__.py -> /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game\n'}
+[11.599922] (connect4_game) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game/test_actions_node.py -> /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game\n'}
+[11.600058] (connect4_game) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game/referee_node.py -> /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game\n'}
+[11.600188] (connect4_game) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_game/build/lib/connect4_game/py.typed -> /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game\n'}
+[11.600575] (connect4_game) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game/__init__.py to __init__.cpython-310.pyc\n'}
+[11.600969] (connect4_game) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game/test_actions_node.py to test_actions_node.cpython-310.pyc\n'}
+[11.602171] (connect4_game) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game/referee_node.py to referee_node.cpython-310.pyc\n'}
+[11.603485] (connect4_game) StdoutLine: {'line': b'running install_data\n'}
+[11.603762] (connect4_game) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_game/share/ament_index/resource_index/packages\n'}
+[11.604041] (connect4_game) StdoutLine: {'line': b'copying resource/connect4_game -> /home/hrilab/connect4_ros/install/connect4_game/share/ament_index/resource_index/packages\n'}
+[11.604396] (connect4_game) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_game/share/connect4_game\n'}
+[11.604529] (connect4_game) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.605237] (connect4_perception) StdoutLine: {'line': b"reading manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'\n"}
+[11.606773] (connect4_perception) StdoutLine: {'line': b"writing manifest file '../../build/connect4_perception/connect4_perception.egg-info/SOURCES.txt'\n"}
+[11.607062] (connect4_perception) StdoutLine: {'line': b'running build\n'}
+[11.607318] (connect4_perception) StdoutLine: {'line': b'running build_py\n'}
+[11.607457] (connect4_perception) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception\n'}
+[11.607592] (connect4_perception) StdoutLine: {'line': b'copying connect4_perception/__init__.py -> /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception\n'}
+[11.607896] (connect4_perception) StdoutLine: {'line': b'copying connect4_perception/board_perception_node.py -> /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception\n'}
+[11.608155] (connect4_perception) StdoutLine: {'line': b'copying connect4_perception/py.typed -> /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception\n'}
+[11.608285] (connect4_perception) StdoutLine: {'line': b'running install\n'}
+[11.612891] (connect4_perception) StdoutLine: {'line': b'running install_lib\n'}
+[11.620025] (connect4_turtlebotnav) StdoutLine: {'line': b"reading manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'\n"}
+[11.621404] (connect4_turtlebotnav) StdoutLine: {'line': b"writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'\n"}
+[11.621556] (connect4_turtlebotnav) StdoutLine: {'line': b'running build\n'}
+[11.621677] (connect4_turtlebotnav) StdoutLine: {'line': b'running build_py\n'}
+[11.621906] (connect4_turtlebotnav) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[11.622115] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/__init__.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[11.622224] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[11.622425] (connect4_turtlebotnav) StdoutLine: {'line': b'copying connect4_turtlebotnav/py.typed -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav\n'}
+[11.622633] (connect4_turtlebotnav) StdoutLine: {'line': b'running install\n'}
+[11.623436] (connect4_manip) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip\n'}
+[11.623700] (connect4_manip) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip/__init__.py -> /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip\n'}
+[11.623961] (connect4_manip) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip/arm_manip_node.py -> /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip\n'}
+[11.624190] (connect4_manip) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_manip/build/lib/connect4_manip/py.typed -> /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip\n'}
+[11.624806] (connect4_manip) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip/__init__.py to __init__.cpython-310.pyc\n'}
+[11.625110] (connect4_manip) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip/arm_manip_node.py to arm_manip_node.cpython-310.pyc\n'}
+[11.626879] (connect4_manip) StdoutLine: {'line': b'running install_data\n'}
+[11.627135] (connect4_manip) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages\n'}
+[11.627474] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_lib\n'}
+[11.627782] (connect4_manip) StdoutLine: {'line': b'copying resource/connect4_manip -> /home/hrilab/connect4_ros/install/connect4_manip/share/ament_index/resource_index/packages\n'}
+[11.627938] (connect4_manip) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_manip/share/connect4_manip\n'}
+[11.628069] (connect4_manip) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.629293] (connect4_game) StdoutLine: {'line': b'Copying ../../build/connect4_game/connect4_game.egg-info to /home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages/connect4_game-0.0.0-py3.10.egg-info\n'}
+[11.630166] (connect4_game) StdoutLine: {'line': b'running install_scripts\n'}
+[11.637939] (connect4_perception) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception\n'}
+[11.638143] (connect4_perception) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception/__init__.py -> /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception\n'}
+[11.638278] (connect4_perception) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception/py.typed -> /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception\n'}
+[11.638407] (connect4_perception) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_perception/build/lib/connect4_perception/board_perception_node.py -> /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception\n'}
+[11.638781] (connect4_perception) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception/__init__.py to __init__.cpython-310.pyc\n'}
+[11.638934] (connect4_perception) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception/board_perception_node.py to board_perception_node.cpython-310.pyc\n'}
+[11.639859] (connect4_perception) StdoutLine: {'line': b'running install_data\n'}
+[11.640146] (connect4_perception) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_perception/share/ament_index/resource_index/packages\n'}
+[11.640499] (connect4_perception) StdoutLine: {'line': b'copying resource/connect4_perception -> /home/hrilab/connect4_ros/install/connect4_perception/share/ament_index/resource_index/packages\n'}
+[11.640716] (connect4_perception) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_perception/share/connect4_perception\n'}
+[11.640862] (connect4_perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.642447] (-) TimerEvent: {}
+[11.653872] (connect4_turtlebotnav) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav\n'}
+[11.654206] (connect4_turtlebotnav) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/__init__.py -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav\n'}
+[11.654358] (connect4_turtlebotnav) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/py.typed -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav\n'}
+[11.654497] (connect4_turtlebotnav) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav\n'}
+[11.654637] (connect4_manip) StdoutLine: {'line': b'Copying ../../build/connect4_manip/connect4_manip.egg-info to /home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages/connect4_manip-0.0.0-py3.10.egg-info\n'}
+[11.654945] (connect4_turtlebotnav) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav/__init__.py to __init__.cpython-310.pyc\n'}
+[11.655088] (connect4_turtlebotnav) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav/block_delivery_node.py to block_delivery_node.cpython-310.pyc\n'}
+[11.655679] (connect4_manip) StdoutLine: {'line': b'running install_scripts\n'}
+[11.656088] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_data\n'}
+[11.656465] (connect4_turtlebotnav) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages\n'}
+[11.656598] (connect4_turtlebotnav) StdoutLine: {'line': b'copying resource/connect4_turtlebotnav -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages\n'}
+[11.656732] (connect4_turtlebotnav) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav\n'}
+[11.656871] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.666856] (connect4_perception) StdoutLine: {'line': b'Copying ../../build/connect4_perception/connect4_perception.egg-info to /home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages/connect4_perception-0.0.0-py3.10.egg-info\n'}
+[11.667740] (connect4_perception) StdoutLine: {'line': b'running install_scripts\n'}
+[11.683606] (connect4_turtlebotnav) StdoutLine: {'line': b'Copying ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav-0.0.0-py3.10.egg-info\n'}
+[11.684527] (connect4_turtlebotnav) StdoutLine: {'line': b'running install_scripts\n'}
+[11.742594] (-) TimerEvent: {}
+[11.814155] (connect4_game) StdoutLine: {'line': b'Installing referee_node script to /home/hrilab/connect4_ros/install/connect4_game/lib/connect4_game\n'}
+[11.814696] (connect4_game) StdoutLine: {'line': b'Installing test_actions_node script to /home/hrilab/connect4_ros/install/connect4_game/lib/connect4_game\n'}
+[11.814912] (connect4_game) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_game/install.log'\n"}
+[11.842745] (-) TimerEvent: {}
+[11.844843] (connect4_game) CommandEnded: {'returncode': 0}
+[11.865662] (connect4_game) JobEnded: {'identifier': 'connect4_game', 'rc': 0}
+[11.866510] (connect4_manip) StdoutLine: {'line': b'Installing arm_manip_node script to /home/hrilab/connect4_ros/install/connect4_manip/lib/connect4_manip\n'}
+[11.866660] (connect4_manip) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_manip/install.log'\n"}
+[11.866769] (connect4_perception) StdoutLine: {'line': b'Installing board_perception_node script to /home/hrilab/connect4_ros/install/connect4_perception/lib/connect4_perception\n'}
+[11.866911] (connect4_perception) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_perception/install.log'\n"}
+[11.883709] (connect4_manip) CommandEnded: {'returncode': 0}
+[11.897524] (connect4_manip) JobEnded: {'identifier': 'connect4_manip', 'rc': 0}
+[11.899351] (connect4_turtlebotnav) StdoutLine: {'line': b'Installing block_delivery_node script to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/connect4_turtlebotnav\n'}
+[11.899531] (connect4_turtlebotnav) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log'\n"}
+[11.899710] (connect4_perception) CommandEnded: {'returncode': 0}
+[11.909157] (connect4_perception) JobEnded: {'identifier': 'connect4_perception', 'rc': 0}
+[11.916906] (connect4_turtlebotnav) CommandEnded: {'returncode': 0}
+[11.926042] (connect4_turtlebotnav) JobEnded: {'identifier': 'connect4_turtlebotnav', 'rc': 0}
+[11.927276] (connect4_launch) JobStarted: {'identifier': 'connect4_launch'}
+[11.942985] (-) TimerEvent: {}
+[12.043224] (-) TimerEvent: {}
+[12.143413] (-) TimerEvent: {}
+[12.243616] (-) TimerEvent: {}
+[12.343844] (-) TimerEvent: {}
+[12.444042] (-) TimerEvent: {}
+[12.544235] (-) TimerEvent: {}
+[12.644430] (-) TimerEvent: {}
+[12.744621] (-) TimerEvent: {}
+[12.844814] (-) TimerEvent: {}
+[12.922258] (connect4_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/connect4_launch', 'build', '--build-base', '/home/hrilab/connect4_ros/build/connect4_launch/build', 'install', '--record', '/home/hrilab/connect4_ros/build/connect4_launch/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hrilab/connect4_ros/src/connect4_launch', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hrilab', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'hrilab', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.2.114', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/hrilab', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/hrilab/connect4_ros', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-f5050ef2-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1838', 'SYSTEMD_EXEC_PID': '2098', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CONDA_ROOT': '/home/hrilab/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '729030', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'hrilab', 'JOURNAL_STREAM': '8:17219', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hrilab', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/humble/bin:/usr/bin:/usr/local/bin:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.local/bin:/home/hrilab/.local/bin:/home/hrilab/propershopper:/home/hrilab/.local/lib/python3.10/site-packages:/home/hrilab/.cargo/bin:/home/hrilab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:', 'SESSION_MANAGER': 'local/gen2beta:@/tmp/.ICE-unix/2074,unix/gen2beta:/tmp/.ICE-unix/2074', 'INVOCATION_ID': '398f752ff14542f78c8898d6f089dad2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_turtlebotnav:/home/hrilab/connect4_ros/install/connect4_perception:/home/hrilab/connect4_ros/install/connect4_manip:/home/hrilab/connect4_ros/install/connect4_game:/home/hrilab/connect4_ros/install/connect4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VIRTUAL_ENV': '/home/hrilab/miniconda3', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hrilab/connect4_ros/build/connect4_launch', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/hrilab/miniconda3/bin/conda', 'VSCODE_CODE_CACHE_PATH': '/home/hrilab/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/hrilab/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/home/hrilab/connect4_ros/build/connect4_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_perception/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_manip/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_game/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VSCODE_PID': '729030', 'CMAKE_PREFIX_PATH': '/home/hrilab/connect4_ros/install/connect4_msgs'}, 'shell': False}
+[12.944928] (-) TimerEvent: {}
+[13.045170] (-) TimerEvent: {}
+[13.145414] (-) TimerEvent: {}
+[13.245683] (-) TimerEvent: {}
+[13.266496] (connect4_launch) StdoutLine: {'line': b'running egg_info\n'}
+[13.290849] (connect4_launch) StdoutLine: {'line': b'creating ../../build/connect4_launch/connect4_launch.egg-info\n'}
+[13.291155] (connect4_launch) StdoutLine: {'line': b'writing ../../build/connect4_launch/connect4_launch.egg-info/PKG-INFO\n'}
+[13.291600] (connect4_launch) StdoutLine: {'line': b'writing dependency_links to ../../build/connect4_launch/connect4_launch.egg-info/dependency_links.txt\n'}
+[13.292032] (connect4_launch) StdoutLine: {'line': b'writing requirements to ../../build/connect4_launch/connect4_launch.egg-info/requires.txt\n'}
+[13.292328] (connect4_launch) StdoutLine: {'line': b'writing top-level names to ../../build/connect4_launch/connect4_launch.egg-info/top_level.txt\n'}
+[13.292481] (connect4_launch) StdoutLine: {'line': b"writing manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'\n"}
+[13.343880] (connect4_launch) StdoutLine: {'line': b"reading manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'\n"}
+[13.345227] (connect4_launch) StdoutLine: {'line': b"writing manifest file '../../build/connect4_launch/connect4_launch.egg-info/SOURCES.txt'\n"}
+[13.345707] (-) TimerEvent: {}
+[13.345765] (connect4_launch) StdoutLine: {'line': b'running build\n'}
+[13.346246] (connect4_launch) StdoutLine: {'line': b'running build_py\n'}
+[13.346422] (connect4_launch) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/build/connect4_launch/build/lib/connect4_launch\n'}
+[13.346576] (connect4_launch) StdoutLine: {'line': b'copying connect4_launch/__init__.py -> /home/hrilab/connect4_ros/build/connect4_launch/build/lib/connect4_launch\n'}
+[13.346724] (connect4_launch) StdoutLine: {'line': b'copying connect4_launch/py.typed -> /home/hrilab/connect4_ros/build/connect4_launch/build/lib/connect4_launch\n'}
+[13.346897] (connect4_launch) StdoutLine: {'line': b'running install\n'}
+[13.351438] (connect4_launch) StdoutLine: {'line': b'running install_lib\n'}
+[13.376776] (connect4_launch) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages/connect4_launch\n'}
+[13.377112] (connect4_launch) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_launch/build/lib/connect4_launch/__init__.py -> /home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages/connect4_launch\n'}
+[13.377289] (connect4_launch) StdoutLine: {'line': b'copying /home/hrilab/connect4_ros/build/connect4_launch/build/lib/connect4_launch/py.typed -> /home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages/connect4_launch\n'}
+[13.377748] (connect4_launch) StdoutLine: {'line': b'byte-compiling /home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages/connect4_launch/__init__.py to __init__.cpython-310.pyc\n'}
+[13.378392] (connect4_launch) StdoutLine: {'line': b'running install_data\n'}
+[13.379128] (connect4_launch) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_launch/share/ament_index/resource_index/packages\n'}
+[13.379452] (connect4_launch) StdoutLine: {'line': b'copying resource/connect4_launch -> /home/hrilab/connect4_ros/install/connect4_launch/share/ament_index/resource_index/packages\n'}
+[13.379762] (connect4_launch) StdoutLine: {'line': b'copying package.xml -> /home/hrilab/connect4_ros/install/connect4_launch/share/connect4_launch\n'}
+[13.380124] (connect4_launch) StdoutLine: {'line': b'creating /home/hrilab/connect4_ros/install/connect4_launch/share/connect4_launch/launch\n'}
+[13.380458] (connect4_launch) StdoutLine: {'line': b'copying launch/connect4_test.launch.py -> /home/hrilab/connect4_ros/install/connect4_launch/share/connect4_launch/launch\n'}
+[13.380758] (connect4_launch) StdoutLine: {'line': b'copying launch/connect4_launch.launch.py -> /home/hrilab/connect4_ros/install/connect4_launch/share/connect4_launch/launch\n'}
+[13.380991] (connect4_launch) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.407132] (connect4_launch) StdoutLine: {'line': b'Copying ../../build/connect4_launch/connect4_launch.egg-info to /home/hrilab/connect4_ros/install/connect4_launch/lib/python3.10/site-packages/connect4_launch-0.0.0-py3.10.egg-info\n'}
+[13.407977] (connect4_launch) StdoutLine: {'line': b'running install_scripts\n'}
+[13.445880] (-) TimerEvent: {}
+[13.546153] (-) TimerEvent: {}
+[13.605241] (connect4_launch) StdoutLine: {'line': b"writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_launch/install.log'\n"}
+[13.633082] (connect4_launch) CommandEnded: {'returncode': 0}
+[13.646291] (-) TimerEvent: {}
+[13.650469] (connect4_launch) JobEnded: {'identifier': 'connect4_launch', 'rc': 0}
+[13.651696] (-) EventReactorShutdown: {}

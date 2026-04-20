@@ -9,11 +9,8 @@ from geometry_msgs.msg import Pose, PoseStamped
 from connect4_msgs.action import ResetBoard
 from connect4_msgs.msg import BoardState
 
-try:
-    from moveit.planning import MoveItPy
-    MOVEIT_AVAILABLE = True
-except ImportError:
-    MOVEIT_AVAILABLE = False
+from moveit.planning import MoveItPy
+
 
 try:
     from control_msgs.action import GripperCommand
@@ -63,28 +60,17 @@ class ArmManipNode(Node):
             callback_group=cb_group,
         )
 
-        if MOVEIT_AVAILABLE:
-            self.moveit = MoveItPy(node_name='arm_manip_moveit')
-            self.arm = self.moveit.get_planning_component(ARM_GROUP)
-            self.get_logger().info('MoveItPy initialized with group "%s"' % ARM_GROUP)
-        else:
-            self.moveit = None
-            self.arm = None
-            self.get_logger().warn('moveit_py not found — running in stub mode')
+        self.moveit = MoveItPy(node_name='arm_manip_moveit')
+        self.arm = self.moveit.get_planning_component(ARM_GROUP)
+        self.get_logger().info('MoveItPy initialized with group "%s"' % ARM_GROUP)
 
-        if GRIPPER_AVAILABLE:
-            self.gripper_client = ActionClient(
-                self, GripperCommand, GRIPPER_ACTION, callback_group=cb_group
-            )
-        else:
-            self.gripper_client = None
-            self.get_logger().warn('control_msgs not found — gripper in stub mode')
+        self.gripper_client = ActionClient(
+            self, GripperCommand, GRIPPER_ACTION, callback_group=cb_group
+        )
 
         self.get_logger().info('ArmManipNode started')
 
-    # ------------------------------------------------------------------ #
-    # Action server                                                        #
-    # ------------------------------------------------------------------ #
+    # Action server                                                        
 
     def execute_reset_board(self, goal_handle):
         self.get_logger().info('Executing ResetBoard action')
@@ -115,10 +101,6 @@ class ArmManipNode(Node):
         self.get_logger().info(result.message)
         return result
 
-    # ------------------------------------------------------------------ #
-    # Board helpers                                                        #
-    # ------------------------------------------------------------------ #
-
     def get_occupied_cells(self, board_state: BoardState):
         return [(i, v) for i, v in enumerate(board_state.cells) if v != 0]
 
@@ -129,7 +111,6 @@ class ArmManipNode(Node):
         pose.position.x = BOARD_ORIGIN_X + col * CELL_SIZE
         pose.position.y = BOARD_ORIGIN_Y + row * CELL_SIZE
         pose.position.z = BOARD_Z
-        # End-effector pointing straight down (180-deg rotation around x)
         pose.orientation.x = 1.0
         pose.orientation.y = 0.0
         pose.orientation.z = 0.0
@@ -148,9 +129,7 @@ class ArmManipNode(Node):
         pose.orientation.w = 0.0
         return pose
 
-    # ------------------------------------------------------------------ #
-    # Motion primitives                                                    #
-    # ------------------------------------------------------------------ #
+
 
     def move_to_approach(self, target_pose: Pose):
         """Move to a hover point directly above the target before descending."""
@@ -163,12 +142,6 @@ class ArmManipNode(Node):
 
     def move_to_pose(self, pose: Pose):
         """Plan and execute a Cartesian motion to pose via MoveIt!."""
-        if self.arm is None:
-            self.get_logger().info(
-                '[STUB] move_to_pose (%.3f, %.3f, %.3f)' % (
-                    pose.position.x, pose.position.y, pose.position.z)
-            )
-            return
 
         ps = PoseStamped()
         ps.header.frame_id = BASE_FRAME

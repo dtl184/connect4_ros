@@ -9,23 +9,11 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-#include "connect4_msgs/action/detail/deliver_block__struct.h"
-#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_Goal(
-  const connect4_msgs__action__DeliverBlock_Goal * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_Goal(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_Goal * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Goal(
@@ -34,22 +22,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Goal(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_Goal(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_Goal(
-  const connect4_msgs__action__DeliverBlock_Goal * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_Goal(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_Goal(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -70,25 +42,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_Result(
-  const connect4_msgs__action__DeliverBlock_Result * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_Result(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_Result * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Result(
@@ -97,22 +55,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Result(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_Result(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_Result(
-  const connect4_msgs__action__DeliverBlock_Result * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_Result(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_Result(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -133,25 +75,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_Feedback(
-  const connect4_msgs__action__DeliverBlock_Feedback * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_Feedback(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_Feedback * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Feedback(
@@ -160,22 +88,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_Feedback(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_Feedback(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_Feedback(
-  const connect4_msgs__action__DeliverBlock_Feedback * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_Feedback(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_Feedback(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -196,25 +108,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_SendGoal_Request(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_SendGoal_Request(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_SendGoal_Request * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Request(
@@ -223,22 +121,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Request(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Request(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_SendGoal_Request(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Request(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Request(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -259,25 +141,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_SendGoal_Response(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_SendGoal_Response(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_SendGoal_Response * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Response(
@@ -291,87 +159,8 @@ size_t max_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Response
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_SendGoal_Response(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Response(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Response(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, connect4_msgs, action, DeliverBlock_SendGoal_Response)();
-
-#ifdef __cplusplus
-}
-#endif
-
-// already included above
-// #include <stddef.h>
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_typesupport_interface/macros.h"
-// already included above
-// #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_SendGoal_Event * ros_message);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  const connect4_msgs__action__DeliverBlock_SendGoal_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_SendGoal_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, connect4_msgs, action, DeliverBlock_SendGoal_Event)();
 
 #ifdef __cplusplus
 }
@@ -404,25 +193,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_GetResult_Request(
-  const connect4_msgs__action__DeliverBlock_GetResult_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_GetResult_Request(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_GetResult_Request * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Request(
@@ -431,22 +206,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Request
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Request(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_GetResult_Request(
-  const connect4_msgs__action__DeliverBlock_GetResult_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Request(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Request(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -467,25 +226,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_GetResult_Response(
-  const connect4_msgs__action__DeliverBlock_GetResult_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_GetResult_Response(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_GetResult_Response * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Response(
@@ -499,87 +244,8 @@ size_t max_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Respons
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_GetResult_Response(
-  const connect4_msgs__action__DeliverBlock_GetResult_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Response(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Response(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, connect4_msgs, action, DeliverBlock_GetResult_Response)();
-
-#ifdef __cplusplus
-}
-#endif
-
-// already included above
-// #include <stddef.h>
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_typesupport_interface/macros.h"
-// already included above
-// #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  const connect4_msgs__action__DeliverBlock_GetResult_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_GetResult_Event * ros_message);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  const connect4_msgs__action__DeliverBlock_GetResult_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_GetResult_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, connect4_msgs, action, DeliverBlock_GetResult_Event)();
 
 #ifdef __cplusplus
 }
@@ -613,25 +279,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "connect4_msgs/action/detail/deliver_block__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__action__DeliverBlock_FeedbackMessage(
-  const connect4_msgs__action__DeliverBlock_FeedbackMessage * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__action__DeliverBlock_FeedbackMessage(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__action__DeliverBlock_FeedbackMessage * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__action__DeliverBlock_FeedbackMessage(
@@ -640,22 +292,6 @@ size_t get_serialized_size_connect4_msgs__action__DeliverBlock_FeedbackMessage(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__action__DeliverBlock_FeedbackMessage(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__action__DeliverBlock_FeedbackMessage(
-  const connect4_msgs__action__DeliverBlock_FeedbackMessage * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__action__DeliverBlock_FeedbackMessage(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__action__DeliverBlock_FeedbackMessage(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

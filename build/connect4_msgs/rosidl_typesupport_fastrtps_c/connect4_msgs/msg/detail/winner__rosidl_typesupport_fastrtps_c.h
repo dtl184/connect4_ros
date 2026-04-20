@@ -9,23 +9,11 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-#include "connect4_msgs/msg/detail/winner__struct.h"
-#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_connect4_msgs__msg__Winner(
-  const connect4_msgs__msg__Winner * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_deserialize_connect4_msgs__msg__Winner(
-  eprosima::fastcdr::Cdr &,
-  connect4_msgs__msg__Winner * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t get_serialized_size_connect4_msgs__msg__Winner(
@@ -34,22 +22,6 @@ size_t get_serialized_size_connect4_msgs__msg__Winner(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
 size_t max_serialized_size_connect4_msgs__msg__Winner(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-bool cdr_serialize_key_connect4_msgs__msg__Winner(
-  const connect4_msgs__msg__Winner * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t get_serialized_size_key_connect4_msgs__msg__Winner(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_connect4_msgs
-size_t max_serialized_size_key_connect4_msgs__msg__Winner(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

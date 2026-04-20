@@ -5,7 +5,6 @@
 #ifndef CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define CONNECT4_MSGS__MSG__DETAIL__BOARD_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
-#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "connect4_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -55,25 +54,6 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_connect4_msgs
 max_serialized_size_BoardState(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_connect4_msgs
-cdr_serialize_key(
-  const connect4_msgs::msg::BoardState & ros_message,
-  eprosima::fastcdr::Cdr &);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_connect4_msgs
-get_serialized_size_key(
-  const connect4_msgs::msg::BoardState & ros_message,
-  size_t current_alignment);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_connect4_msgs
-max_serialized_size_key_BoardState(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

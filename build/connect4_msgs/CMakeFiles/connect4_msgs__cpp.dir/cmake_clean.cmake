@@ -19,7 +19,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/connect4_msgs/msg/detail/winner__struct.hpp"
   "rosidl_generator_cpp/connect4_msgs/msg/detail/winner__traits.hpp"
   "rosidl_generator_cpp/connect4_msgs/msg/detail/winner__type_support.hpp"
-  "rosidl_generator_cpp/connect4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/connect4_msgs/msg/winner.hpp"
 )
 

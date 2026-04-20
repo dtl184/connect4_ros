@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5ce587c278b5808fe76d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "connect4_msgs__py",
+					"jsonFile" : "directory-connect4_msgs__py-18ef59ed486192891667.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hrilab/connect4_ros/build/connect4_msgs/connect4_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "connect4_msgs__rs",
+					"jsonFile" : "directory-connect4_msgs__rs-ed7e6fcd3deefcca6bce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hrilab/connect4_ros/build/connect4_msgs/connect4_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "connect4_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_connect4_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_connect4_msgs_egg-4103209b5e7e17a61a8f.json",
+					"name" : "ament_cmake_python_build_connect4_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_connect4_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_connect4_msgs-dc905380688e73a091ce.json",
+					"name" : "ament_cmake_python_copy_connect4_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs-0c6e88e244a2e3940a16.json",
+					"name" : "connect4_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__cpp-536b4221a29e0cfd3080.json",
+					"name" : "connect4_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "connect4_msgs__py::@6776b48f5aad21e59270",
+					"jsonFile" : "target-connect4_msgs__py-d2f10e2599e696a26248.json",
+					"name" : "connect4_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_generator_c-6d7818493f058bbb579f.json",
+					"name" : "connect4_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_generator_py-6e95e81c472a939607d0.json",
+					"name" : "connect4_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_c-a0f2a4beef06b153a8b0.json",
+					"name" : "connect4_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_c__pyext-1d9cae3ff4d225e2782b.json",
+					"name" : "connect4_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_cpp-d324ee7ba31757acf628.json",
+					"name" : "connect4_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_fastrtps_c-6e82d6e252f128797b5b.json",
+					"name" : "connect4_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_fastrtps_c__pyext-656c27dabae7184706ef.json",
+					"name" : "connect4_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_fastrtps_cpp-e02593461828acfca22e.json",
+					"name" : "connect4_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_introspection_c-c1fb26d53abfe284ae7e.json",
+					"name" : "connect4_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_introspection_c__pyext-5fddbe80bc7792cb6bcc.json",
+					"name" : "connect4_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs__rosidl_typesupport_introspection_cpp-3d8ae14ad787ead153bc.json",
+					"name" : "connect4_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "connect4_msgs__rs::@d8468d6edf90fcff45f4",
+					"jsonFile" : "target-connect4_msgs__rs-b3d8f9c43600a9bde499.json",
+					"name" : "connect4_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "connect4_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-connect4_msgs_uninstall-31480335a2661ff30ac3.json",
+					"name" : "connect4_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ce121db283f6e004e91e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hrilab/connect4_ros/build/connect4_msgs",
+		"source" : "/home/hrilab/connect4_ros/src/connect4_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

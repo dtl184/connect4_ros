@@ -72,7 +72,7 @@ connect4_msgs__msg__BoardState__copy(
 }
 
 connect4_msgs__msg__BoardState *
-connect4_msgs__msg__BoardState__create(void)
+connect4_msgs__msg__BoardState__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   connect4_msgs__msg__BoardState * msg = (connect4_msgs__msg__BoardState *)allocator.allocate(sizeof(connect4_msgs__msg__BoardState), allocator.state);

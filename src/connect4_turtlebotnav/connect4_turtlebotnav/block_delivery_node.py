@@ -3,7 +3,7 @@ import time
 
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer
+from rclpy.action import ActionServer, ActionClient
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 
@@ -41,12 +41,11 @@ class BlockDeliveryNode(Node):
 
         self.navigator = BasicNavigator()
         self.nav2_ready = False
+        self.nav2_available = None   # None = not yet checked
 
         self.get_logger().info('BlockDeliveryNode started')
 
-    # ------------------------------------------------------------------ #
-    # Action server                                                        #
-    # ------------------------------------------------------------------ #
+    # Action server                                                        
 
     def execute_deliver_block(self, goal_handle):
         player = goal_handle.request.player
@@ -58,8 +57,6 @@ class BlockDeliveryNode(Node):
             result.success = False
             result.message = 'Unknown player %d' % player
             return result
-
-        self._ensure_nav2_ready()
 
         goal_pose = self._make_pose(*PLAYER_DELIVERY_POSES[player])
         self.get_logger().info(
@@ -96,16 +93,6 @@ class BlockDeliveryNode(Node):
 
         return result
 
-    # ------------------------------------------------------------------ #
-    # Helpers                                                              #
-    # ------------------------------------------------------------------ #
-
-    def _ensure_nav2_ready(self):
-        if not self.nav2_ready:
-            self.get_logger().info('Waiting for Nav2 to become active...')
-            self.navigator.waitUntilNav2Active()
-            self.nav2_ready = True
-            self.get_logger().info('Nav2 is active')
 
     def _make_pose(self, x: float, y: float, yaw: float) -> PoseStamped:
         pose = PoseStamped()

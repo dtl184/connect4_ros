@@ -1,9 +1,9 @@
 {
   "package_name": "connect4_msgs",
   "non_idl_tuples": [
-    "/home/danie/connect4_ros/src/connect4_msgs:msg/BoardState.msg",
-    "/home/danie/connect4_ros/src/connect4_msgs:msg/Winner.msg",
-    "/home/danie/connect4_ros/src/connect4_msgs:action/DeliverBlock.action",
-    "/home/danie/connect4_ros/src/connect4_msgs:action/ResetBoard.action"
+    "/home/hrilab/connect4_ros/src/connect4_msgs:msg/BoardState.msg",
+    "/home/hrilab/connect4_ros/src/connect4_msgs:msg/Winner.msg",
+    "/home/hrilab/connect4_ros/src/connect4_msgs:action/DeliverBlock.action",
+    "/home/hrilab/connect4_ros/src/connect4_msgs:action/ResetBoard.action"
   ]
 }

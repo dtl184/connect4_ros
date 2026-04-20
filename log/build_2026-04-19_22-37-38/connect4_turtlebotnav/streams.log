@@ -1,0 +1,35 @@
+[1.967s] Invoking command in '/home/hrilab/connect4_ros/src/connect4_turtlebotnav': AMENT_PREFIX_PATH=/home/hrilab/connect4_ros/install/connect4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hrilab/connect4_ros/install/connect4_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/hrilab/connect4_ros/install/connect4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hrilab/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build install --record /home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data
+[2.346s] running egg_info
+[2.374s] creating ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info
+[2.374s] writing ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/PKG-INFO
+[2.375s] writing dependency_links to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/dependency_links.txt
+[2.375s] writing entry points to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/entry_points.txt
+[2.375s] writing requirements to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/requires.txt
+[2.376s] writing top-level names to ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/top_level.txt
+[2.376s] writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[2.429s] reading manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[2.430s] writing manifest file '../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info/SOURCES.txt'
+[2.431s] running build
+[2.431s] running build_py
+[2.431s] creating /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[2.431s] copying connect4_turtlebotnav/__init__.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[2.431s] copying connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[2.431s] copying connect4_turtlebotnav/py.typed -> /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav
+[2.432s] running install
+[2.437s] running install_lib
+[2.463s] creating /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav
+[2.463s] copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/__init__.py -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav
+[2.463s] copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/py.typed -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav
+[2.463s] copying /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build/lib/connect4_turtlebotnav/block_delivery_node.py -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav
+[2.464s] byte-compiling /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav/__init__.py to __init__.cpython-310.pyc
+[2.464s] byte-compiling /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav/block_delivery_node.py to block_delivery_node.cpython-310.pyc
+[2.465s] running install_data
+[2.465s] creating /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages
+[2.466s] copying resource/connect4_turtlebotnav -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/ament_index/resource_index/packages
+[2.466s] copying package.xml -> /home/hrilab/connect4_ros/install/connect4_turtlebotnav/share/connect4_turtlebotnav
+[2.466s] running install_egg_info
+[2.493s] Copying ../../build/connect4_turtlebotnav/connect4_turtlebotnav.egg-info to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages/connect4_turtlebotnav-0.0.0-py3.10.egg-info
+[2.494s] running install_scripts
+[2.708s] Installing block_delivery_node script to /home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/connect4_turtlebotnav
+[2.709s] writing list of installed files to '/home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log'
+[2.726s] Invoked command in '/home/hrilab/connect4_ros/src/connect4_turtlebotnav' returned '0': AMENT_PREFIX_PATH=/home/hrilab/connect4_ros/install/connect4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hrilab/connect4_ros/install/connect4_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/hrilab/connect4_ros/install/connect4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hrilab/connect4_ros/build/connect4_turtlebotnav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hrilab/connect4_ros/install/connect4_turtlebotnav/lib/python3.10/site-packages:/home/hrilab/connect4_ros/install/connect4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/connect4_turtlebotnav build --build-base /home/hrilab/connect4_ros/build/connect4_turtlebotnav/build install --record /home/hrilab/connect4_ros/build/connect4_turtlebotnav/install.log --single-version-externally-managed install_data

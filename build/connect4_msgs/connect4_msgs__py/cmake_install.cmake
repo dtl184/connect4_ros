@@ -1,8 +1,8 @@
-# Install script for directory: /home/danie/connect4_ros/build/connect4_msgs/connect4_msgs__py
+# Install script for directory: /home/hrilab/connect4_ros/build/connect4_msgs/connect4_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/danie/connect4_ros/install/connect4_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/hrilab/connect4_ros/install/connect4_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

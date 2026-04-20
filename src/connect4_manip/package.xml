@@ -11,7 +11,6 @@
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>connect4_msgs</depend>
-  <depend>moveit_py</depend>
   <depend>moveit_msgs</depend>
   <depend>control_msgs</depend>
   <depend>shape_msgs</depend>
