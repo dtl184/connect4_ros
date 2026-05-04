@@ -1,0 +1,11 @@
+# Goal
+# Empty goal: server uses latest /detected_block_pose and hardcoded drop pose
+
+---
+# Result
+bool success
+string message
+
+---
+# Feedback
+string status

@@ -25,6 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': ['board_perception_node = connect4_perception.board_perception_node:main',
+        'block_pose_detector_node = connect4_perception.block_pose_detector_node:main',
         ],
     },
 )

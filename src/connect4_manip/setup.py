@@ -26,6 +26,8 @@ setup(
     entry_points={
         "console_scripts": [
             "arm_manip_node = connect4_manip.arm_manip_node:main",
+            'pick_and_drop_action_server = connect4_manip.pick_and_drop_action_server:main',
+            'reset_board_action_server = connect4_manip.reset_board_action_server:main',
         ],
     },
 )

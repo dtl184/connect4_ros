@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "demo_driver_node = connect4_game.demo_driver_node:main",
+            'tic_tac_toe_node = connect4_game.tic_tac_toe_node:main',
             "referee_node = connect4_game.referee_node:main",
         ],
     },

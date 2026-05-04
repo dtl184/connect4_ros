@@ -3,6 +3,8 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
+from std_msgs.msg import String
+import time
 
 from geometry_msgs.msg import PoseStamped
 from moveit_msgs.action import MoveGroup
@@ -14,6 +16,8 @@ class MoveItPoseClient(Node):
 
         self.client = ActionClient(self, MoveGroup, '/move_action')
 
+        self.script_pub = self.create_publisher(String, "/urscript_interface/script_command", 10)
+
     def send_goal(self):
         self.get_logger().info("Waiting for MoveIt action server...")
         self.client.wait_for_server()
@@ -22,17 +26,22 @@ class MoveItPoseClient(Node):
 
         # ---- YOUR POSE ----
         pose = PoseStamped()
-        pose.header.frame_id = "base_link"
+        pose.header.frame_id = "base"
 
         pose.pose.position.x = -0.07939464487979704
         pose.pose.position.y = -0.4872288619907205
         pose.pose.position.z = 0.08506966228172184
 
+        pose.pose.position.x += 0.01
+        pose.pose.position.y += 0.03
+
         # Quaternion from your RX,RY,RZ
-        pose.pose.orientation.x = -0.001442144508047713
-        pose.pose.orientation.y = 0.9980593980439965
-        pose.pose.orientation.z = 0.04763367301103559
-        pose.pose.orientation.w = 0.040079812758435356
+
+
+        pose.pose.orientation.x = -0.012
+        pose.pose.orientation.y = 1.000
+        pose.pose.orientation.z = 0.021
+        pose.pose.orientation.w = 0.014
 
         # ---- Constraints ----
         goal.request.group_name = "ur_manipulator"
@@ -93,6 +102,8 @@ class MoveItPoseClient(Node):
         constraints.orientation_constraints.append(oc)
 
         return constraints
+
+
 
 
 def main():
