@@ -1,0 +1,9 @@
+# connect4_msgs/action/PickAndPlace.action
+
+geometry_msgs/PoseStamped pickup_pose
+geometry_msgs/PoseStamped place_pose
+---
+bool success
+string message
+---
+string status

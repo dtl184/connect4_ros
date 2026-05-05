@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/DeliverBlock.action"
   "action/ResetBoard.action"
   "action/PickAndDrop.action"
+  "action/PickAndPlace.action"
   "msg/DetectedBlock.msg"
   "msg/DetectedBlockArray.msg"
   DEPENDENCIES builtin_interfaces action_msgs geometry_msgs
