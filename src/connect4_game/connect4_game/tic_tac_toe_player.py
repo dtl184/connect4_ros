@@ -9,7 +9,7 @@ from rclpy.action import ActionClient
 
 from geometry_msgs.msg import PoseStamped
 from connect4_msgs.msg import DetectedBlockArray
-from connect4_msgs.action import PickAndPlace
+from connect4_msgs.action import PickAndPlace, ResetBoard
 
 
 EMPTY = 0
@@ -26,6 +26,7 @@ class TicTacToeRobotNode(Node):
 
         self.block_topic = "/connect4/detected_block_poses"
         self.pick_and_place_action_name = "/connect4/pick_and_place"
+        self.reset_action_name = "/connect4/reset_board"
 
         self.x_row_split_1 = 0.075
         self.x_row_split_2 = 0.145
@@ -41,30 +42,25 @@ class TicTacToeRobotNode(Node):
 
         self.robot_busy = False
         self.game_over = False
+        self.reset_sent = False
 
         self.next_supply_index = 0
         self.pending_robot_square = None
 
-        # These are XY hover poses. The action server controls Z.
         self.robot_supply_poses = [
             self.make_pose(-0.173, -0.250, 0.040),
             self.make_pose(-0.111, -0.250, 0.040),
             self.make_pose(-0.030, -0.250, 0.040),
-            self.make_pose(0.053, -0.250, 0.040),
+            self.make_pose(0.033, -0.250, 0.040),
         ]
 
-        #   0 | 1 | 2
-        #   3 | 4 | 5
-        #   6 | 7 | 8
         self.board_place_poses = {
             0: self.make_pose(-0.104, -0.481, 0.040),
             1: self.make_pose(-0.106, -0.428, 0.040),
             2: self.make_pose(-0.106, -0.366, 0.040),
-
             3: self.make_pose(-0.047, -0.489, 0.040),
             4: self.make_pose(-0.056, -0.435, 0.040),
             5: self.make_pose(-0.055, -0.372, 0.040),
-
             6: self.make_pose(-0.001, -0.491, 0.040),
             7: self.make_pose(0.009, -0.426, 0.040),
             8: self.make_pose(-0.005, -0.375, 0.040),
@@ -74,6 +70,12 @@ class TicTacToeRobotNode(Node):
             self,
             PickAndPlace,
             self.pick_and_place_action_name,
+        )
+
+        self.reset_client = ActionClient(
+            self,
+            ResetBoard,
+            self.reset_action_name,
         )
 
         self.sub = self.create_subscription(
@@ -87,6 +89,7 @@ class TicTacToeRobotNode(Node):
         self.get_logger().info(f"Robot is player {ROBOT}")
         self.get_logger().info(f"Listening on {self.block_topic}")
         self.get_logger().info(f"Pick/place action: {self.pick_and_place_action_name}")
+        self.get_logger().info(f"Reset action: {self.reset_action_name}")
 
     def make_pose(self, x: float, y: float, z: float) -> PoseStamped:
         pose = PoseStamped()
@@ -125,7 +128,7 @@ class TicTacToeRobotNode(Node):
         return row, col
 
     def blocks_callback(self, msg: DetectedBlockArray):
-        if self.robot_busy or self.game_over:
+        if self.robot_busy or self.reset_sent:
             return
 
         observed_board = self.build_board_from_blocks(msg)
@@ -147,7 +150,6 @@ class TicTacToeRobotNode(Node):
         self.get_logger().info("Stable board update accepted:")
         self.print_board(self.current_board)
 
-        # First accept the robot's own move after perception sees it.
         if self.pending_robot_square is not None:
             if self.valid_robot_move(
                 self.last_accepted_board,
@@ -157,33 +159,18 @@ class TicTacToeRobotNode(Node):
                 self.get_logger().info(
                     f"Confirmed robot move at square {self.pending_robot_square}"
                 )
+
                 self.last_accepted_board = copy.deepcopy(self.current_board)
                 self.pending_robot_square = None
 
-                winner = self.check_winner(self.current_board)
-                if winner is not None:
-                    self.get_logger().info(f"Game over. Player {winner} won.")
-                    self.game_over = True
-                elif self.is_draw(self.current_board):
-                    self.get_logger().info("Game over. Draw.")
-                    self.game_over = True
+                if self.handle_game_over_if_needed():
+                    return
 
                 return
 
             self.get_logger().warn(
                 "Waiting for perception to confirm robot move. Ignoring update."
             )
-            return
-
-        winner = self.check_winner(self.current_board)
-        if winner is not None:
-            self.get_logger().info(f"Game over. Player {winner} won.")
-            self.game_over = True
-            return
-
-        if self.is_draw(self.current_board):
-            self.get_logger().info("Game over. Draw.")
-            self.game_over = True
             return
 
         if not self.valid_human_move(self.last_accepted_board, self.current_board):
@@ -194,13 +181,35 @@ class TicTacToeRobotNode(Node):
 
         self.last_accepted_board = copy.deepcopy(self.current_board)
 
+        if self.handle_game_over_if_needed():
+            return
+
         robot_square = self.choose_robot_move(self.current_board)
         if robot_square is None:
             self.get_logger().info("No legal robot move available.")
+            self.game_over = True
+            self.send_reset_board()
             return
 
         self.get_logger().info(f"Robot chose square {robot_square}")
         self.send_pick_and_place(robot_square)
+
+    def handle_game_over_if_needed(self) -> bool:
+        winner = self.check_winner(self.current_board)
+
+        if winner is not None:
+            self.get_logger().info(f"Game over. Player {winner} won.")
+            self.game_over = True
+            self.send_reset_board()
+            return True
+
+        if self.is_draw(self.current_board):
+            self.get_logger().info("Game over. Draw.")
+            self.game_over = True
+            self.send_reset_board()
+            return True
+
+        return False
 
     def build_board_from_blocks(self, msg: DetectedBlockArray) -> List[List[int]]:
         board = [[EMPTY for _ in range(3)] for _ in range(3)]
@@ -227,6 +236,62 @@ class TicTacToeRobotNode(Node):
             board[row][col] = player
 
         return board
+
+    def send_reset_board(self):
+        if self.reset_sent:
+            return
+
+        self.reset_sent = True
+        self.robot_busy = True
+
+        if not self.reset_client.wait_for_server(timeout_sec=2.0):
+            self.get_logger().error("ResetBoard action server not available")
+            self.reset_sent = False
+            self.robot_busy = False
+            return
+
+        self.get_logger().info("Sending ResetBoard action")
+
+        goal_msg = ResetBoard.Goal()
+        future = self.reset_client.send_goal_async(goal_msg)
+        future.add_done_callback(self.reset_goal_response_callback)
+
+    def reset_goal_response_callback(self, future):
+        goal_handle = future.result()
+
+        if not goal_handle.accepted:
+            self.get_logger().error("ResetBoard goal rejected")
+            self.reset_sent = False
+            self.robot_busy = False
+            return
+
+        self.get_logger().info("ResetBoard goal accepted")
+
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(self.reset_result_callback)
+
+    def reset_result_callback(self, future):
+        result = future.result().result
+
+        success = getattr(result, "success", True)
+        message = getattr(result, "message", "")
+
+        self.get_logger().info(
+            f"ResetBoard finished: success={success}, message={message}"
+        )
+
+        self.current_board = [[EMPTY for _ in range(3)] for _ in range(3)]
+        self.last_accepted_board = [[EMPTY for _ in range(3)] for _ in range(3)]
+        self.stable_candidate_board = None
+        self.stable_count = 0
+        self.pending_robot_square = None
+        self.next_supply_index = 0
+
+        self.robot_busy = False
+        self.game_over = False
+        self.reset_sent = False
+
+        self.get_logger().info("Ready for next game.")
 
     def valid_human_move(self, old_board, new_board) -> bool:
         human_added = 0
@@ -376,13 +441,14 @@ class TicTacToeRobotNode(Node):
         if self.next_supply_index >= len(self.robot_supply_poses):
             self.get_logger().error("No more hardcoded robot supply poses available.")
             return
-        
-        
 
         pickup_pose = copy.deepcopy(self.robot_supply_poses[self.next_supply_index])
         place_pose = copy.deepcopy(self.board_place_poses[square])
 
-        self.get_logger().info(f'Picking block from location {pickup_pose.pose.position.x}, {pickup_pose.pose.position.y}')
+        self.get_logger().info(
+            f"Picking block from location "
+            f"{pickup_pose.pose.position.x}, {pickup_pose.pose.position.y}"
+        )
 
         now = self.get_clock().now().to_msg()
         pickup_pose.header.stamp = now

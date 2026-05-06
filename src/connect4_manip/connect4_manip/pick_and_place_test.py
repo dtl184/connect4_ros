@@ -10,10 +10,13 @@ from connect4_msgs.action import PickAndPlace
 
 
 class TestPickAndPlace(Node):
-    def __init__(self, square):
+    def __init__(self, square=4, run_all=False):
         super().__init__("test_pick_and_place")
 
         self.square = square
+        self.run_all = run_all
+        self.current_index = 0
+
         self.client = ActionClient(
             self,
             PickAndPlace,
@@ -24,7 +27,7 @@ class TestPickAndPlace(Node):
             self.make_pose(-0.173, -0.250, 0.100),
             self.make_pose(-0.111, -0.250, 0.100),
             self.make_pose(-0.030, -0.250, 0.100),
-            self.make_pose(0.053, -0.250, 0.100),
+            self.make_pose(0.033, -0.250, 0.100),
         ]
 
         self.board_poses = {
@@ -41,7 +44,19 @@ class TestPickAndPlace(Node):
             8: self.make_pose(-0.005, -0.375, 0.100),
         }
 
-        self.send_goal()
+        if self.run_all:
+            self.jobs = [
+                (0, 0),
+                (1, 1),
+                (2, 2),
+                (3, 3),
+            ]
+        else:
+            self.jobs = [
+                (0, self.square),
+            ]
+
+        self.send_next_goal()
 
     def make_pose(self, x, y, z):
         pose = PoseStamped()
@@ -58,9 +73,21 @@ class TestPickAndPlace(Node):
 
         return pose
 
-    def send_goal(self):
-        if self.square not in self.board_poses:
+    def send_next_goal(self):
+        if self.current_index >= len(self.jobs):
+            self.get_logger().info("All requested pick-and-place goals finished")
+            rclpy.shutdown()
+            return
+
+        supply_index, square = self.jobs[self.current_index]
+
+        if square not in self.board_poses:
             self.get_logger().error("Square must be 0 through 8")
+            rclpy.shutdown()
+            return
+
+        if supply_index >= len(self.supply_poses):
+            self.get_logger().error(f"No supply pose for index {supply_index}")
             rclpy.shutdown()
             return
 
@@ -70,14 +97,18 @@ class TestPickAndPlace(Node):
             return
 
         goal = PickAndPlace.Goal()
-        goal.pickup_pose = self.supply_poses[0]
-        goal.place_pose = self.board_poses[self.square]
+        goal.pickup_pose = self.supply_poses[supply_index]
+        goal.place_pose = self.board_poses[square]
 
         now = self.get_clock().now().to_msg()
         goal.pickup_pose.header.stamp = now
         goal.place_pose.header.stamp = now
 
-        self.get_logger().info(f"Testing placement into square {self.square}")
+        self.get_logger().info(
+            f"Sending goal {self.current_index + 1}/{len(self.jobs)}: "
+            f"supply {supply_index} -> square {square}"
+        )
+
         future = self.client.send_goal_async(goal)
         future.add_done_callback(self.goal_response_callback)
 
@@ -95,18 +126,34 @@ class TestPickAndPlace(Node):
 
     def result_callback(self, future):
         result = future.result().result
-        self.get_logger().info(f"Result: success={result.success}, message={result.message}")
-        rclpy.shutdown()
+        self.get_logger().info(
+            f"Result: success={result.success}, message={result.message}"
+        )
+
+        if not result.success:
+            self.get_logger().error("Stopping because a pick-and-place failed")
+            rclpy.shutdown()
+            return
+
+        self.current_index += 1
+        self.send_next_goal()
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    square = 4
-    if len(sys.argv) >= 2:
-        square = int(sys.argv[1])
+    run_all = "--all" in sys.argv
 
-    node = TestPickAndPlace(square)
+    square = 4
+    positional_args = [
+        arg for arg in sys.argv[1:]
+        if arg != "--all"
+    ]
+
+    if positional_args:
+        square = int(positional_args[0])
+
+    node = TestPickAndPlace(square=square, run_all=run_all)
     rclpy.spin(node)
 
 

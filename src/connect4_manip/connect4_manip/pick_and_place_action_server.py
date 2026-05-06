@@ -57,14 +57,18 @@ class PickAndPlaceActionServer(Node):
             callback_group=self.cb_group,
         )
 
-        # Tune these carefully.
         self.hover_z = 0.100
         self.pick_z = 0.015
         self.place_z = 0.020
 
-        # Descend in steps like your working PickAndDrop server.
         self.pick_descend_steps = [0.075, 0.065, 0.055, self.pick_z]
         self.place_descend_steps = [0.075, 0.060, 0.045, self.place_z]
+
+        # Rest pose measured with:
+        # ros2 run tf2_ros tf2_echo base tool0
+        self.rest_x = -0.081
+        self.rest_y = -0.417
+        self.rest_z = 0.210
 
         self.get_logger().info("PickAndPlace action server ready")
 
@@ -90,29 +94,21 @@ class PickAndPlaceActionServer(Node):
             goal_handle.abort()
             return result
 
-    
-    def make_drop_pose(self):
+    def make_rest_pose(self):
         pose = PoseStamped()
-        pose.header.frame_id = "base_link"
+        pose.header.frame_id = "base"
 
-        pose.pose.position.x = 0.242
-        pose.pose.position.y = -0.379
-        pose.pose.position.z = 0.094
+        pose.pose.position.x = self.rest_x
+        pose.pose.position.y = self.rest_y
+        pose.pose.position.z = self.rest_z
 
-        pose.pose.orientation.x = -0.759
-        pose.pose.orientation.y = 0.650
-        pose.pose.orientation.z = -0.018
-        pose.pose.orientation.w = 0.039
-
-        self.normalize_quaternion(pose)
+        self.set_gripper_orientation(pose)
         return pose
-
 
     def pick_and_place(self, goal_handle):
         pickup_hover = copy.deepcopy(goal_handle.request.pickup_pose)
         place_hover = copy.deepcopy(goal_handle.request.place_pose)
 
-        # Treat incoming poses as XY hover targets.
         pickup_hover.header.frame_id = "base"
         place_hover.header.frame_id = "base"
 
@@ -152,9 +148,11 @@ class PickAndPlaceActionServer(Node):
             return False, "Failed to move to place hover"
 
         self.publish_feedback(goal_handle, "Descending to place")
+        place_low = None
         for i, z in enumerate(self.place_descend_steps):
             p = copy.deepcopy(place_hover)
             p.pose.position.z = z
+            place_low = copy.deepcopy(p)
             if not self.move_to_pose(p, f"place descend step {i}"):
                 return False, f"Failed during place descend step {i}"
 
@@ -164,24 +162,63 @@ class PickAndPlaceActionServer(Node):
 
         time.sleep(0.5)
 
-
-        final_pose = self.make_drop_pose()
-        self.publish_feedback(goal_handle, "Retreating from placed block")
-        if not self.move_to_pose(final_pose, "retreat from place"):
-            return False, "Failed to retreat after placing"
+        self.publish_feedback(goal_handle, "Moving to rest pose in small steps")
+        if not self.move_to_rest_in_steps(place_low):
+            return False, "Failed to move to rest pose after placing"
 
         self.publish_feedback(goal_handle, "Pick and place complete")
         return True, "Pick and place complete"
 
+    def move_to_rest_in_steps(self, start_pose):
+        rest_pose = self.make_rest_pose()
+
+        sx = start_pose.pose.position.x
+        sy = start_pose.pose.position.y
+        sz = start_pose.pose.position.z
+
+        rx = rest_pose.pose.position.x
+        ry = rest_pose.pose.position.y
+        rz = rest_pose.pose.position.z
+
+        safe_z = max(rz, self.hover_z, sz)
+
+        steps = []
+
+        # First go straight up above the placed block.
+        lift_steps = 4
+        for i in range(1, lift_steps + 1):
+            a = i / float(lift_steps)
+            p = copy.deepcopy(start_pose)
+            p.header.frame_id = "base"
+            p.pose.position.x = sx
+            p.pose.position.y = sy
+            p.pose.position.z = sz + a * (safe_z - sz)
+            self.set_gripper_orientation(p)
+            steps.append(p)
+
+        # Then move across to the rest XY at safe height.
+        travel_steps = 6
+        for i in range(1, travel_steps + 1):
+            a = i / float(travel_steps)
+            p = copy.deepcopy(rest_pose)
+            p.pose.position.x = sx + a * (rx - sx)
+            p.pose.position.y = sy + a * (ry - sy)
+            p.pose.position.z = safe_z + a * (rz - safe_z)
+            self.set_gripper_orientation(p)
+            steps.append(p)
+
+        for i, p in enumerate(steps):
+            if not self.move_to_pose(p, f"rest step {i + 1}/{len(steps)}"):
+                return False
+
+        return True
+
     def set_gripper_orientation(self, pose: PoseStamped):
-        # Same orientation as your working PickAndDrop make_pose().
         pose.pose.orientation.x = -0.012
         pose.pose.orientation.y = 1.000
         pose.pose.orientation.z = 0.021
         pose.pose.orientation.w = 0.014
         self.normalize_quaternion(pose)
-    
-
 
     def publish_feedback(self, goal_handle, status: str):
         feedback = PickAndPlace.Feedback()
@@ -226,6 +263,8 @@ class PickAndPlaceActionServer(Node):
         )
 
     def move_to_pose(self, pose, label="pose"):
+        pose.header.stamp = self.get_clock().now().to_msg()
+
         self.get_logger().info(
             f"Moving to {label}: "
             f"x={pose.pose.position.x:.3f}, "
