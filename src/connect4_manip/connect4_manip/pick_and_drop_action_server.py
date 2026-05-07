@@ -124,6 +124,7 @@ class PickAndDropActionServer(Node):
         block_x, block_y = self.raw_block_to_base(raw_x, raw_y)
 
         block_y += -0.006
+        block_x += 0.011
 
         if 0.095 <= raw_x <= 0.13 and 0.015 <= raw_y <= 0.05:
             self.get_logger().warn("Applying correction for Mid-Right")

@@ -24,7 +24,7 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': ['block_delivery_node = connect4_turtlebotnav.block_delivery_node:main',
+        'console_scripts': ["turtle_deliver_server = connect4_turtlebotnav.turtle_deliver_server:main",
         ],
     },
 )

@@ -18,7 +18,7 @@ find_package(action_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BoardState.msg"
   "msg/Winner.msg"
-  "action/DeliverBlock.action"
+  "action/TurtleDeliver.action"
   "action/ResetBoard.action"
   "action/PickAndDrop.action"
   "action/PickAndPlace.action"

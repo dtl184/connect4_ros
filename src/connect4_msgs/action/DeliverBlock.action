@@ -1,6 +1,0 @@
-int32 player
----
-bool success
-string message
----
-string status
