@@ -3,47 +3,19 @@ from launch.actions import (
     DeclareLaunchArgument,
     IncludeLaunchDescription,
     TimerAction,
-    SetEnvironmentVariable,
+    ExecuteProcess,
 )
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-from launch.substitutions import PathJoinSubstitution
-from launch.actions import ExecuteProcess
+
 
 def generate_launch_description():
 
     robot_ip = LaunchConfiguration("robot_ip")
     ur_type = LaunchConfiguration("ur_type")
     video_device = LaunchConfiguration("video_device")
-    turtlebot3_model = LaunchConfiguration("turtlebot3_model")
-
-    set_tb3_model = SetEnvironmentVariable(
-        name="TURTLEBOT3_MODEL",
-        value=turtlebot3_model,
-    )
-
-    nav2_sim = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution([
-                FindPackageShare("nav2_bringup"),
-                "launch",
-                "tb3_simulation_launch.py",
-            ])
-        ),
-        launch_arguments={
-            "headless": "False",
-            "autostart": "True",
-        }.items(),
-    )
-
-    turtle_deliver_server = Node(
-        package="connect4_turtlebotnav",
-        executable="turtle_deliver_server",
-        name="turtle_deliver_server",
-        output="screen",
-    )
 
     ur_driver = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -89,6 +61,13 @@ def generate_launch_description():
         output="screen",
     )
 
+    gripper_service = Node(
+        package="connect4_manip",
+        executable="robotiq_gripper_service",
+        name="robotiq_gripper_service",
+        output="screen",
+    )
+
     reset_board_server = Node(
         package="connect4_manip",
         executable="reset_board_action_server",
@@ -105,7 +84,7 @@ def generate_launch_description():
 
     referee = Node(
         package="connect4_game",
-        executable="tic_tac_toe_node",
+        executable="tic_tac_toe_referee",
         name="referee",
         output="screen",
     )
@@ -114,22 +93,17 @@ def generate_launch_description():
         DeclareLaunchArgument("robot_ip", default_value="192.168.1.2"),
         DeclareLaunchArgument("ur_type", default_value="ur3e"),
         DeclareLaunchArgument("video_device", default_value="/dev/video0"),
-        DeclareLaunchArgument("turtlebot3_model", default_value="waffle"),
 
-        set_tb3_model,
-
-        camera,
-        block_detector,
-
-        ur_driver,
+        TimerAction(period=0.0, actions=[
+            camera,
+            block_detector,
+            ur_driver,
+            gripper_service,
+        ]),
 
         TimerAction(period=5.0, actions=[moveit]),
 
-        TimerAction(period=8.0, actions=[nav2_sim]),
-
-        TimerAction(period=18.0, actions=[turtle_deliver_server]),
-
-        TimerAction(period=20.0, actions=[
+        TimerAction(period=10.0, actions=[
             reset_board_server,
             pick_and_drop_server,
             referee,

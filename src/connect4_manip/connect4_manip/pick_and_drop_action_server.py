@@ -211,11 +211,11 @@ class PickAndDropActionServer(Node):
         # One area of the board consistently exhibited
         # systematic error, so an additional adjustment
         # is applied there.
-        # if 0.095 <= raw_x <= 0.13 and 0.015 <= raw_y <= 0.05:
-        #     self.get_logger().warn("Applying correction for Mid-Right")
+        if 0.095 <= raw_x <= 0.13 and 0.015 <= raw_y <= 0.05:
+            self.get_logger().warn("Applying correction for Mid-Right")
 
-        #     block_x += 0.01
-        #     block_y += 0.0
+            block_x += 0.01
+            block_y += 0.0
 
         self.get_logger().info(
             f"BASE block pose: x={block_x:.4f}, y={block_y:.4f}"

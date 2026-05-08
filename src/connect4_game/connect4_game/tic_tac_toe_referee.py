@@ -13,19 +13,13 @@ class TicTacToeNode(Node):
         super().__init__("tic_tac_toe_node")
 
         self.player1_tags = {0, 1, 2, 3}
-
-        # Placeholder until you make player 2 tags
-        self.player2_tags = {4,5,6,7,9}
+        self.player2_tags = {4, 5, 6, 7, 9}
 
         self.block_topic = "/connect4/detected_block_poses"
         self.reset_action_name = "/connect4/reset_board"
 
-        # These are based on your earlier calibrated board coordinates.
-        # x determines row: top, middle, bottom
-        # y determines col: left, middle, right
         self.x_row_split_1 = 0.075
         self.x_row_split_2 = 0.145
-
         self.y_col_split_1 = 0.060
         self.y_col_split_2 = 0.140
 
@@ -34,8 +28,9 @@ class TicTacToeNode(Node):
         self.reset_client = ActionClient(
             self,
             ResetBoard,
-            self.reset_action_name
+            self.reset_action_name,
         )
+
         self.turtle_client = ActionClient(
             self,
             TurtleDeliver,
@@ -46,11 +41,12 @@ class TicTacToeNode(Node):
             DetectedBlockArray,
             self.block_topic,
             self.blocks_callback,
-            10
+            10,
         )
 
         self.win_candidate = None
         self.win_counter = 0
+        self.draw_counter = 0
         self.frames_required_for_reset = 5
         self.reset_sent = False
 
@@ -121,7 +117,24 @@ class TicTacToeNode(Node):
         if winner is None:
             self.win_candidate = None
             self.win_counter = 0
+
+            if self.is_draw():
+                self.draw_counter += 1
+                self.get_logger().info(
+                    f"Draw detected {self.draw_counter}/{self.frames_required_for_reset}"
+                )
+
+                if self.draw_counter >= self.frames_required_for_reset:
+                    self.get_logger().info("Board full with no winner. Sending reset board action.")
+                    self.send_reset_board()
+                    self.send_turtle_deliver()
+
+                return
+
+            self.draw_counter = 0
             return
+
+        self.draw_counter = 0
 
         if self.win_candidate == winner:
             self.win_counter += 1
@@ -137,21 +150,36 @@ class TicTacToeNode(Node):
         if self.win_counter >= self.frames_required_for_reset:
             self.get_logger().info(f"Player {winner} wins. Sending reset board action.")
             self.send_reset_board()
-            goal = TurtleDeliver.Goal()
-            goal.x = 1.0
-            goal.y = 0.0
-            goal.yaw = 0.0
+            self.send_turtle_deliver()
 
-            self.turtle_client.wait_for_server()
-            self.turtle_client.send_goal_async(goal)
+    def is_draw(self):
+        if self.check_winner() is not None:
+            return False
+
+        for row in self.board:
+            for cell in row:
+                if cell == 0:
+                    return False
+
+        return True
+
+    def send_turtle_deliver(self):
+        goal = TurtleDeliver.Goal()
+        goal.x = 1.0
+        goal.y = 0.0
+        goal.yaw = 0.0
+
+        if not self.turtle_client.wait_for_server(timeout_sec=2.0):
+            self.get_logger().warn("TurtleDeliver action server not available")
+            return
+
+        self.turtle_client.send_goal_async(goal)
 
     def check_winner(self):
         lines = []
 
-        # Rows
         lines.extend(self.board)
 
-        # Columns
         for col in range(3):
             lines.append([
                 self.board[0][col],
@@ -159,7 +187,6 @@ class TicTacToeNode(Node):
                 self.board[2][col],
             ])
 
-        # Diagonals
         lines.append([
             self.board[0][0],
             self.board[1][1],

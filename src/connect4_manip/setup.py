@@ -29,6 +29,7 @@ setup(
             'pick_and_drop_action_server = connect4_manip.pick_and_drop_action_server:main',
             'reset_board_action_server = connect4_manip.reset_board_action_server:main',
             'pick_and_place_action_server = connect4_manip.pick_and_place_action_server:main',
+            'robotiq_gripper_service = connect4_manip.robotiq_gripper:main',
         ],
     },
 )
