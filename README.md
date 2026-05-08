@@ -38,8 +38,40 @@ Launch file for full system.
 - UR3 driver
 - Turtlebot packages
 
-## Assignment commit hashes
+## Assignments
 
-Initial Implementation: 022b0f3
+Here is where you will find the parts of my project that correspond to the class assignments
 
-MoveIt and Nav2: 94dd5a5
+Initial Implementation: 022b0f3 (commit hash)
+
+MoveIt: connect4_manip/connect4_manip/pick_and_place_server.py
+        connect4_manip/connect4_manip/pick_and_drop_server.py
+
+Nav2: connect4_turtlebotnav/connect4_turtlebotnav/turtle_deliver_server.py
+
+Perception: connect4_perception/connect4_perception/block_pose_detector_node.py
+
+High-Level control: connect4_game/connect4_game/tic_tac_toe_referee.py
+                    connect4_game/connect4_game/tic_tac_toe_player.py (custom, handwritten node)
+
+## How to run
+1. Turn on the ur3e arm using the Teach Pendant.
+2. Create a custom program on the Teach Pendant with an External Control node.
+3. Connect ur3e control box to computer running ROS system with ethernet.
+4. Enter the following into a terminal on the ROS computer:
+   
+   `cd ~/connect4_ros`
+   
+   `source /opt/ros/kilted/setup.bash`
+   
+   `source install/setup.bash`
+   
+5. Start either referee mode or player mode.
+   
+   `ros2 launch connect4_launch referee.launch.py video_device:=/dev/video0`
+   
+   `ros2 launch connect4_launch player.launch.py video_device:=/dev/video0`
+   
+   Replace `/dev/video0` with whatever your camera is.
+   
+7. Once all ROS nodes have launched, press play on the Teach Pendant.
