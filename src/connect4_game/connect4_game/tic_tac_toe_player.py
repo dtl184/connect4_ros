@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Tic-Tac-Toe robot player node (custom node)
+Tic-Tac-Toe robot player node (custom hand-written node)
 
 This node:
     1. Listens to AprilTag-based board perception.
@@ -522,7 +522,7 @@ class TicTacToeRobotNode(Node):
         human_added = 0
         robot_added = 0
         removed = 0
-        changed_badly = 0
+        changed_badly = 0 # we really screwed up
 
         for r in range(3):
             for c in range(3):
