@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+"""
+Robotiq Gripper services.
+"""
 import socket
 import time
 
@@ -15,9 +17,6 @@ PORT = 63352
 # 0   = fully open
 # 255 = fully closed
 #
-# Tune this.
-# Larger value = gripper opens LESS.
-# Smaller value = gripper opens MORE.
 NARROW_OPEN_POS = 95
 
 
