@@ -47,7 +47,9 @@ from connect4_msgs.action import PickAndPlace
 class PickAndPlaceActionServer(Node):
     """
     Action server responsible for pick-and-place operations during player mode.
+
     """
+
     def __init__(self):
         super().__init__("pick_and_place_action_server")
 
