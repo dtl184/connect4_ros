@@ -97,11 +97,8 @@ class TicTacToeNode(Node):
         self.win_candidate = None
 
         self.win_counter = 0
-<<<<<<< HEAD
 
-=======
         self.draw_counter = 0
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
         self.frames_required_for_reset = 5
 
         self.reset_sent = False
@@ -240,12 +237,9 @@ class TicTacToeNode(Node):
             self.draw_counter = 0
             return
 
-<<<<<<< HEAD
         # Stabilize perception, only accept a winning board if we see it for a few frames
-=======
         self.draw_counter = 0
 
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
         if self.win_candidate == winner:
             self.win_counter += 1
 

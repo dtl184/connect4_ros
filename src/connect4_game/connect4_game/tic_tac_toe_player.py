@@ -335,9 +335,7 @@ class TicTacToeRobotNode(Node):
             self.game_over = True
 
             self.send_reset_board()
-<<<<<<< HEAD
 
-=======
             goal = TurtleDeliver.Goal()
             goal.x = 1.0
             goal.y = 0.0
@@ -345,7 +343,6 @@ class TicTacToeRobotNode(Node):
 
             self.turtle_client.wait_for_server()
             self.turtle_client.send_goal_async(goal)
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
             return
 
         self.get_logger().info(

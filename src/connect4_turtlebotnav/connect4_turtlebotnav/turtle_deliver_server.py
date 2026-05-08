@@ -28,7 +28,6 @@ from nav2_msgs.action import NavigateToPose
 from connect4_msgs.action import TurtleDeliver
 
 
-<<<<<<< HEAD
 # Flask web server
 app = Flask(__name__)
 
@@ -64,7 +63,6 @@ class TurtleDeliverNode(Node):
         self.nav_client.wait_for_server()
 
         # Create navigation goal
-=======
 # Starting / home pose in the map frame.
 # Tune these to wherever the TurtleBot starts in RViz.
 HOME_X = 0.0
@@ -102,14 +100,12 @@ class TurtleDeliverServer(Node):
         self.get_logger().info("Turtle deliver action server ready.")
 
     def make_nav_goal(self, x, y, yaw):
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
         goal = NavigateToPose.Goal()
 
         goal.pose = PoseStamped()
 
         goal.pose.header.frame_id = "map"
 
-<<<<<<< HEAD
         goal.pose.header.stamp = (
             self.get_clock().now().to_msg()
         )
@@ -128,7 +124,6 @@ class TurtleDeliverServer(Node):
         self.get_logger().info(
             "Sending TurtleBot delivery goal..."
         )
-=======
         goal.pose.pose.position.x = float(x)
         goal.pose.pose.position.y = float(y)
         goal.pose.pose.position.z = 0.0
@@ -140,14 +135,12 @@ class TurtleDeliverServer(Node):
         goal.pose.pose.orientation.w = qw
 
         return goal
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
 
     def send_nav_goal_and_wait(self, x, y, yaw, status_text, goal_handle):
         feedback = TurtleDeliver.Feedback()
         feedback.status = status_text
         goal_handle.publish_feedback(feedback)
 
-<<<<<<< HEAD
         def goal_response_callback(future):
             """
             Handle Nav2 goal response.
@@ -201,32 +194,31 @@ def deliver():
         """
         ros_node.send_delivery_goal()
 
-    threading.Thread(
-        target=run_goal,
-        daemon=True
-    ).start()
+        threading.Thread(
+            target=run_goal,
+            daemon=True
+        ).start()
 
-    return jsonify({"status": "started"})
-=======
-        nav_goal = self.make_nav_goal(x, y, yaw)
+        return jsonify({"status": "started"})
+    nav_goal = self.make_nav_goal(x, y, yaw)
 
-        send_future = self.nav_client.send_goal_async(nav_goal)
-        rclpy.spin_until_future_complete(self, send_future)
+    send_future = self.nav_client.send_goal_async(nav_goal)
+    rclpy.spin_until_future_complete(self, send_future)
 
-        nav_goal_handle = send_future.result()
+    nav_goal_handle = send_future.result()
 
-        if nav_goal_handle is None or not nav_goal_handle.accepted:
-            return False, "Nav2 rejected goal."
+    if nav_goal_handle is None or not nav_goal_handle.accepted:
+        return False, "Nav2 rejected goal."
 
-        result_future = nav_goal_handle.get_result_async()
-        rclpy.spin_until_future_complete(self, result_future)
+    result_future = nav_goal_handle.get_result_async()
+    rclpy.spin_until_future_complete(self, result_future)
 
-        nav_result = result_future.result()
+    nav_result = result_future.result()
 
-        if nav_result is None:
-            return False, "No result returned from Nav2."
+    if nav_result is None:
+        return False, "No result returned from Nav2."
 
-        return True, "Nav2 goal completed."
+    return True, "Nav2 goal completed."
 
     def execute_callback(self, goal_handle):
         x = goal_handle.request.x
@@ -298,13 +290,11 @@ def deliver():
         result.message = "Delivery complete and robot returned home."
         goal_handle.succeed()
         return result
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-<<<<<<< HEAD
     # Initialize ROS2
     rclpy.init()
 
@@ -322,7 +312,6 @@ def main(args=None):
         host="0.0.0.0",
         port=5000
     )
-=======
     node = TurtleDeliverServer()
     executor = MultiThreadedExecutor()
     executor.add_node(node)
@@ -332,7 +321,6 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
->>>>>>> 3c4320a35d110b0c840f03d63b6ac0b503829f05
 
 
 if __name__ == "__main__":
