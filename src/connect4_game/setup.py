@@ -25,8 +25,8 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            'tic_tac_toe_node = connect4_game.tic_tac_toe_node:main',
-            "referee_node = connect4_game.referee_node:main",
+            "tic_tac_toe_referee = connect4_game.tic_tac_toe_referee:main",
+            "player = connect4_game.tic_tac_toe_player:main",
         ],
     },
 )

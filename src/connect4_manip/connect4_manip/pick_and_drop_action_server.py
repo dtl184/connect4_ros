@@ -13,21 +13,18 @@ This node:
 ROS Interfaces
 -------------------
 SUBSCRIBES:
-    /detected_block_pose          
-        Type: geometry_msgs/PoseStamped
+    /detected_block_pose          geometry_msgs/PoseStamped
 
 ACTION SERVER:
-    /connect4/pick_and_drop      
-        Type: connect4_msgs/action/PickAndDrop
+    /connect4/pick_and_drop      connect4_msgs/PickAndDrop
 
-SERVICES:
+SERVICES USED:
+    /connect4/gripper/open
     /connect4/gripper/open_narrow
     /connect4/gripper/close
-        Type: std_srvs/srv/Empty
 
-MOVEIT ACTION CLIENT:
-    /move_action                 
-        Type: moveit_msgs/MoveGroup
+MOVEIT ACTION:
+    /move_action                 moveit_msgs/MoveGroup
 
 
 Motion
@@ -61,23 +58,21 @@ from std_srvs.srv import Empty
 
 from connect4_msgs.action import PickAndDrop
 
-from moveit_msgs.msg import Constraints, PositionConstraint, OrientationConstraint
-
-from shape_msgs.msg import SolidPrimitive
-
 
 class PickAndDropActionServer(Node):
     """
-    Action Server responsible for block pickup and drop during board reset.
+    Action Server responsible for block pickup and drop.
+
+    Uses:
+        - MoveIt for arm planning/execution
+        - Gripper services for grasping
+        - Perception topic for locating blocks
     """
 
     def __init__(self):
         super().__init__("pick_and_drop_action_server")
 
         self.cb_group = ReentrantCallbackGroup()
-
-        # Regression coefficients for camera calibration
-        self.coeff_x, self.coeff_y = self.compute_calibration_coeffs()
 
         # MoveIt action client.
         self.move_client = ActionClient(
@@ -124,46 +119,6 @@ class PickAndDropActionServer(Node):
         )
 
         self.get_logger().info("PickAndDrop action server ready")
-    
-    def compute_calibration_coeffs(self):
-        """
-        Computes the coefficients of polynomial regression for converting camera coordinates into robot-base coordinates.
-
-        Calibration Dataset Columns:
-            raw_x, raw_y, base_x, base_y
-
-        Regression Features: x, y, xy, x^2, y^2, bias
-        """
-        calibration = np.array([
-            [0.115, 0.108, -0.056, -0.439],
-            [0.113, 0.047, -0.068, -0.385],
-            [0.111, 0.171, -0.058, -0.488],
-            [0.044, 0.111, -0.104, -0.437],
-            [0.047, 0.047, -0.116, -0.385],
-            [0.047, 0.170, -0.102, -0.492],
-            [0.180, 0.106,  0.005, -0.435],
-            [0.181, 0.046,  0.006, -0.379],
-            [0.180, 0.170,  0.005, -0.490],
-        ], dtype=float)
-
-        rx = calibration[:, 0]
-        ry = calibration[:, 1]
-        bx = calibration[:, 2]
-        by = calibration[:, 3]
-
-        A = np.column_stack([
-            rx,
-            ry,
-            rx * ry,
-            rx * rx,
-            ry * ry,
-            np.ones_like(rx),
-        ])
-
-        coeff_x, _, _, _ = np.linalg.lstsq(A, bx, rcond=None)
-        coeff_y, _, _, _ = np.linalg.lstsq(A, by, rcond=None)
-
-        return coeff_x, coeff_y
 
     def block_pose_callback(self, msg: PoseStamped):
         """
@@ -246,9 +201,21 @@ class PickAndDropActionServer(Node):
         # Convert camera/board coordinates into robot base coordinates
         block_x, block_y = self.raw_block_to_base(raw_x, raw_y)
 
-        # After polynomial regression it's still a little off so we add an offset
+        # Due to camera calibration issues, we need to add a hardcoded offset
+        # to the robot pose
         block_y += -0.006
         block_x += 0.011
+
+        # Region-specific correction.
+        #
+        # One area of the board consistently exhibited
+        # systematic error, so an additional adjustment
+        # is applied there.
+        if 0.095 <= raw_x <= 0.13 and 0.015 <= raw_y <= 0.05:
+            self.get_logger().warn("Applying correction for Mid-Right")
+
+            block_x += 0.01
+            block_y += 0.0
 
         self.get_logger().info(
             f"BASE block pose: x={block_x:.4f}, y={block_y:.4f}"
@@ -345,8 +312,43 @@ class PickAndDropActionServer(Node):
 
     def raw_block_to_base(self, raw_x, raw_y):
         """
-        Converts "raw" camera coordinates into robot base coordinates with the regression coefficients
+        Converts camera coordinates into robot-base coordinates with polynomial regression
+
+        Calibration Dataset Columns:
+            raw_x, raw_y, base_x, base_y
+
+        Regression Features: x, y, xy, x^2, y^2, bias
         """
+
+        calibration = np.array([
+            [0.115, 0.108, -0.056, -0.439],
+            [0.113, 0.047, -0.068, -0.385],
+            [0.111, 0.171, -0.058, -0.488],
+            [0.044, 0.111, -0.104, -0.437],
+            [0.047, 0.047, -0.116, -0.385],
+            [0.047, 0.170, -0.102, -0.492],
+            [0.180, 0.106,  0.005, -0.435],
+            [0.181, 0.046,  0.006, -0.379],
+            [0.180, 0.170,  0.005, -0.490],
+        ], dtype=float)
+
+        rx = calibration[:, 0]
+        ry = calibration[:, 1]
+        bx = calibration[:, 2]
+        by = calibration[:, 3]
+
+        A = np.column_stack([
+            rx,
+            ry,
+            rx * ry,
+            rx * rx,
+            ry * ry,
+            np.ones_like(rx),
+        ])
+
+        coeff_x, _, _, _ = np.linalg.lstsq(A, bx, rcond=None)
+        coeff_y, _, _, _ = np.linalg.lstsq(A, by, rcond=None)
+
         x = raw_x
         y = raw_y
 
@@ -359,14 +361,14 @@ class PickAndDropActionServer(Node):
             1.0,
         ])
 
-        base_x = float(features @ self.coeff_x)
-        base_y = float(features @ self.coeff_y)
+        base_x = float(features @ coeff_x)
+        base_y = float(features @ coeff_y)
 
         return base_x, base_y
 
     def make_pose(self, x, y, z):
         """
-        Creates a PoseStamped in the robot base frame. Gripper is positioned downward for pickup
+        Creates a PoseStamped in the robot base frame. Tool is position downward for pickup
         """
         pose = PoseStamped()
 
@@ -439,7 +441,7 @@ class PickAndDropActionServer(Node):
         """
         return self.call_empty_service(
             self.gripper_open_narrow_client,
-            "gripper open"
+            "gripper narrow open"
         )
 
     def move_to_pose(self, pose, label="pose"):
@@ -467,7 +469,7 @@ class PickAndDropActionServer(Node):
             self.pose_to_constraints(pose)
         )
 
-        # Don't go too fast
+        # Conservative motion scaling for safer motion.
         goal.request.max_velocity_scaling_factor = 0.05
         goal.request.max_acceleration_scaling_factor = 0.05
 
@@ -507,17 +509,36 @@ class PickAndDropActionServer(Node):
     def pose_to_constraints(self, pose):
         """
         Converts a pose into MoveIt constraints.
+
+        Includes:
+            - position constraint
+            - orientation constraint
+
+        A very small box region is used so the planner
+        strongly targets the desired pose.
         """
+
+        from moveit_msgs.msg import (
+            Constraints,
+            PositionConstraint,
+            OrientationConstraint
+        )
+
+        from shape_msgs.msg import SolidPrimitive
+
         constraints = Constraints()
 
+        # --------------------------------------------------------------
         # Position constraint
+        # --------------------------------------------------------------
+
         pc = PositionConstraint()
 
         pc.header = pose.header
         pc.link_name = "tool0"
 
         box = SolidPrimitive()
-        # Give MoveIt a small box to go to
+
         box.type = SolidPrimitive.BOX
         box.dimensions = [0.01, 0.01, 0.01]
 
@@ -526,7 +547,10 @@ class PickAndDropActionServer(Node):
 
         pc.weight = 1.0
 
+        # --------------------------------------------------------------
         # Orientation constraint
+        # --------------------------------------------------------------
+
         oc = OrientationConstraint()
 
         oc.header = pose.header
@@ -555,6 +579,11 @@ def main(args=None):
 
     node = PickAndDropActionServer()
 
+    # Multi-threaded executor is important because:
+    # - actions
+    # - services
+    # - subscriptions
+    # may all execute concurrently.
     executor = MultiThreadedExecutor(num_threads=4)
 
     executor.add_node(node)
