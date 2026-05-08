@@ -6,10 +6,9 @@ from typing import Optional, Tuple, List
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-
 from geometry_msgs.msg import PoseStamped
 from connect4_msgs.msg import DetectedBlockArray
-from connect4_msgs.action import PickAndPlace, ResetBoard
+from connect4_msgs.action import PickAndPlace, ResetBoard, TurtleDeliver
 
 
 EMPTY = 0
@@ -76,6 +75,11 @@ class TicTacToeRobotNode(Node):
             self,
             ResetBoard,
             self.reset_action_name,
+        )
+        self.turtle_client = ActionClient(
+            self,
+            TurtleDeliver,
+            "/connect4/turtle_deliver",
         )
 
         self.sub = self.create_subscription(
@@ -189,6 +193,13 @@ class TicTacToeRobotNode(Node):
             self.get_logger().info("No legal robot move available.")
             self.game_over = True
             self.send_reset_board()
+            goal = TurtleDeliver.Goal()
+            goal.x = 1.0
+            goal.y = 0.0
+            goal.yaw = 0.0
+
+            self.turtle_client.wait_for_server()
+            self.turtle_client.send_goal_async(goal)
             return
 
         self.get_logger().info(f"Robot chose square {robot_square}")

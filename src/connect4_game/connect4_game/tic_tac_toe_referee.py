@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.action import ActionClient
 
 from connect4_msgs.msg import DetectedBlockArray
-from connect4_msgs.action import ResetBoard
+from connect4_msgs.action import ResetBoard, TurtleDeliver
 
 
 class TicTacToeNode(Node):
@@ -35,6 +35,11 @@ class TicTacToeNode(Node):
             self,
             ResetBoard,
             self.reset_action_name
+        )
+        self.turtle_client = ActionClient(
+            self,
+            TurtleDeliver,
+            "/connect4/turtle_deliver",
         )
 
         self.sub = self.create_subscription(
@@ -132,6 +137,13 @@ class TicTacToeNode(Node):
         if self.win_counter >= self.frames_required_for_reset:
             self.get_logger().info(f"Player {winner} wins. Sending reset board action.")
             self.send_reset_board()
+            goal = TurtleDeliver.Goal()
+            goal.x = 1.0
+            goal.y = 0.0
+            goal.yaw = 0.0
+
+            self.turtle_client.wait_for_server()
+            self.turtle_client.send_goal_async(goal)
 
     def check_winner(self):
         lines = []
