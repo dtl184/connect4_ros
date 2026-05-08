@@ -1,9 +1,6 @@
-# ROS2 Connect4 Referee 
+# ROS2 Game Referee 
 
-This project implements a robotic Connect Four referee system using ROS2.  
-Two players place blocks on a flat Connect4 board. A Turtlebot delivers blocks,
-a perception node detects board state, a referee node manages game logic, and
-a UR3 arm resets the board after a win.
+This project implements a robotic Tic-Tac-Toe referee system using ROS2.  
 
 ## Packages
 
