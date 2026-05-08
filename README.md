@@ -41,15 +41,21 @@ Here is where you will find the parts of my project that correspond to the class
 
 Initial Implementation: 022b0f3 (commit hash)
 
-MoveIt: connect4_manip/connect4_manip/pick_and_place_server.py
-        connect4_manip/connect4_manip/pick_and_drop_server.py
+MoveIt:
 
-Nav2: connect4_turtlebotnav/connect4_turtlebotnav/turtle_deliver_server.py
+`connect4_manip/connect4_manip/pick_and_place_server.py`
+       
+`connect4_manip/connect4_manip/pick_and_drop_server.py`
 
-Perception: connect4_perception/connect4_perception/block_pose_detector_node.py
+Nav2: `connect4_turtlebotnav/connect4_turtlebotnav/turtle_deliver_server.py`
 
-High-Level control: connect4_game/connect4_game/tic_tac_toe_referee.py
-                    connect4_game/connect4_game/tic_tac_toe_player.py (custom, handwritten node)
+Perception: `connect4_perception/connect4_perception/block_pose_detector_node.py`
+
+High-Level control: 
+
+`connect4_game/connect4_game/tic_tac_toe_referee.py`
+
+`connect4_game/connect4_game/tic_tac_toe_player.py` (custom, handwritten node)
 
 ## How to run
 1. Turn on the ur3e arm using the Teach Pendant.
