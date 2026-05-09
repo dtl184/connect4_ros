@@ -87,12 +87,15 @@ Instead, my video shows me manually starting Nav2 and sending a command, to simu
 
 1. In one terminal, run
 
-'export TURTLEBOT3_MODEL=waffle'
+`export TURTLEBOT3_MODEL=waffle`
 
+`ros2 launch nav2_bringup tb3_simulation_launch.py slam:=False headless:=False use_rviz:=False`
 
-ros2 launch nav2_bringup tb3_simulation_launch.py \
-    slam:=False \
-    headless:=False \
-    use_rviz:=False
+2. In another run
 
+`ros2 run connect4_turtlebotnav turtle_deliver_server`
+
+3. In another run this command to see the Turtlebot move:
+
+`ros2 action send_goal /connect4/turtle_deliver connect4_msgs/action/TurtleDeliver "{x: 1.0, y: 0.0, yaw: 0.0}"`
 
