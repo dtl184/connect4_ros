@@ -79,23 +79,17 @@ High-Level control:
    
 7. Once all ROS nodes have launched, press play on the Teach Pendant.
 
-# Note
+# Note on Nav2
 
 The Nav2 component of my project currently only works in simulation. Additionally, I discovered there are problems when Nav2 and MoveIt are run with same ROS_DOMAIN_ID. I attempted to solve this by using Python Flask to create an http server so my Nav2 nodes could still communicate with my other ROS nodes with a different domain ID, but I was unable to make this work. 
 
 Instead, my video shows me manually starting Nav2 and sending a command, to simulate what the Turtlebot should do after the board is reset. To recreate this, run the following commands.
 
-1. In one terminal, run
+1. In one terminal, run the following to launch Rviz, Gazebo, and the turtlebot action server. When Rviz opens, indicate the robot's initial pose on the map.
 
-`export TURTLEBOT3_MODEL=waffle`
+`ros2 launch connect4_launch turtle.launch.py`
 
-`ros2 launch nav2_bringup tb3_simulation_launch.py slam:=False headless:=False use_rviz:=False`
-
-2. In another run
-
-`ros2 run connect4_turtlebotnav turtle_deliver_server`
-
-3. In another run this command to see the Turtlebot move:
+2. In another, run this command to see the Turtlebot move in Gazebo.
 
 `ros2 action send_goal /connect4/turtle_deliver connect4_msgs/action/TurtleDeliver "{x: 1.0, y: 0.0, yaw: 0.0}"`
 
