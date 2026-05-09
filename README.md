@@ -1,9 +1,6 @@
-# ROS2 Connect4 Referee 
+# ROS2 Game Referee 
 
-This project implements a robotic Connect Four referee system using ROS2.  
-Two players place blocks on a flat Connect4 board. A Turtlebot delivers blocks,
-a perception node detects board state, a referee node manages game logic, and
-a UR3 arm resets the board after a win.
+This project implements a robotic Tic-Tac-Toe referee system using ROS2.  
 
 ## Packages
 
@@ -38,8 +35,67 @@ Launch file for full system.
 - UR3 driver
 - Turtlebot packages
 
-## Assignment commit hashes
+## Assignments
 
-Initial Implementation: 022b0f3
+Here is where you will find the parts of my project that correspond to the class assignments
 
-MoveIt and Nav2: 94dd5a5
+Initial Implementation: 022b0f3 (commit hash)
+
+MoveIt:
+
+`connect4_manip/connect4_manip/pick_and_place_server.py`
+       
+`connect4_manip/connect4_manip/pick_and_drop_server.py`
+
+Nav2: `connect4_turtlebotnav/connect4_turtlebotnav/turtle_deliver_server.py`
+
+Perception: `connect4_perception/connect4_perception/block_pose_detector_node.py`
+
+High-Level control: 
+
+`connect4_game/connect4_game/tic_tac_toe_referee.py`
+
+`connect4_game/connect4_game/tic_tac_toe_player.py` (custom, handwritten node)
+
+## How to run
+1. Turn on the ur3e arm using the Teach Pendant.
+2. Create a custom program on the Teach Pendant with an External Control node.
+3. Connect ur3e control box to computer running ROS system with ethernet.
+4. Enter the following into a terminal on the ROS computer:
+   
+   `cd ~/connect4_ros`
+   
+   `source /opt/ros/kilted/setup.bash`
+   
+   `source install/setup.bash`
+   
+5. Start either referee mode or player mode.
+   
+   `ros2 launch connect4_launch referee.launch.py video_device:=/dev/video0`
+   
+   `ros2 launch connect4_launch player.launch.py video_device:=/dev/video0`
+   
+   Replace `/dev/video0` with whatever your camera is.
+   
+7. Once all ROS nodes have launched, press play on the Teach Pendant.
+
+# Note
+
+The Nav2 component of my project currently only works in simulation. Additionally, I discovered there are problems when Nav2 and MoveIt are run with same ROS_DOMAIN_ID. I attempted to solve this by using Python Flask to create an http server so my Nav2 nodes could still communicate with my other ROS nodes with a different domain ID, but I was unable to make this work. 
+
+Instead, my video shows me manually starting Nav2 and sending a command, to simulate what the Turtlebot should do after the board is reset. To recreate this, run the following commands.
+
+1. In one terminal, run
+
+`export TURTLEBOT3_MODEL=waffle`
+
+`ros2 launch nav2_bringup tb3_simulation_launch.py slam:=False headless:=False use_rviz:=False`
+
+2. In another run
+
+`ros2 run connect4_turtlebotnav turtle_deliver_server`
+
+3. In another run this command to see the Turtlebot move:
+
+`ros2 action send_goal /connect4/turtle_deliver connect4_msgs/action/TurtleDeliver "{x: 1.0, y: 0.0, yaw: 0.0}"`
+
