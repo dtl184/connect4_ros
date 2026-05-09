@@ -78,3 +78,21 @@ High-Level control:
    Replace `/dev/video0` with whatever your camera is.
    
 7. Once all ROS nodes have launched, press play on the Teach Pendant.
+
+# Note
+
+The Nav2 component of my project currently only works in simulation. Additionally, I discovered there are problems when Nav2 and MoveIt are run with same ROS_DOMAIN_ID. I attempted to solve this by using Python Flask to create an http server so my Nav2 nodes could still communicate with my other ROS nodes with a different domain ID, but I was unable to make this work. 
+
+Instead, my video shows me manually starting Nav2 and sending a command, to simulate what the Turtlebot should do after the board is reset. To recreate this, run the following commands.
+
+1. In one terminal, run
+
+'export TURTLEBOT3_MODEL=waffle'
+
+
+ros2 launch nav2_bringup tb3_simulation_launch.py \
+    slam:=False \
+    headless:=False \
+    use_rviz:=False
+
+
